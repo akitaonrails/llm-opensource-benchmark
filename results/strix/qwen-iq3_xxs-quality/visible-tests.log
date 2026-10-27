@@ -1,0 +1,27 @@
+test_basic_summary (test_logstats.LogstatsTests.test_basic_summary) ... ok
+test_cli_key_order_is_deterministic (test_logstats.LogstatsTests.test_cli_key_order_is_deterministic) ... ok
+test_empty_input_has_zero_error_rate (test_logstats.LogstatsTests.test_empty_input_has_zero_error_rate) ... ok
+test_malformed_json_is_skipped_with_warning (test_logstats.LogstatsTests.test_malformed_json_is_skipped_with_warning) ... ok
+test_timezone_offsets_compare_as_instants (test_logstats.LogstatsTests.test_timezone_offsets_compare_as_instants) ... ok
+test_until_is_exclusive (test_logstats.LogstatsTests.test_until_is_exclusive) ... ok
+test_iter_records_does_not_materialize_the_input (test_new_requirements.BoundedMemoryTests.test_iter_records_does_not_materialize_the_input) ... ok
+test_summarize_peak_memory_is_bounded_in_record_count (test_new_requirements.BoundedMemoryTests.test_summarize_peak_memory_is_bounded_in_record_count) ... ok
+test_cli_bounds_and_health_combine (test_new_requirements.CliRegressionTests.test_cli_bounds_and_health_combine) ... ok
+test_cli_excludes_health_and_keeps_field_shape (test_new_requirements.CliRegressionTests.test_cli_excludes_health_and_keeps_field_shape) ... ok
+test_cli_still_warns_on_malformed_and_ignores_blank_lines (test_new_requirements.CliRegressionTests.test_cli_still_warns_on_malformed_and_ignores_blank_lines) ... ok
+test_exact_health_path_is_excluded (test_new_requirements.HealthExclusionTests.test_exact_health_path_is_excluded) ... ok
+test_health_records_do_not_affect_selection_or_percentile (test_new_requirements.HealthExclusionTests.test_health_records_do_not_affect_selection_or_percentile) ... ok
+test_similar_paths_are_not_excluded (test_new_requirements.HealthExclusionTests.test_similar_paths_are_not_excluded) ... ok
+test_p95_at_multiples_of_twenty_uses_exact_ceiling (test_new_requirements.NearestRankP95Tests.test_p95_at_multiples_of_twenty_uses_exact_ceiling) ... ok
+test_p95_is_nearest_rank_not_interpolation (test_new_requirements.NearestRankP95Tests.test_p95_is_nearest_rank_not_interpolation) ... ok
+test_p95_is_null_only_for_zero_count (test_new_requirements.NearestRankP95Tests.test_p95_is_null_only_for_zero_count) ... ok
+test_p95_on_hundred_records (test_new_requirements.NearestRankP95Tests.test_p95_on_hundred_records) ... ok
+test_p95_single_record_returns_its_latency (test_new_requirements.NearestRankP95Tests.test_p95_single_record_returns_its_latency) ... ok
+test_p95_with_duplicate_latencies (test_new_requirements.NearestRankP95Tests.test_p95_with_duplicate_latencies) ... ok
+test_bytes_accepts_any_nonnegative_integer (test_new_requirements.SpecConformanceTests.test_bytes_accepts_any_nonnegative_integer) ... ok
+test_negative_bytes_is_skipped_with_warning (test_new_requirements.SpecConformanceTests.test_negative_bytes_is_skipped_with_warning) ... ok
+
+----------------------------------------------------------------------
+Ran 22 tests in 4.565s
+
+OK

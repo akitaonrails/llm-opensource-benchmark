@@ -1,0 +1,30 @@
+test_charge_and_fee (test_ledger.LedgerTests.test_charge_and_fee) ... ok
+test_cli_keys_are_sorted (test_ledger.LedgerTests.test_cli_keys_are_sorted) ... ok
+test_empty_input (test_ledger.LedgerTests.test_empty_input) ... ok
+test_malformed_line_is_skipped_with_warning (test_ledger.LedgerTests.test_malformed_line_is_skipped_with_warning) ... ok
+test_accepted_chargeback_consumes_refundable_amount (test_regressions.ChargebackTests.test_accepted_chargeback_consumes_refundable_amount) ... ok
+test_at_most_one_chargeback_first_by_timestamp_wins (test_regressions.ChargebackTests.test_at_most_one_chargeback_first_by_timestamp_wins) ... ok
+test_chargeback_equal_to_charge_allowed (test_regressions.ChargebackTests.test_chargeback_equal_to_charge_allowed) ... ok
+test_chargeback_exceeding_charge_rejected (test_regressions.ChargebackTests.test_chargeback_exceeding_charge_rejected) ... ok
+test_chargeback_matches_charge_anywhere (test_regressions.ChargebackTests.test_chargeback_matches_charge_anywhere) ... ok
+test_chargeback_mismatch_or_unknown_charge_rejected (test_regressions.ChargebackTests.test_chargeback_mismatch_or_unknown_charge_rejected) ... ok
+test_chargeback_not_limited_by_remaining_refundable_amount (test_regressions.ChargebackTests.test_chargeback_not_limited_by_remaining_refundable_amount) ... ok
+test_chargeback_without_charge_id_invalid (test_regressions.ChargebackTests.test_chargeback_without_charge_id_invalid) ... ok
+test_out_of_window_chargeback_still_consumes_refundable (test_regressions.ChargebackTests.test_out_of_window_chargeback_still_consumes_refundable) ... ok
+test_refund_after_chargeback_fits_or_is_rejected (test_regressions.ChargebackTests.test_refund_after_chargeback_fits_or_is_rejected) ... ok
+test_same_instant_ties_broken_by_file_order (test_regressions.ChargebackTests.test_same_instant_ties_broken_by_file_order) ... ok
+test_convert_matches_exact_division (test_regressions.MoneyConversionTests.test_convert_matches_exact_division) ... ok
+test_convert_returns_unrounded_decimal_with_40_plus_digits (test_regressions.MoneyConversionTests.test_convert_returns_unrounded_decimal_with_40_plus_digits) ... ok
+test_convert_same_currency_is_exact (test_regressions.MoneyConversionTests.test_convert_same_currency_is_exact) ... ok
+test_convert_unknown_currency_raises (test_regressions.MoneyConversionTests.test_convert_unknown_currency_raises) ... ok
+test_balances_reported_in_target_currency (test_regressions.ReportCurrencyTests.test_balances_reported_in_target_currency) ... ok
+test_cli_reports_in_currency (test_regressions.ReportCurrencyTests.test_cli_reports_in_currency) ... ok
+test_cli_unknown_currency_fails_without_stdout (test_regressions.ReportCurrencyTests.test_cli_unknown_currency_fails_without_stdout) ... ok
+test_house_accounts_still_excluded_in_report_currency (test_regressions.ReportCurrencyTests.test_house_accounts_still_excluded_in_report_currency) ... ok
+test_unknown_report_currency_raises (test_regressions.ReportCurrencyTests.test_unknown_report_currency_raises) ... ok
+test_usd_charge_reported_in_jpy (test_regressions.ReportCurrencyTests.test_usd_charge_reported_in_jpy) ... ok
+
+----------------------------------------------------------------------
+Ran 25 tests in 0.093s
+
+OK

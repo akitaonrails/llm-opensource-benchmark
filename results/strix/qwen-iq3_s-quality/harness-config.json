@@ -1,0 +1,42 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "model": "bench/qwen3.8-flash-next-iq3_s",
+  "small_model": "bench/qwen3.8-flash-next-iq3_s",
+  "enabled_providers": [
+    "bench"
+  ],
+  "share": "disabled",
+  "autoupdate": false,
+  "permission": {
+    "*": "allow",
+    "task": "deny",
+    "webfetch": "deny",
+    "websearch": "deny"
+  },
+  "provider": {
+    "bench": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "bench",
+      "options": {
+        "baseURL": "http://127.0.0.1:18080/v1",
+        "apiKey": "local",
+        "timeout": 1800000
+      },
+      "models": {
+        "qwen3.8-flash-next-iq3_s": {
+          "name": "qwen3.8-flash-next-iq3_s",
+          "tool_call": true,
+          "reasoning": false,
+          "limit": {
+            "context": 131072,
+            "output": 32768
+          },
+          "cost": {
+            "input": 0,
+            "output": 0
+          }
+        }
+      }
+    }
+  }
+}

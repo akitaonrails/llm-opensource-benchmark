@@ -1,0 +1,43 @@
+{
+ "exe": "component:strata-engine",
+ "args": [
+  "--pack",
+  "/var/strata-models/osb/data/packs/ud-q4_k_xl",
+  "--native",
+  "/var/strata-models/osb/models/qwen-q4_k_xl/UD-Q4_K_XL/Qwen3.8-Flash-Next-UD-Q4_K_XL-00001-of-00004.gguf",
+  "--expert-profile",
+  "/home/akitaonrails/.local/share/strata/terminal/0.1.45.3/data/expert-profile.bin",
+  "--resident-budget-gib",
+  "38",
+  "--expert-cache",
+  "auto",
+  "--prefill",
+  "auto",
+  "--spec",
+  "4",
+  "--spec-min-p",
+  "0.5",
+  "--mtp",
+  "/var/strata-models/mtp/rt",
+  "--max-context",
+  "131072",
+  "--kv",
+  "int8",
+  "--conversation-cache-slots",
+  "1",
+  "--conversation-cache-min-free-mib",
+  "8192"
+ ],
+ "env": {
+  "STRATA_RESIDENT_HEADROOM_GIB": "8"
+ },
+ "cwd": "/home/akitaonrails/.local/share/strata/terminal/0.1.45.3",
+ "tokenizer": "/var/strata-models/osb/data/packs/ud-q4_k_xl/tokenizer",
+ "model_name": "qwen3.8-flash-next-unsloth-ud-q4_k_xl",
+ "log": "/var/strata-models/osb/logs/qwen-q4_k_xl.engine.log",
+ "lib_dirs": [],
+ "port": 18083,
+ "backend": "hip",
+ "host": "127.0.0.1",
+ "open_browser": false
+}

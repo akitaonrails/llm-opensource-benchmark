@@ -1,0 +1,37 @@
+{
+  "label": "deepseek-v4.1-iq2_xxs-strata-0.1.51",
+  "model": "deepseek-v4.1-flash",
+  "base_url": "http://127.0.0.1:18082/v1",
+  "command": [
+    "/home/akitaonrails/.local/share/strata/components/control/0.1.51/bin/strata",
+    "serve",
+    "--config",
+    "/home/akitaonrails/.local/share/strata/install/strata-deepseek-v4.1-flash-ist-das-2.00bpw.json",
+    "--host",
+    "127.0.0.1",
+    "--port",
+    "18082"
+  ],
+  "started_epoch": 1792977062.0541775,
+  "platform": "Linux-7.2.8-9-omarchy-x86_64-with-glibc2.44",
+  "python": "3.12.12",
+  "reserve_mib": 4096,
+  "status": "failed",
+  "records": [],
+  "server_pid": 1199502,
+  "error": "RuntimeError('server exited during startup with status 1')",
+  "gpu": {
+    "samples": 2,
+    "minimum_free_mib": 27886.0,
+    "maximum_free_mib": 27895.0,
+    "safety_violation": false
+  },
+  "system": {
+    "samples": 3,
+    "minimum_available_mib": 67038.42578125,
+    "maximum_swap_used_mib": 17060.89453125,
+    "swap_growth_mib": -0.01953125,
+    "maximum_nvme_read_mib_s": 0.4217445830866319
+  },
+  "finished_epoch": 1792977064.0612767
+}

@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+# Models, packs and engine state (hundreds of GB); server configs are copied to configs/.
+.strata/
+# Per-run bulk: the model's working copy, private homes, raw opencode streams and long prompts.
+# The report.json in each run folder keeps scores, timings and per-test results.
+results/**/project/
+results/**/home/
+results/**/grading-home/
+results/**/oracle/
+results/**/turn-*.prompt.md
+results/**/turn-*.stdout.jsonl

@@ -1,0 +1,10 @@
+2026/10/26 15:30:18 socat[82] E read(6, 0x56526f680000, 8192): Connection reset by peer
+2026/10/26 15:30:22 socat[216] E read(6, 0x56526f680000, 8192): Connection reset by peer
+2026/10/26 15:30:31 socat[221] E read(6, 0x56526f680000, 8192): Connection reset by peer
+2026/10/26 15:32:22 socat[226] E read(6, 0x56526f680000, 8192): Connection reset by peer
+2026/10/26 15:32:43 socat[295] E read(6, 0x56526f680000, 8192): Connection reset by peer
+2026/10/26 15:32:45 socat[316] E read(6, 0x56526f680000, 8192): Connection reset by peer
+2026/10/26 15:32:58 socat[332] E read(6, 0x56526f680000, 8192): Connection reset by peer
+2026/10/26 15:33:22 socat[345] E read(6, 0x56526f680000, 8192): Connection reset by peer
+2026/10/26 15:33:40 socat[375] E read(6, 0x56526f680000, 8192): Connection reset by peer
+2026/10/26 15:33:40 socat[3] W exiting on signal 15

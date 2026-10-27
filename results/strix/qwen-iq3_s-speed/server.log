@@ -1,0 +1,53 @@
+[strata] saved tuning 'IQ3_S 128K' applied: the standard settings (nothing to change)
+loading the model (the first start takes a minute or two) ...
+[strata] starting the engine: reading the model's weights ...
+[strata] loading the experts the GPU does not hold into RAM (of about 55 GB) and locking part of them for the GPU.
+         YOUR PC CAN BE SLOW OR STOP RESPONDING FOR 1-3 MINUTES NOW - this is normal.
+         Please wait and don't close this window; the server says when it is ready.
+[strata] filling the GPU's expert cache (24576 experts, 46.84 GiB of VRAM) ...
+[strata] still starting (23 s) - please wait ...
+[strata] almost ready ...
+ready: http://127.0.0.1:18083/v1  (OpenAI: /v1/chat/completions, Anthropic: /v1/messages, context 131072 tokens)
+       open http://127.0.0.1:18083/ in a browser to chat; close this window to stop the model
+[strata] reading the prompt: 5,368 tokens, 10 s so far
+[strata] reading the prompt: 5,363 of 5,368 tokens, 15 s so far
+[strata] thinking: 31 of max 256 tokens, 48.4 tok/s, 16 s
+[strata] thinking: 74 of max 256 tokens, 44.7 tok/s, 18 s
+[strata] thinking: 125 of max 256 tokens, 46.9 tok/s, 19 s
+[strata] thinking: 183 of max 256 tokens, 49.6 tok/s, 20 s
+[strata] thinking: 240 of max 256 tokens, 50.5 tok/s, 21 s
+[strata] done: 256 tokens in 21 s (50.7 tok/s) (length, cancel=False)
+[strata] the reply reached max tokens while still thinking, so it has no answer: a thinking budget (reasoning_budget_tokens, in the request or in strata-<model>.json for every request) leaves room to answer
+[strata] reading the prompt: 42,400 tokens, 10 s so far
+[strata] reading the prompt: 42,400 tokens, 20 s so far
+[strata] reading the prompt: 8,192 of 42,400 tokens, 23 s so far
+[strata] reading the prompt: 8,192 of 42,400 tokens, 33 s so far
+[strata] reading the prompt: 8,192 of 42,400 tokens, 43 s so far
+[strata] reading the prompt: 16,384 of 42,400 tokens, 47 s so far
+[strata] reading the prompt: 16,384 of 42,400 tokens, 57 s so far
+[strata] reading the prompt: 16,384 of 42,400 tokens, 67 s so far
+[strata] reading the prompt: 24,576 of 42,400 tokens, 70 s so far
+[strata] reading the prompt: 24,576 of 42,400 tokens, 80 s so far
+[strata] reading the prompt: 24,576 of 42,400 tokens, 90 s so far
+[strata] reading the prompt: 32,768 of 42,400 tokens, 95 s so far
+[strata] reading the prompt: 32,768 of 42,400 tokens, 105 s so far
+[strata] reading the prompt: 32,768 of 42,400 tokens, 115 s so far
+[strata] reading the prompt: 40,960 of 42,400 tokens, 120 s so far
+[strata] reading the prompt: 42,395 of 42,400 tokens, 125 s so far
+[strata] thinking: 28 of max 256 tokens, 52.0 tok/s, 126 s
+[strata] thinking: 75 of max 256 tokens, 47.7 tok/s, 127 s
+[strata] thinking: 118 of max 256 tokens, 45.5 tok/s, 128 s
+[strata] thinking: 166 of max 256 tokens, 46.1 tok/s, 129 s
+[strata] thinking: 221 of max 256 tokens, 47.7 tok/s, 130 s
+[strata] done: 256 tokens in 131 s (48.2 tok/s) (length, cancel=False)
+[strata] the reply reached max tokens while still thinking, so it has no answer: a thinking budget (reasoning_budget_tokens, in the request or in strata-<model>.json for every request) leaves room to answer
+[strata] thinking: 25 of max 256 tokens, 49.9 tok/s, 1 s
+[strata] thinking: 73 of max 256 tokens, 47.7 tok/s, 2 s
+[strata] thinking: 115 of max 256 tokens, 44.6 tok/s, 3 s
+[strata] thinking: 159 of max 256 tokens, 44.4 tok/s, 4 s
+[strata] thinking: 215 of max 256 tokens, 46.5 tok/s, 5 s
+[strata] done: 256 tokens in 6 s (47.3 tok/s) (length, cancel=False)
+[strata] the reply reached max tokens while still thinking, so it has no answer: a thinking budget (reasoning_budget_tokens, in the request or in strata-<model>.json for every request) leaves room to answer
+
+[strata] stopping (Ctrl+C again to end the engine at once) ...
+[strata] stopped

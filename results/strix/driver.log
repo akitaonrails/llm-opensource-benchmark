@@ -1,0 +1,833 @@
+[q2_0] speed already completed, skipping
+[q2_0] quality: starting server (qwen3.8-flash-next-q2_0)
+Traceback (most recent call last):
+  File "<string>", line 3, in <module>
+    s = socket.create_connection(("127.0.0.1", 18083))
+  File "/usr/lib64/python3.13/socket.py", line 868, in create_connection
+    raise exceptions[0]
+  File "/usr/lib64/python3.13/socket.py", line 853, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+ConnectionRefusedError: [Errno 111] Connection refused
+2026/10/26 12:08:50 socat[3847066] W waitpid(): child 3847067 exited with status 1
+Traceback (most recent call last):
+  File "<string>", line 3, in <module>
+    s = socket.create_connection(("127.0.0.1", 18083))
+  File "/usr/lib64/python3.13/socket.py", line 868, in create_connection
+    raise exceptions[0]
+  File "/usr/lib64/python3.13/socket.py", line 853, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+ConnectionRefusedError: [Errno 111] Connection refused
+2026/10/26 12:08:55 socat[3848500] W waitpid(): child 3848501 exited with status 1
+[q2_0] server ready (qwen3.8-flash-next-q2_0), running quality canary
+Fatal Python error: _enter_buffered_busy: could not acquire lock for <_io.BufferedReader name='<stdin>'> at interpreter shutdown, possibly due to daemon threads
+Python runtime state: finalizing (tstate=0x00007f1d81c05de8)
+
+Current thread 0x00007f1d81d24780 (most recent call first):
+  <no Python frame>
+2026/10/26 12:11:35 socat[3850717] W waitpid(): child 3850718 exited with status 255
+Fatal Python error: _enter_buffered_busy: could not acquire lock for <_io.BufferedReader name='<stdin>'> at interpreter shutdown, possibly due to daemon threads
+Python runtime state: finalizing (tstate=0x00007f3dab805de8)
+
+Current thread 0x00007f3dab8b8780 (most recent call first):
+  <no Python frame>
+2026/10/26 12:11:37 socat[3867073] W waitpid(): child 3867074 exited with status 255
+Fatal Python error: _enter_buffered_busy: could not acquire lock for <_io.BufferedReader name='<stdin>'> at interpreter shutdown, possibly due to daemon threads
+Python runtime state: finalizing (tstate=0x00007ff889605de8)
+
+Current thread 0x00007ff8896ad780 (most recent call first):
+  <no Python frame>
+2026/10/26 12:11:46 socat[3867582] W waitpid(): child 3867584 exited with status 255
+Fatal Python error: _enter_buffered_busy: could not acquire lock for <_io.BufferedReader name='<stdin>'> at interpreter shutdown, possibly due to daemon threads
+Python runtime state: finalizing (tstate=0x00007f93c3c05de8)
+
+Current thread 0x00007f93c3c9d780 (most recent call first):
+  <no Python frame>
+2026/10/26 12:13:49 socat[3868628] W waitpid(): child 3868629 exited with status 255
+Fatal Python error: _enter_buffered_busy: could not acquire lock for <_io.BufferedReader name='<stdin>'> at interpreter shutdown, possibly due to daemon threads
+Python runtime state: finalizing (tstate=0x00007fbb32e05de8)
+
+Current thread 0x00007fbb32f35780 (most recent call first):
+  <no Python frame>
+2026/10/26 12:13:51 socat[3885511] W waitpid(): child 3885512 exited with status 255
+Fatal Python error: _enter_buffered_busy: could not acquire lock for <_io.BufferedReader name='<stdin>'> at interpreter shutdown, possibly due to daemon threads
+Python runtime state: finalizing (tstate=0x00007f3a38e05de8)
+
+Current thread 0x00007f3a38eba780 (most recent call first):
+  <no Python frame>
+2026/10/26 12:14:18 socat[3886232] W waitpid(): child 3886233 exited with status 255
+Fatal Python error: _enter_buffered_busy: could not acquire lock for <_io.BufferedReader name='<stdin>'> at interpreter shutdown, possibly due to daemon threads
+Python runtime state: finalizing (tstate=0x00007f4640805de8)
+
+Current thread 0x00007f46408a3780 (most recent call first):
+  <no Python frame>
+2026/10/26 12:14:27 socat[3888856] W waitpid(): child 3888857 exited with status 255
+Fatal Python error: _enter_buffered_busy: could not acquire lock for <_io.BufferedReader name='<stdin>'> at interpreter shutdown, possibly due to daemon threads
+Python runtime state: finalizing (tstate=0x00007f5cda405de8)
+
+Current thread 0x00007f5cda4bb780 (most recent call first):
+  <no Python frame>
+2026/10/26 12:14:29 socat[3889044] W waitpid(): child 3889045 exited with status 255
+Fatal Python error: _enter_buffered_busy: could not acquire lock for <_io.BufferedReader name='<stdin>'> at interpreter shutdown, possibly due to daemon threads
+Python runtime state: finalizing (tstate=0x00007f8a46405de8)
+
+Current thread 0x00007f8a4658c780 (most recent call first):
+  <no Python frame>
+2026/10/26 12:14:42 socat[3889124] W waitpid(): child 3889125 exited with status 255
+Fatal Python error: _enter_buffered_busy: could not acquire lock for <_io.BufferedReader name='<stdin>'> at interpreter shutdown, possibly due to daemon threads
+Python runtime state: finalizing (tstate=0x00007f1867805de8)
+
+Current thread 0x00007f1867907780 (most recent call first):
+  <no Python frame>
+2026/10/26 12:14:58 socat[3889783] W waitpid(): child 3889784 exited with status 255
+Fatal Python error: _enter_buffered_busy: could not acquire lock for <_io.BufferedReader name='<stdin>'> at interpreter shutdown, possibly due to daemon threads
+Python runtime state: finalizing (tstate=0x00007fd24b205de8)
+
+Current thread 0x00007fd24b2cb780 (most recent call first):
+  <no Python frame>
+2026/10/26 12:15:12 socat[3890273] W waitpid(): child 3890274 exited with status 255
+Fatal Python error: _enter_buffered_busy: could not acquire lock for <_io.BufferedReader name='<stdin>'> at interpreter shutdown, possibly due to daemon threads
+Python runtime state: finalizing (tstate=0x00007f612da05de8)
+
+Current thread 0x00007f612da88780 (most recent call first):
+  <no Python frame>
+2026/10/26 12:15:30 socat[3890792] W waitpid(): child 3890793 exited with status 255
+Fatal Python error: _enter_buffered_busy: could not acquire lock for <_io.BufferedReader name='<stdin>'> at interpreter shutdown, possibly due to daemon threads
+Python runtime state: finalizing (tstate=0x00007f6141005de8)
+
+Current thread 0x00007f614117b780 (most recent call first):
+  <no Python frame>
+2026/10/26 12:15:34 socat[3891467] W waitpid(): child 3891468 exited with status 255
+Fatal Python error: _enter_buffered_busy: could not acquire lock for <_io.BufferedReader name='<stdin>'> at interpreter shutdown, possibly due to daemon threads
+Python runtime state: finalizing (tstate=0x00007fc7f2405de8)
+
+Current thread 0x00007fc7f24c0780 (most recent call first):
+  <no Python frame>
+2026/10/26 12:15:37 socat[3891719] W waitpid(): child 3891720 exited with status 255
+Fatal Python error: _enter_buffered_busy: could not acquire lock for <_io.BufferedReader name='<stdin>'> at interpreter shutdown, possibly due to daemon threads
+Python runtime state: finalizing (tstate=0x00007f3852605de8)
+
+Current thread 0x00007f3852734780 (most recent call first):
+  <no Python frame>
+2026/10/26 12:15:39 socat[3891846] W waitpid(): child 3891847 exited with status 255
+Fatal Python error: _enter_buffered_busy: could not acquire lock for <_io.BufferedReader name='<stdin>'> at interpreter shutdown, possibly due to daemon threads
+Python runtime state: finalizing (tstate=0x00007f915e205de8)
+
+Current thread 0x00007f915e28c780 (most recent call first):
+  <no Python frame>
+2026/10/26 12:15:45 socat[3891924] W waitpid(): child 3891925 exited with status 255
+Fatal Python error: _enter_buffered_busy: could not acquire lock for <_io.BufferedReader name='<stdin>'> at interpreter shutdown, possibly due to daemon threads
+Python runtime state: finalizing (tstate=0x00007f5365e05de8)
+
+Current thread 0x00007f5365f31780 (most recent call first):
+  <no Python frame>
+2026/10/26 12:15:47 socat[3892431] W waitpid(): child 3892432 exited with status 255
+Fatal Python error: _enter_buffered_busy: could not acquire lock for <_io.BufferedReader name='<stdin>'> at interpreter shutdown, possibly due to daemon threads
+Python runtime state: finalizing (tstate=0x00007f2470405de8)
+
+Current thread 0x00007f24704ec780 (most recent call first):
+  <no Python frame>
+2026/10/26 12:15:54 socat[3892504] W waitpid(): child 3892505 exited with status 255
+Fatal Python error: _enter_buffered_busy: could not acquire lock for <_io.BufferedReader name='<stdin>'> at interpreter shutdown, possibly due to daemon threads
+Python runtime state: finalizing (tstate=0x00007f00de605de8)
+
+Current thread 0x00007f00de6a0780 (most recent call first):
+  <no Python frame>
+Fatal Python error: _enter_buffered_busy: could not acquire lock for <_io.BufferedReader name='<stdin>'> at interpreter shutdown, possibly due to daemon threads
+Python runtime state: finalizing (tstate=0x00007f99f0c05de8)
+
+Current thread 0x00007f99f0cdf780 (most recent call first):
+  <no Python frame>
+2026/10/26 12:16:19 socat[3893237] W waitpid(): child 3893238 exited with status 255
+Fatal Python error: _enter_buffered_busy: could not acquire lock for <_io.BufferedReader name='<stdin>'> at interpreter shutdown, possibly due to daemon threads
+Python runtime state: finalizing (tstate=0x00007f13c6205de8)
+
+Current thread 0x00007f13c6333780 (most recent call first):
+  <no Python frame>
+2026/10/26 12:16:27 socat[3894091] W waitpid(): child 3894092 exited with status 255
+Fatal Python error: _enter_buffered_busy: could not acquire lock for <_io.BufferedReader name='<stdin>'> at interpreter shutdown, possibly due to daemon threads
+Python runtime state: finalizing (tstate=0x00007f90d9e05de8)
+
+Current thread 0x00007f90d9ec3780 (most recent call first):
+  <no Python frame>
+2026/10/26 12:16:31 socat[3895340] W waitpid(): child 3895341 exited with status 255
+Fatal Python error: _enter_buffered_busy: could not acquire lock for <_io.BufferedReader name='<stdin>'> at interpreter shutdown, possibly due to daemon threads
+Python runtime state: finalizing (tstate=0x00007f7207005de8)
+
+Current thread 0x00007f720715e780 (most recent call first):
+  <no Python frame>
+2026/10/26 12:16:50 socat[3895477] W waitpid(): child 3895478 exited with status 255
+Fatal Python error: _enter_buffered_busy: could not acquire lock for <_io.BufferedReader name='<stdin>'> at interpreter shutdown, possibly due to daemon threads
+Python runtime state: finalizing (tstate=0x00007f18f9a05de8)
+
+Current thread 0x00007f18f9b7a780 (most recent call first):
+  <no Python frame>
+2026/10/26 12:16:59 socat[3896553] W waitpid(): child 3896554 exited with status 255
+Fatal Python error: _enter_buffered_busy: could not acquire lock for <_io.BufferedReader name='<stdin>'> at interpreter shutdown, possibly due to daemon threads
+Python runtime state: finalizing (tstate=0x00007f1d25405de8)
+
+Current thread 0x00007f1d254ce780 (most recent call first):
+  <no Python frame>
+2026/10/26 12:17:30 socat[3897017] W waitpid(): child 3897018 exited with status 255
+Fatal Python error: _enter_buffered_busy: could not acquire lock for <_io.BufferedReader name='<stdin>'> at interpreter shutdown, possibly due to daemon threads
+Python runtime state: finalizing (tstate=0x00007f9938805de8)
+
+Current thread 0x00007f9938903780 (most recent call first):
+  <no Python frame>
+2026/10/26 12:17:51 socat[3900385] W waitpid(): child 3900386 exited with status 255
+Fatal Python error: _enter_buffered_busy: could not acquire lock for <_io.BufferedReader name='<stdin>'> at interpreter shutdown, possibly due to daemon threads
+Python runtime state: finalizing (tstate=0x00007f1cc0005de8)
+
+Current thread 0x00007f1cc0123780 (most recent call first):
+  <no Python frame>
+2026/10/26 12:18:50 socat[3901345] W waitpid(): child 3901346 exited with status 255
+Fatal Python error: _enter_buffered_busy: could not acquire lock for <_io.BufferedReader name='<stdin>'> at interpreter shutdown, possibly due to daemon threads
+Python runtime state: finalizing (tstate=0x00007f7eb1005de8)
+
+Current thread 0x00007f7eb10cb780 (most recent call first):
+  <no Python frame>
+2026/10/26 12:19:13 socat[3904590] W waitpid(): child 3904591 exited with status 255
+Fatal Python error: _enter_buffered_busy: could not acquire lock for <_io.BufferedReader name='<stdin>'> at interpreter shutdown, possibly due to daemon threads
+Python runtime state: finalizing (tstate=0x00007f9b40e05de8)
+
+Current thread 0x00007f9b40f10780 (most recent call first):
+  <no Python frame>
+2026/10/26 12:19:15 socat[3906531] W waitpid(): child 3906532 exited with status 255
+Fatal Python error: _enter_buffered_busy: could not acquire lock for <_io.BufferedReader name='<stdin>'> at interpreter shutdown, possibly due to daemon threads
+Python runtime state: finalizing (tstate=0x00007f2d0fa05de8)
+
+Current thread 0x00007f2d0fb49780 (most recent call first):
+  <no Python frame>
+2026/10/26 12:19:23 socat[3906660] W waitpid(): child 3906661 exited with status 255
+Fatal Python error: _enter_buffered_busy: could not acquire lock for <_io.BufferedReader name='<stdin>'> at interpreter shutdown, possibly due to daemon threads
+Python runtime state: finalizing (tstate=0x00007ff90f605de8)
+
+Current thread 0x00007ff90f788780 (most recent call first):
+  <no Python frame>
+2026/10/26 12:19:38 socat[3907051] W waitpid(): child 3907052 exited with status 255
+Fatal Python error: _enter_buffered_busy: could not acquire lock for <_io.BufferedReader name='<stdin>'> at interpreter shutdown, possibly due to daemon threads
+Python runtime state: finalizing (tstate=0x00007f3ce9805de8)
+
+Current thread 0x00007f3ce9966780 (most recent call first):
+  <no Python frame>
+2026/10/26 12:20:40 socat[3908348] W waitpid(): child 3908349 exited with status 255
+Fatal Python error: _enter_buffered_busy: could not acquire lock for <_io.BufferedReader name='<stdin>'> at interpreter shutdown, possibly due to daemon threads
+Python runtime state: finalizing (tstate=0x00007f14a1605de8)
+
+Current thread 0x00007f14a16b6780 (most recent call first):
+  <no Python frame>
+2026/10/26 12:20:46 socat[3916895] W waitpid(): child 3916896 exited with status 255
+Fatal Python error: _enter_buffered_busy: could not acquire lock for <_io.BufferedReader name='<stdin>'> at interpreter shutdown, possibly due to daemon threads
+Python runtime state: finalizing (tstate=0x00007f215e205de8)
+
+Current thread 0x00007f215e27d780 (most recent call first):
+  <no Python frame>
+2026/10/26 12:20:47 socat[3917181] W waitpid(): child 3917182 exited with status 255
+Fatal Python error: _enter_buffered_busy: could not acquire lock for <_io.BufferedReader name='<stdin>'> at interpreter shutdown, possibly due to daemon threads
+Python runtime state: finalizing (tstate=0x00007f7677605de8)
+
+Current thread 0x00007f767772d780 (most recent call first):
+  <no Python frame>
+2026/10/26 12:20:54 socat[3917919] W waitpid(): child 3917920 exited with status 255
+Fatal Python error: _enter_buffered_busy: could not acquire lock for <_io.BufferedReader name='<stdin>'> at interpreter shutdown, possibly due to daemon threads
+Python runtime state: finalizing (tstate=0x00007fc4a1e05de8)
+
+Current thread 0x00007fc4a1f01780 (most recent call first):
+  <no Python frame>
+Fatal Python error: _enter_buffered_busy: could not acquire lock for <_io.BufferedReader name='<stdin>'> at interpreter shutdown, possibly due to daemon threads
+Python runtime state: finalizing (tstate=0x00007f763d805de8)
+
+Current thread 0x00007f763d8ee780 (most recent call first):
+  <no Python frame>
+2026/10/26 12:21:54 socat[3920523] W waitpid(): child 3920524 exited with status 255
+Fatal Python error: _enter_buffered_busy: could not acquire lock for <_io.BufferedReader name='<stdin>'> at interpreter shutdown, possibly due to daemon threads
+Python runtime state: finalizing (tstate=0x00007f07d3c05de8)
+
+Current thread 0x00007f07d3cde780 (most recent call first):
+  <no Python frame>
+2026/10/26 12:22:22 socat[3921128] W waitpid(): child 3921129 exited with status 255
+Fatal Python error: _enter_buffered_busy: could not acquire lock for <_io.BufferedReader name='<stdin>'> at interpreter shutdown, possibly due to daemon threads
+Python runtime state: finalizing (tstate=0x00007f4a53205de8)
+
+Current thread 0x00007f4a53330780 (most recent call first):
+  <no Python frame>
+2026/10/26 12:22:40 socat[3927638] W waitpid(): child 3927639 exited with status 255
+Fatal Python error: _enter_buffered_busy: could not acquire lock for <_io.BufferedReader name='<stdin>'> at interpreter shutdown, possibly due to daemon threads
+Python runtime state: finalizing (tstate=0x00007f62c0e05de8)
+
+Current thread 0x00007f62c0ecb780 (most recent call first):
+  <no Python frame>
+2026/10/26 12:23:20 socat[3929125] W waitpid(): child 3929127 exited with status 255
+Fatal Python error: _enter_buffered_busy: could not acquire lock for <_io.BufferedReader name='<stdin>'> at interpreter shutdown, possibly due to daemon threads
+Python runtime state: finalizing (tstate=0x00007f441d605de8)
+
+Current thread 0x00007f441d6e7780 (most recent call first):
+  <no Python frame>
+2026/10/26 12:23:24 socat[3931609] W waitpid(): child 3931610 exited with status 255
+Fatal Python error: _enter_buffered_busy: could not acquire lock for <_io.BufferedReader name='<stdin>'> at interpreter shutdown, possibly due to daemon threads
+Python runtime state: finalizing (tstate=0x00007f34f0c05de8)
+
+Current thread 0x00007f34f0c8f780 (most recent call first):
+  <no Python frame>
+2026/10/26 12:23:59 socat[3932285] W waitpid(): child 3932286 exited with status 255
+{
+  "status": "completed",
+  "quality_score": 100.0
+}
+2026/10/26 12:24:01 socat[3847060] W exiting on signal 15
+[q2_0] done
+[iq3_xxs] speed canary starting (qwen3.8-flash-next-iq3_xxs)
+[iq3_xxs] speed done: completed
+[iq3_xxs] quality: starting server (qwen3.8-flash-next-iq3_xxs)
+Traceback (most recent call last):
+  File "<string>", line 3, in <module>
+    s = socket.create_connection(("127.0.0.1", 18083))
+  File "/usr/lib64/python3.13/socket.py", line 868, in create_connection
+    raise exceptions[0]
+  File "/usr/lib64/python3.13/socket.py", line 853, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+ConnectionRefusedError: [Errno 111] Connection refused
+2026/10/26 12:27:08 socat[3960041] W waitpid(): child 3960042 exited with status 1
+Traceback (most recent call last):
+  File "<string>", line 3, in <module>
+    s = socket.create_connection(("127.0.0.1", 18083))
+  File "/usr/lib64/python3.13/socket.py", line 868, in create_connection
+    raise exceptions[0]
+  File "/usr/lib64/python3.13/socket.py", line 853, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+ConnectionRefusedError: [Errno 111] Connection refused
+2026/10/26 12:27:13 socat[3961199] W waitpid(): child 3961200 exited with status 1
+Traceback (most recent call last):
+  File "<string>", line 3, in <module>
+    s = socket.create_connection(("127.0.0.1", 18083))
+  File "/usr/lib64/python3.13/socket.py", line 868, in create_connection
+    raise exceptions[0]
+  File "/usr/lib64/python3.13/socket.py", line 853, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+ConnectionRefusedError: [Errno 111] Connection refused
+2026/10/26 12:27:18 socat[3962418] W waitpid(): child 3962419 exited with status 1
+Traceback (most recent call last):
+  File "<string>", line 3, in <module>
+    s = socket.create_connection(("127.0.0.1", 18083))
+  File "/usr/lib64/python3.13/socket.py", line 868, in create_connection
+    raise exceptions[0]
+  File "/usr/lib64/python3.13/socket.py", line 853, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+ConnectionRefusedError: [Errno 111] Connection refused
+2026/10/26 12:27:24 socat[3963651] W waitpid(): child 3963652 exited with status 1
+Traceback (most recent call last):
+  File "<string>", line 3, in <module>
+    s = socket.create_connection(("127.0.0.1", 18083))
+  File "/usr/lib64/python3.13/socket.py", line 868, in create_connection
+    raise exceptions[0]
+  File "/usr/lib64/python3.13/socket.py", line 853, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+ConnectionRefusedError: [Errno 111] Connection refused
+2026/10/26 12:27:30 socat[3964826] W waitpid(): child 3964827 exited with status 1
+[iq3_xxs] server ready (qwen3.8-flash-next-iq3_xxs), running quality canary
+Fatal Python error: _enter_buffered_busy: could not acquire lock for <_io.BufferedReader name='<stdin>'> at interpreter shutdown, possibly due to daemon threads
+Python runtime state: finalizing (tstate=0x00007f2957005de8)
+
+Current thread 0x00007f2957145780 (most recent call first):
+  <no Python frame>
+2026/10/26 12:30:19 socat[3966246] W waitpid(): child 3966247 exited with status 255
+Fatal Python error: _enter_buffered_busy: could not acquire lock for <_io.BufferedReader name='<stdin>'> at interpreter shutdown, possibly due to daemon threads
+Python runtime state: finalizing (tstate=0x00007f6119405de8)
+
+Current thread 0x00007f6119516780 (most recent call first):
+  <no Python frame>
+2026/10/26 12:30:24 socat[3990660] W waitpid(): child 3990661 exited with status 255
+Fatal Python error: _enter_buffered_busy: could not acquire lock for <_io.BufferedReader name='<stdin>'> at interpreter shutdown, possibly due to daemon threads
+Python runtime state: finalizing (tstate=0x00007fed83205de8)
+
+Current thread 0x00007fed83371780 (most recent call first):
+  <no Python frame>
+2026/10/26 12:30:33 socat[3991748] W waitpid(): child 3991749 exited with status 255
+Fatal Python error: _enter_buffered_busy: could not acquire lock for <_io.BufferedReader name='<stdin>'> at interpreter shutdown, possibly due to daemon threads
+Python runtime state: finalizing (tstate=0x00007f981ea05de8)
+
+Current thread 0x00007f981eac2780 (most recent call first):
+  <no Python frame>
+2026/10/26 12:32:23 socat[3992480] W waitpid(): child 3992481 exited with status 255
+Fatal Python error: _enter_buffered_busy: could not acquire lock for <_io.BufferedReader name='<stdin>'> at interpreter shutdown, possibly due to daemon threads
+Python runtime state: finalizing (tstate=0x00007f64f7405de8)
+
+Current thread 0x00007f64f74a8780 (most recent call first):
+  <no Python frame>
+2026/10/26 12:32:44 socat[4008260] W waitpid(): child 4008261 exited with status 255
+Fatal Python error: _enter_buffered_busy: could not acquire lock for <_io.BufferedReader name='<stdin>'> at interpreter shutdown, possibly due to daemon threads
+Python runtime state: finalizing (tstate=0x00007f5a0e005de8)
+
+Current thread 0x00007f5a0e140780 (most recent call first):
+  <no Python frame>
+2026/10/26 12:32:46 socat[4009314] W waitpid(): child 4009315 exited with status 255
+Fatal Python error: _enter_buffered_busy: could not acquire lock for <_io.BufferedReader name='<stdin>'> at interpreter shutdown, possibly due to daemon threads
+Python runtime state: finalizing (tstate=0x00007f3506405de8)
+
+Current thread 0x00007f3506494780 (most recent call first):
+  <no Python frame>
+2026/10/26 12:32:59 socat[4009474] W waitpid(): child 4009475 exited with status 255
+Fatal Python error: _enter_buffered_busy: could not acquire lock for <_io.BufferedReader name='<stdin>'> at interpreter shutdown, possibly due to daemon threads
+Python runtime state: finalizing (tstate=0x00007f159e605de8)
+
+Current thread 0x00007f159e740780 (most recent call first):
+  <no Python frame>
+2026/10/26 12:33:24 socat[4010282] W waitpid(): child 4010283 exited with status 255
+Fatal Python error: _enter_buffered_busy: could not acquire lock for <_io.BufferedReader name='<stdin>'> at interpreter shutdown, possibly due to daemon threads
+Python runtime state: finalizing (tstate=0x00007fe968005de8)
+
+Current thread 0x00007fe9680b6780 (most recent call first):
+  <no Python frame>
+2026/10/26 12:33:42 socat[4011572] W waitpid(): child 4011573 exited with status 255
+Fatal Python error: _enter_buffered_busy: could not acquire lock for <_io.BufferedReader name='<stdin>'> at interpreter shutdown, possibly due to daemon threads
+Python runtime state: finalizing (tstate=0x00007f0a80005de8)
+
+Current thread 0x00007f0a80152780 (most recent call first):
+  <no Python frame>
+2026/10/26 12:33:48 socat[4012503] W waitpid(): child 4012504 exited with status 255
+Fatal Python error: _enter_buffered_busy: could not acquire lock for <_io.BufferedReader name='<stdin>'> at interpreter shutdown, possibly due to daemon threads
+Python runtime state: finalizing (tstate=0x00007efc63005de8)
+
+Current thread 0x00007efc63128780 (most recent call first):
+  <no Python frame>
+2026/10/26 12:34:57 socat[4012821] W waitpid(): child 4012822 exited with status 255
+Fatal Python error: _enter_buffered_busy: could not acquire lock for <_io.BufferedReader name='<stdin>'> at interpreter shutdown, possibly due to daemon threads
+Python runtime state: finalizing (tstate=0x00007f5208e05de8)
+
+Current thread 0x00007f5208f65780 (most recent call first):
+  <no Python frame>
+2026/10/26 12:35:06 socat[4016029] W waitpid(): child 4016030 exited with status 255
+Fatal Python error: _enter_buffered_busy: could not acquire lock for <_io.BufferedReader name='<stdin>'> at interpreter shutdown, possibly due to daemon threads
+Python runtime state: finalizing (tstate=0x00007f46fb005de8)
+
+Current thread 0x00007f46fb0bf780 (most recent call first):
+  <no Python frame>
+Fatal Python error: _enter_buffered_busy: could not acquire lock for <_io.BufferedReader name='<stdin>'> at interpreter shutdown, possibly due to daemon threads
+Python runtime state: finalizing (tstate=0x00007ff40a805de8)
+
+Current thread 0x00007ff40a1fd780 (most recent call first):
+  <no Python frame>
+2026/10/26 12:35:25 socat[4018245] W waitpid(): child 4018247 exited with status 255
+Fatal Python error: _enter_buffered_busy: could not acquire lock for <_io.BufferedReader name='<stdin>'> at interpreter shutdown, possibly due to daemon threads
+Python runtime state: finalizing (tstate=0x00007fbdd2405de8)
+
+Current thread 0x00007fbdd254c780 (most recent call first):
+  <no Python frame>
+2026/10/26 12:40:02 socat[4019298] W waitpid(): child 4019299 exited with status 255
+Fatal Python error: _enter_buffered_busy: could not acquire lock for <_io.BufferedReader name='<stdin>'> at interpreter shutdown, possibly due to daemon threads
+Python runtime state: finalizing (tstate=0x00007f606b005de8)
+
+Current thread 0x00007f606b0d1780 (most recent call first):
+  <no Python frame>
+2026/10/26 12:40:48 socat[4039338] W waitpid(): child 4039339 exited with status 255
+Fatal Python error: _enter_buffered_busy: could not acquire lock for <_io.BufferedReader name='<stdin>'> at interpreter shutdown, possibly due to daemon threads
+Python runtime state: finalizing (tstate=0x00007faa3fa05de8)
+
+Current thread 0x00007faa3fabe780 (most recent call first):
+  <no Python frame>
+2026/10/26 12:40:56 socat[4050865] W waitpid(): child 4050866 exited with status 255
+Fatal Python error: _enter_buffered_busy: could not acquire lock for <_io.BufferedReader name='<stdin>'> at interpreter shutdown, possibly due to daemon threads
+Python runtime state: finalizing (tstate=0x00007fc559805de8)
+
+Current thread 0x00007fc55992a780 (most recent call first):
+  <no Python frame>
+2026/10/26 12:41:36 socat[4051344] W waitpid(): child 4051345 exited with status 255
+Fatal Python error: _enter_buffered_busy: could not acquire lock for <_io.BufferedReader name='<stdin>'> at interpreter shutdown, possibly due to daemon threads
+Python runtime state: finalizing (tstate=0x00007fe516a05de8)
+
+Current thread 0x00007fe516aaf780 (most recent call first):
+  <no Python frame>
+2026/10/26 12:41:41 socat[4054377] W waitpid(): child 4054378 exited with status 255
+Fatal Python error: _enter_buffered_busy: could not acquire lock for <_io.BufferedReader name='<stdin>'> at interpreter shutdown, possibly due to daemon threads
+Python runtime state: finalizing (tstate=0x00007f7aec805de8)
+
+Current thread 0x00007f7aec8fd780 (most recent call first):
+  <no Python frame>
+2026/10/26 12:41:54 socat[4055106] W waitpid(): child 4055107 exited with status 255
+Fatal Python error: _enter_buffered_busy: could not acquire lock for <_io.BufferedReader name='<stdin>'> at interpreter shutdown, possibly due to daemon threads
+Python runtime state: finalizing (tstate=0x00007feef8005de8)
+
+Current thread 0x00007feef80ad780 (most recent call first):
+  <no Python frame>
+2026/10/26 12:42:03 socat[4055576] W waitpid(): child 4055577 exited with status 255
+Fatal Python error: _enter_buffered_busy: could not acquire lock for <_io.BufferedReader name='<stdin>'> at interpreter shutdown, possibly due to daemon threads
+Python runtime state: finalizing (tstate=0x00007fed3a805de8)
+
+Current thread 0x00007fed3a92e780 (most recent call first):
+  <no Python frame>
+2026/10/26 12:42:17 socat[4057215] W waitpid(): child 4057216 exited with status 255
+Fatal Python error: _enter_buffered_busy: could not acquire lock for <_io.BufferedReader name='<stdin>'> at interpreter shutdown, possibly due to daemon threads
+Python runtime state: finalizing (tstate=0x00007f0893605de8)
+
+Current thread 0x00007f08936db780 (most recent call first):
+  <no Python frame>
+2026/10/26 12:42:21 socat[4058012] W waitpid(): child 4058013 exited with status 255
+Fatal Python error: _enter_buffered_busy: could not acquire lock for <_io.BufferedReader name='<stdin>'> at interpreter shutdown, possibly due to daemon threads
+Python runtime state: finalizing (tstate=0x00007ff048605de8)
+
+Current thread 0x00007ff0486ea780 (most recent call first):
+  <no Python frame>
+2026/10/26 12:42:35 socat[4058111] W waitpid(): child 4058112 exited with status 255
+Fatal Python error: _enter_buffered_busy: could not acquire lock for <_io.BufferedReader name='<stdin>'> at interpreter shutdown, possibly due to daemon threads
+Python runtime state: finalizing (tstate=0x00007f811de05de8)
+
+Current thread 0x00007f811df4a780 (most recent call first):
+  <no Python frame>
+2026/10/26 12:43:13 socat[4059481] W waitpid(): child 4059482 exited with status 255
+{
+  "status": "completed",
+  "quality_score": 100.0
+}
+2026/10/26 12:43:17 socat[3960027] W exiting on signal 15
+[iq3_xxs] done
+[iq3_s] speed canary starting (qwen3.8-flash-next-iq3_s)
+[iq3_s] speed done: completed
+[iq3_s] quality: starting server (qwen3.8-flash-next-iq3_s)
+Traceback (most recent call last):
+  File "<string>", line 3, in <module>
+    s = socket.create_connection(("127.0.0.1", 18083))
+  File "/usr/lib64/python3.13/socket.py", line 868, in create_connection
+    raise exceptions[0]
+  File "/usr/lib64/python3.13/socket.py", line 853, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+ConnectionRefusedError: [Errno 111] Connection refused
+2026/10/26 12:46:37 socat[4094950] W waitpid(): child 4094951 exited with status 1
+Traceback (most recent call last):
+  File "<string>", line 3, in <module>
+    s = socket.create_connection(("127.0.0.1", 18083))
+  File "/usr/lib64/python3.13/socket.py", line 868, in create_connection
+    raise exceptions[0]
+  File "/usr/lib64/python3.13/socket.py", line 853, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+ConnectionRefusedError: [Errno 111] Connection refused
+2026/10/26 12:46:42 socat[4096526] W waitpid(): child 4096527 exited with status 1
+Traceback (most recent call last):
+  File "<string>", line 3, in <module>
+    s = socket.create_connection(("127.0.0.1", 18083))
+  File "/usr/lib64/python3.13/socket.py", line 868, in create_connection
+    raise exceptions[0]
+  File "/usr/lib64/python3.13/socket.py", line 853, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+ConnectionRefusedError: [Errno 111] Connection refused
+2026/10/26 12:46:48 socat[4099743] W waitpid(): child 4099744 exited with status 1
+Traceback (most recent call last):
+  File "<string>", line 3, in <module>
+    s = socket.create_connection(("127.0.0.1", 18083))
+  File "/usr/lib64/python3.13/socket.py", line 868, in create_connection
+    raise exceptions[0]
+  File "/usr/lib64/python3.13/socket.py", line 853, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+ConnectionRefusedError: [Errno 111] Connection refused
+2026/10/26 12:46:53 socat[4100352] W waitpid(): child 4100353 exited with status 1
+Traceback (most recent call last):
+  File "<string>", line 3, in <module>
+    s = socket.create_connection(("127.0.0.1", 18083))
+  File "/usr/lib64/python3.13/socket.py", line 868, in create_connection
+    raise exceptions[0]
+  File "/usr/lib64/python3.13/socket.py", line 853, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+ConnectionRefusedError: [Errno 111] Connection refused
+2026/10/26 12:46:59 socat[4100712] W waitpid(): child 4100713 exited with status 1
+Traceback (most recent call last):
+  File "<string>", line 3, in <module>
+    s = socket.create_connection(("127.0.0.1", 18083))
+  File "/usr/lib64/python3.13/socket.py", line 868, in create_connection
+    raise exceptions[0]
+  File "/usr/lib64/python3.13/socket.py", line 853, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+ConnectionRefusedError: [Errno 111] Connection refused
+2026/10/26 12:47:04 socat[4101098] W waitpid(): child 4101099 exited with status 1
+[iq3_s] server ready (qwen3.8-flash-next-iq3_s), running quality canary
+Fatal Python error: _enter_buffered_busy: could not acquire lock for <_io.BufferedReader name='<stdin>'> at interpreter shutdown, possibly due to daemon threads
+Python runtime state: finalizing (tstate=0x00007fdb2ba05de8)
+
+Current thread 0x00007fdb2ba96780 (most recent call first):
+  <no Python frame>
+2026/10/26 12:49:56 socat[4101572] W waitpid(): child 4101573 exited with status 255
+Fatal Python error: _enter_buffered_busy: could not acquire lock for <_io.BufferedReader name='<stdin>'> at interpreter shutdown, possibly due to daemon threads
+Python runtime state: finalizing (tstate=0x00007f4997605de8)
+
+Current thread 0x00007f4997708780 (most recent call first):
+  <no Python frame>
+2026/10/26 12:50:04 socat[4118081] W waitpid(): child 4118082 exited with status 255
+Fatal Python error: _enter_buffered_busy: could not acquire lock for <_io.BufferedReader name='<stdin>'> at interpreter shutdown, possibly due to daemon threads
+Python runtime state: finalizing (tstate=0x00007ff94f605de8)
+
+Current thread 0x00007ff94f726780 (most recent call first):
+  <no Python frame>
+2026/10/26 12:50:10 socat[4119250] W waitpid(): child 4119251 exited with status 255
+Fatal Python error: _enter_buffered_busy: could not acquire lock for <_io.BufferedReader name='<stdin>'> at interpreter shutdown, possibly due to daemon threads
+Python runtime state: finalizing (tstate=0x00007fa205005de8)
+
+Current thread 0x00007fa205081780 (most recent call first):
+  <no Python frame>
+2026/10/26 12:51:05 socat[4119525] W waitpid(): child 4119526 exited with status 255
+Fatal Python error: _enter_buffered_busy: could not acquire lock for <_io.BufferedReader name='<stdin>'> at interpreter shutdown, possibly due to daemon threads
+Python runtime state: finalizing (tstate=0x00007f3658605de8)
+
+Current thread 0x00007f3658770780 (most recent call first):
+  <no Python frame>
+2026/10/26 12:51:06 socat[4124088] W waitpid(): child 4124089 exited with status 255
+Fatal Python error: _enter_buffered_busy: could not acquire lock for <_io.BufferedReader name='<stdin>'> at interpreter shutdown, possibly due to daemon threads
+Python runtime state: finalizing (tstate=0x00007f692e405de8)
+
+Current thread 0x00007f692e4fc780 (most recent call first):
+  <no Python frame>
+2026/10/26 12:53:05 socat[4124178] W waitpid(): child 4124179 exited with status 255
+Fatal Python error: _enter_buffered_busy: could not acquire lock for <_io.BufferedReader name='<stdin>'> at interpreter shutdown, possibly due to daemon threads
+Python runtime state: finalizing (tstate=0x00007f9fafa05de8)
+
+Current thread 0x00007f9faf3fb780 (most recent call first):
+  <no Python frame>
+2026/10/26 12:53:12 socat[4132040] W waitpid(): child 4132041 exited with status 255
+Fatal Python error: _enter_buffered_busy: could not acquire lock for <_io.BufferedReader name='<stdin>'> at interpreter shutdown, possibly due to daemon threads
+Python runtime state: finalizing (tstate=0x00007f08fbc05de8)
+
+Current thread 0x00007f08fbd4e780 (most recent call first):
+  <no Python frame>
+2026/10/26 12:53:16 socat[4132365] W waitpid(): child 4132366 exited with status 255
+Fatal Python error: _enter_buffered_busy: could not acquire lock for <_io.BufferedReader name='<stdin>'> at interpreter shutdown, possibly due to daemon threads
+Python runtime state: finalizing (tstate=0x00007f3018a05de8)
+
+Current thread 0x00007f3018b65780 (most recent call first):
+  <no Python frame>
+2026/10/26 12:53:21 socat[4132476] W waitpid(): child 4132477 exited with status 255
+Fatal Python error: _enter_buffered_busy: could not acquire lock for <_io.BufferedReader name='<stdin>'> at interpreter shutdown, possibly due to daemon threads
+Python runtime state: finalizing (tstate=0x00007fc999e05de8)
+
+Current thread 0x00007fc999ed1780 (most recent call first):
+  <no Python frame>
+2026/10/26 12:53:23 socat[4132683] W waitpid(): child 4132684 exited with status 255
+Fatal Python error: _enter_buffered_busy: could not acquire lock for <_io.BufferedReader name='<stdin>'> at interpreter shutdown, possibly due to daemon threads
+Python runtime state: finalizing (tstate=0x00007ff9f8005de8)
+
+Current thread 0x00007ff9f80ee780 (most recent call first):
+  <no Python frame>
+2026/10/26 12:53:54 socat[4132758] W waitpid(): child 4132759 exited with status 255
+Fatal Python error: _enter_buffered_busy: could not acquire lock for <_io.BufferedReader name='<stdin>'> at interpreter shutdown, possibly due to daemon threads
+Python runtime state: finalizing (tstate=0x00007fe681005de8)
+
+Current thread 0x00007fe6810eb780 (most recent call first):
+  <no Python frame>
+2026/10/26 12:54:23 socat[4142008] W waitpid(): child 4142009 exited with status 255
+Fatal Python error: _enter_buffered_busy: could not acquire lock for <_io.BufferedReader name='<stdin>'> at interpreter shutdown, possibly due to daemon threads
+Python runtime state: finalizing (tstate=0x00007fa7c3205de8)
+
+Current thread 0x00007fa7c3311780 (most recent call first):
+  <no Python frame>
+2026/10/26 12:54:30 socat[4143265] W waitpid(): child 4143266 exited with status 255
+Fatal Python error: _enter_buffered_busy: could not acquire lock for <_io.BufferedReader name='<stdin>'> at interpreter shutdown, possibly due to daemon threads
+Python runtime state: finalizing (tstate=0x00007f00aca05de8)
+
+Current thread 0x00007f00aca86780 (most recent call first):
+  <no Python frame>
+Fatal Python error: _enter_buffered_busy: could not acquire lock for <_io.BufferedReader name='<stdin>'> at interpreter shutdown, possibly due to daemon threads
+Python runtime state: finalizing (tstate=0x00007fcc7fa05de8)
+
+Current thread 0x00007fcc7fa89780 (most recent call first):
+  <no Python frame>
+2026/10/26 12:54:38 socat[4143886] W waitpid(): child 4143887 exited with status 255
+Fatal Python error: _enter_buffered_busy: could not acquire lock for <_io.BufferedReader name='<stdin>'> at interpreter shutdown, possibly due to daemon threads
+Python runtime state: finalizing (tstate=0x00007f3433005de8)
+
+Current thread 0x00007f34330a5780 (most recent call first):
+  <no Python frame>
+2026/10/26 12:55:06 socat[4144005] W waitpid(): child 4144006 exited with status 255
+Fatal Python error: _enter_buffered_busy: could not acquire lock for <_io.BufferedReader name='<stdin>'> at interpreter shutdown, possibly due to daemon threads
+Python runtime state: finalizing (tstate=0x00007f24efc05de8)
+
+Current thread 0x00007f24efd3b780 (most recent call first):
+  <no Python frame>
+2026/10/26 12:55:11 socat[4145761] W waitpid(): child 4145762 exited with status 255
+Fatal Python error: _enter_buffered_busy: could not acquire lock for <_io.BufferedReader name='<stdin>'> at interpreter shutdown, possibly due to daemon threads
+Python runtime state: finalizing (tstate=0x00007fb233e05de8)
+
+Current thread 0x00007fb233eaf780 (most recent call first):
+  <no Python frame>
+2026/10/26 12:55:19 socat[4145928] W waitpid(): child 4145929 exited with status 255
+Fatal Python error: _enter_buffered_busy: could not acquire lock for <_io.BufferedReader name='<stdin>'> at interpreter shutdown, possibly due to daemon threads
+Python runtime state: finalizing (tstate=0x00007f5e9de05de8)
+
+Current thread 0x00007f5e9deb7780 (most recent call first):
+  <no Python frame>
+2026/10/26 12:55:45 socat[4147207] W waitpid(): child 4147208 exited with status 255
+Fatal Python error: _enter_buffered_busy: could not acquire lock for <_io.BufferedReader name='<stdin>'> at interpreter shutdown, possibly due to daemon threads
+Python runtime state: finalizing (tstate=0x00007fdb7f205de8)
+
+Current thread 0x00007fdb7f341780 (most recent call first):
+  <no Python frame>
+2026/10/26 12:55:57 socat[4152393] W waitpid(): child 4152394 exited with status 255
+Fatal Python error: _enter_buffered_busy: could not acquire lock for <_io.BufferedReader name='<stdin>'> at interpreter shutdown, possibly due to daemon threads
+Python runtime state: finalizing (tstate=0x00007ff53b405de8)
+
+Current thread 0x00007ff53adfb780 (most recent call first):
+  <no Python frame>
+2026/10/26 12:57:14 socat[4153103] W waitpid(): child 4153104 exited with status 255
+Fatal Python error: _enter_buffered_busy: could not acquire lock for <_io.BufferedReader name='<stdin>'> at interpreter shutdown, possibly due to daemon threads
+Python runtime state: finalizing (tstate=0x00007fc2aca05de8)
+
+Current thread 0x00007fc2acad6780 (most recent call first):
+  <no Python frame>
+2026/10/26 12:57:19 socat[4164407] W waitpid(): child 4164408 exited with status 255
+Fatal Python error: _enter_buffered_busy: could not acquire lock for <_io.BufferedReader name='<stdin>'> at interpreter shutdown, possibly due to daemon threads
+Python runtime state: finalizing (tstate=0x00007f98fb405de8)
+
+Current thread 0x00007f98fb529780 (most recent call first):
+  <no Python frame>
+2026/10/26 12:58:00 socat[4164634] W waitpid(): child 4164635 exited with status 255
+Fatal Python error: _enter_buffered_busy: could not acquire lock for <_io.BufferedReader name='<stdin>'> at interpreter shutdown, possibly due to daemon threads
+Python runtime state: finalizing (tstate=0x00007fae41405de8)
+
+Current thread 0x00007fae41533780 (most recent call first):
+  <no Python frame>
+2026/10/26 12:58:05 socat[4167037] W waitpid(): child 4167038 exited with status 255
+Fatal Python error: _enter_buffered_busy: could not acquire lock for <_io.BufferedReader name='<stdin>'> at interpreter shutdown, possibly due to daemon threads
+Python runtime state: finalizing (tstate=0x00007faeefc05de8)
+
+Current thread 0x00007faeefce6780 (most recent call first):
+  <no Python frame>
+2026/10/26 12:58:10 socat[4167323] W waitpid(): child 4167324 exited with status 255
+Fatal Python error: _enter_buffered_busy: could not acquire lock for <_io.BufferedReader name='<stdin>'> at interpreter shutdown, possibly due to daemon threads
+Python runtime state: finalizing (tstate=0x00007f4b41005de8)
+
+Current thread 0x00007f4b41092780 (most recent call first):
+  <no Python frame>
+2026/10/26 12:58:12 socat[4167525] W waitpid(): child 4167526 exited with status 255
+Fatal Python error: _enter_buffered_busy: could not acquire lock for <_io.BufferedReader name='<stdin>'> at interpreter shutdown, possibly due to daemon threads
+Python runtime state: finalizing (tstate=0x00007f2ae2805de8)
+
+Current thread 0x00007f2ae2972780 (most recent call first):
+  <no Python frame>
+2026/10/26 12:58:38 socat[4167679] W waitpid(): child 4167680 exited with status 255
+Fatal Python error: _enter_buffered_busy: could not acquire lock for <_io.BufferedReader name='<stdin>'> at interpreter shutdown, possibly due to daemon threads
+Python runtime state: finalizing (tstate=0x00007ff076a05de8)
+
+Current thread 0x00007ff076aa1780 (most recent call first):
+  <no Python frame>
+2026/10/26 12:58:41 socat[4170753] W waitpid(): child 4170754 exited with status 255
+Fatal Python error: _enter_buffered_busy: could not acquire lock for <_io.BufferedReader name='<stdin>'> at interpreter shutdown, possibly due to daemon threads
+Python runtime state: finalizing (tstate=0x00007f9843e05de8)
+
+Current thread 0x00007f9843ea8780 (most recent call first):
+  <no Python frame>
+2026/10/26 12:58:57 socat[4171082] W waitpid(): child 4171083 exited with status 255
+Fatal Python error: _enter_buffered_busy: could not acquire lock for <_io.BufferedReader name='<stdin>'> at interpreter shutdown, possibly due to daemon threads
+Python runtime state: finalizing (tstate=0x00007f5656605de8)
+
+Current thread 0x00007f5656710780 (most recent call first):
+  <no Python frame>
+2026/10/26 12:59:02 socat[4171733] W waitpid(): child 4171734 exited with status 255
+Fatal Python error: _enter_buffered_busy: could not acquire lock for <_io.BufferedReader name='<stdin>'> at interpreter shutdown, possibly due to daemon threads
+Python runtime state: finalizing (tstate=0x00007ffa41805de8)
+
+Current thread 0x00007ffa418ee780 (most recent call first):
+  <no Python frame>
+2026/10/26 12:59:10 socat[4171991] W waitpid(): child 4171992 exited with status 255
+Fatal Python error: _enter_buffered_busy: could not acquire lock for <_io.BufferedReader name='<stdin>'> at interpreter shutdown, possibly due to daemon threads
+Python runtime state: finalizing (tstate=0x00007f349c605de8)
+
+Current thread 0x00007f349c745780 (most recent call first):
+  <no Python frame>
+2026/10/26 12:59:16 socat[4172344] W waitpid(): child 4172345 exited with status 255
+Fatal Python error: _enter_buffered_busy: could not acquire lock for <_io.BufferedReader name='<stdin>'> at interpreter shutdown, possibly due to daemon threads
+Python runtime state: finalizing (tstate=0x00007fd6caa05de8)
+
+Current thread 0x00007fd6caad9780 (most recent call first):
+  <no Python frame>
+2026/10/26 12:59:22 socat[4172592] W waitpid(): child 4172593 exited with status 255
+Fatal Python error: _enter_buffered_busy: could not acquire lock for <_io.BufferedReader name='<stdin>'> at interpreter shutdown, possibly due to daemon threads
+Python runtime state: finalizing (tstate=0x00007fa5fb005de8)
+
+Current thread 0x00007fa5fb171780 (most recent call first):
+  <no Python frame>
+2026/10/26 12:59:42 socat[4172882] W waitpid(): child 4172883 exited with status 255
+Fatal Python error: _enter_buffered_busy: could not acquire lock for <_io.BufferedReader name='<stdin>'> at interpreter shutdown, possibly due to daemon threads
+Python runtime state: finalizing (tstate=0x00007f7e34205de8)
+
+Current thread 0x00007f7e34339780 (most recent call first):
+  <no Python frame>
+2026/10/26 12:59:51 socat[4173789] W waitpid(): child 4173790 exited with status 255
+Fatal Python error: _enter_buffered_busy: could not acquire lock for <_io.BufferedReader name='<stdin>'> at interpreter shutdown, possibly due to daemon threads
+Python runtime state: finalizing (tstate=0x00007fc27c605de8)
+
+Current thread 0x00007fc27c6cd780 (most recent call first):
+  <no Python frame>
+2026/10/26 13:00:17 socat[4174136] W waitpid(): child 4174137 exited with status 255
+Fatal Python error: _enter_buffered_busy: could not acquire lock for <_io.BufferedReader name='<stdin>'> at interpreter shutdown, possibly due to daemon threads
+Python runtime state: finalizing (tstate=0x00007faa6c005de8)
+
+Current thread 0x00007faa6c142780 (most recent call first):
+  <no Python frame>
+2026/10/26 13:03:05 socat[4178105] W waitpid(): child 4178106 exited with status 255
+Fatal Python error: _enter_buffered_busy: could not acquire lock for <_io.BufferedReader name='<stdin>'> at interpreter shutdown, possibly due to daemon threads
+Python runtime state: finalizing (tstate=0x00007fced2c05de8)
+
+Current thread 0x00007fced2d96780 (most recent call first):
+  <no Python frame>
+2026/10/26 13:05:05 socat[4190937] W waitpid(): child 4190938 exited with status 255
+Fatal Python error: _enter_buffered_busy: could not acquire lock for <_io.BufferedReader name='<stdin>'> at interpreter shutdown, possibly due to daemon threads
+Python runtime state: finalizing (tstate=0x00007f876de05de8)
+
+Current thread 0x00007f876deba780 (most recent call first):
+  <no Python frame>
+2026/10/26 13:05:31 socat[10981] W waitpid(): child 10982 exited with status 255
+Fatal Python error: _enter_buffered_busy: could not acquire lock for <_io.BufferedReader name='<stdin>'> at interpreter shutdown, possibly due to daemon threads
+Python runtime state: finalizing (tstate=0x00007f3dcc205de8)
+
+Current thread 0x00007f3dcc329780 (most recent call first):
+  <no Python frame>
+2026/10/26 13:06:21 socat[12270] W waitpid(): child 12271 exited with status 255
+Fatal Python error: _enter_buffered_busy: could not acquire lock for <_io.BufferedReader name='<stdin>'> at interpreter shutdown, possibly due to daemon threads
+Python runtime state: finalizing (tstate=0x00007fccfe805de8)
+
+Current thread 0x00007fccfe90a780 (most recent call first):
+  <no Python frame>
+2026/10/26 13:06:56 socat[14732] W waitpid(): child 14733 exited with status 255
+Fatal Python error: _enter_buffered_busy: could not acquire lock for <_io.BufferedReader name='<stdin>'> at interpreter shutdown, possibly due to daemon threads
+Python runtime state: finalizing (tstate=0x00007f128fe05de8)
+
+Current thread 0x00007f128ff2d780 (most recent call first):
+  <no Python frame>
+2026/10/26 13:08:09 socat[16025] W waitpid(): child 16026 exited with status 255
+Fatal Python error: _enter_buffered_busy: could not acquire lock for <_io.BufferedReader name='<stdin>'> at interpreter shutdown, possibly due to daemon threads
+Python runtime state: finalizing (tstate=0x00007ff6cba05de8)
+
+Current thread 0x00007ff6cbaf1780 (most recent call first):
+  <no Python frame>
+2026/10/26 13:08:55 socat[21525] W waitpid(): child 21526 exited with status 255
+{
+  "status": "completed",
+  "quality_score": 100.0
+}
+2026/10/26 13:08:56 socat[4094935] W exiting on signal 15
+[iq3_s] done
+[q4_k_xl] speed canary starting (qwen3.8-flash-next-unsloth-ud-q4_k_xl)
+ssh: connect to host 192.168.0.90 port 22: Connection timed out
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(303) [Receiver=3.5.1-g04355d27]
+ssh: connect to host 192.168.0.90 port 22: No route to host
+[q4_k_xl] speed done: missing
+ssh: connect to host 192.168.0.90 port 22: No route to host
+[q4_k_xl] quality: starting server (qwen3.8-flash-next-unsloth-ud-q4_k_xl)
+ssh: connect to host 192.168.0.90 port 22: No route to host
+ssh: connect to host 192.168.0.90 port 22: No route to host
+2026/10/26 13:14:30 socat[58843] W waitpid(): child 58844 exited with status 255
+2026/10/26 13:14:30 socat[58843] E read(5, 0x55c364a46000, 8192): Connection reset by peer
+ssh: connect to host 192.168.0.90 port 22: No route to host
+[q4_k_xl] server failed to start or serves '' instead of 'qwen3.8-flash-next-unsloth-ud-q4_k_xl' (failed)
+2026/10/26 13:14:33 socat[58838] W exiting on signal 15
+ssh: connect to host 192.168.0.90 port 22: No route to host
+ssh: connect to host 192.168.0.90 port 22: No route to host
+ssh: connect to host 192.168.0.90 port 22: No route to host

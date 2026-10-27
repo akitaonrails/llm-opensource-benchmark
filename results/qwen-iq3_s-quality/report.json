@@ -1,0 +1,389 @@
+{
+  "label": "qwen-iq3_s-quality",
+  "model": "qwen3.8-flash-next-iq3_s",
+  "provider": "strata-5090",
+  "isolation": "bwrap --unshare-all (no network); /work = project only; model-only Unix-socket gateway",
+  "base_url": "http://127.0.0.1:18082/v1",
+  "started_epoch": 1792992787.3110428,
+  "turns": [
+    {
+      "turn": 1,
+      "status": "completed",
+      "returncode": 0,
+      "elapsed_seconds": 75.2918876989861,
+      "command": [
+        "run",
+        "--standalone",
+        "--auto",
+        "--agent",
+        "build",
+        "--format",
+        "json",
+        "--model",
+        "bench/qwen3.8-flash-next-iq3_s",
+        "--title",
+        "bench-qwen-iq3_s-quality",
+        "--file",
+        "/opt/prompt.md"
+      ],
+      "session_id": "ses_e894d434bffeuBxiakc5pq6Ezt",
+      "tokens": {
+        "input": 90,
+        "output": 135,
+        "reasoning": 0,
+        "cache": {
+          "read": 69074,
+          "write": 0
+        }
+      },
+      "token_events": [
+        {
+          "input": 55488,
+          "output": 69,
+          "reasoning": 0,
+          "cache": {
+            "read": 0,
+            "write": 0
+          }
+        },
+        {
+          "input": 325,
+          "output": 64,
+          "reasoning": 0,
+          "cache": {
+            "read": 55556,
+            "write": 0
+          }
+        },
+        {
+          "input": 1699,
+          "output": 171,
+          "reasoning": 0,
+          "cache": {
+            "read": 55947,
+            "write": 0
+          }
+        },
+        {
+          "input": 1262,
+          "output": 6644,
+          "reasoning": 0,
+          "cache": {
+            "read": 57818,
+            "write": 0
+          }
+        },
+        {
+          "input": 39,
+          "output": 153,
+          "reasoning": 0,
+          "cache": {
+            "read": 65725,
+            "write": 0
+          }
+        },
+        {
+          "input": 186,
+          "output": 1332,
+          "reasoning": 0,
+          "cache": {
+            "read": 65918,
+            "write": 0
+          }
+        },
+        {
+          "input": 130,
+          "output": 1505,
+          "reasoning": 0,
+          "cache": {
+            "read": 67437,
+            "write": 0
+          }
+        },
+        {
+          "input": 90,
+          "output": 135,
+          "reasoning": 0,
+          "cache": {
+            "read": 69074,
+            "write": 0
+          }
+        }
+      ],
+      "provider_requests": 9,
+      "provider_seconds": 74.2,
+      "invalid_json_lines": 0,
+      "stdout": "turn-1.stdout.jsonl",
+      "stderr": "turn-1.stderr.log"
+    },
+    {
+      "turn": 2,
+      "status": "completed",
+      "returncode": 0,
+      "elapsed_seconds": 32.52036485099234,
+      "command": [
+        "run",
+        "--standalone",
+        "--auto",
+        "--agent",
+        "build",
+        "--format",
+        "json",
+        "--session",
+        "ses_e894d434bffeuBxiakc5pq6Ezt"
+      ],
+      "session_id": "ses_e894d434bffeuBxiakc5pq6Ezt",
+      "tokens": {
+        "input": 410,
+        "output": 76,
+        "reasoning": 0,
+        "cache": {
+          "read": 77207,
+          "write": 0
+        }
+      },
+      "token_events": [
+        {
+          "input": 648,
+          "output": 308,
+          "reasoning": 0,
+          "cache": {
+            "read": 70609,
+            "write": 0
+          }
+        },
+        {
+          "input": 247,
+          "output": 237,
+          "reasoning": 0,
+          "cache": {
+            "read": 71566,
+            "write": 0
+          }
+        },
+        {
+          "input": 1447,
+          "output": 2816,
+          "reasoning": 0,
+          "cache": {
+            "read": 72052,
+            "write": 0
+          }
+        },
+        {
+          "input": 16,
+          "output": 239,
+          "reasoning": 0,
+          "cache": {
+            "read": 76318,
+            "write": 0
+          }
+        },
+        {
+          "input": 195,
+          "output": 436,
+          "reasoning": 0,
+          "cache": {
+            "read": 76575,
+            "write": 0
+          }
+        },
+        {
+          "input": 410,
+          "output": 76,
+          "reasoning": 0,
+          "cache": {
+            "read": 77207,
+            "write": 0
+          }
+        }
+      ],
+      "provider_requests": 7,
+      "provider_seconds": 31.65,
+      "invalid_json_lines": 0,
+      "stdout": "turn-2.stdout.jsonl",
+      "stderr": "turn-2.stderr.log"
+    },
+    {
+      "turn": 3,
+      "status": "completed",
+      "returncode": 0,
+      "elapsed_seconds": 104.32424052397255,
+      "command": [
+        "run",
+        "--standalone",
+        "--auto",
+        "--agent",
+        "build",
+        "--format",
+        "json",
+        "--session",
+        "ses_e894d434bffeuBxiakc5pq6Ezt"
+      ],
+      "session_id": "ses_e894d434bffeuBxiakc5pq6Ezt",
+      "tokens": {
+        "input": 1029,
+        "output": 708,
+        "reasoning": 0,
+        "cache": {
+          "read": 95059,
+          "write": 0
+        }
+      },
+      "token_events": [
+        {
+          "input": 119,
+          "output": 10464,
+          "reasoning": 0,
+          "cache": {
+            "read": 78359,
+            "write": 0
+          }
+        },
+        {
+          "input": 43,
+          "output": 803,
+          "reasoning": 0,
+          "cache": {
+            "read": 88942,
+            "write": 0
+          }
+        },
+        {
+          "input": 26,
+          "output": 1995,
+          "reasoning": 0,
+          "cache": {
+            "read": 89787,
+            "write": 0
+          }
+        },
+        {
+          "input": 23,
+          "output": 802,
+          "reasoning": 0,
+          "cache": {
+            "read": 91810,
+            "write": 0
+          }
+        },
+        {
+          "input": 24,
+          "output": 178,
+          "reasoning": 0,
+          "cache": {
+            "read": 92637,
+            "write": 0
+          }
+        },
+        {
+          "input": 606,
+          "output": 1010,
+          "reasoning": 0,
+          "cache": {
+            "read": 92838,
+            "write": 0
+          }
+        },
+        {
+          "input": 117,
+          "output": 488,
+          "reasoning": 0,
+          "cache": {
+            "read": 94455,
+            "write": 0
+          }
+        },
+        {
+          "input": 1029,
+          "output": 708,
+          "reasoning": 0,
+          "cache": {
+            "read": 95059,
+            "write": 0
+          }
+        }
+      ],
+      "provider_requests": 9,
+      "provider_seconds": 103.16,
+      "invalid_json_lines": 0,
+      "stdout": "turn-3.stdout.jsonl",
+      "stderr": "turn-3.stderr.log"
+    }
+  ],
+  "status": "completed",
+  "evaluation": {
+    "visible_tests": {
+      "status": "completed",
+      "returncode": 0
+    },
+    "hidden_tests": {
+      "status": "completed",
+      "returncode": 0,
+      "passed": 9,
+      "total": 9,
+      "individual_results": {
+        "test_basic_count_errors_and_bytes": "ok",
+        "test_malformed_lines_warn_and_continue": "ok",
+        "test_empty_input": "ok",
+        "test_timezone_offsets": "ok",
+        "test_since_inclusive_until_exclusive": "ok",
+        "test_health_excluded": "ok",
+        "test_nearest_rank_p95": "ok",
+        "test_deterministic_json_key_order": "ok",
+        "test_bounded_memory_streaming": "ok"
+      },
+      "individual_failures": []
+    },
+    "dependency_audit": {
+      "passed": true,
+      "violations": []
+    },
+    "visible_tests_unchanged": true,
+    "oracle_path_access_evidence": [],
+    "model_test_execution_evidence": true,
+    "score_components": {
+      "functional_correctness": {
+        "passed": 9,
+        "total": 9,
+        "points": 70.0,
+        "maximum": 70
+      },
+      "requirement_retention": {
+        "checks": {
+          "deterministic_output": {
+            "passed": true,
+            "points": 4
+          },
+          "bounded_memory": {
+            "passed": true,
+            "points": 4
+          },
+          "no_dependencies": {
+            "passed": true,
+            "points": 4
+          },
+          "visible_tests_unchanged": {
+            "passed": true,
+            "points": 4
+          },
+          "no_oracle_path_access": {
+            "passed": true,
+            "points": 4
+          }
+        },
+        "points": 20,
+        "maximum": 20
+      },
+      "engineering_process": {
+        "tests_ran": true,
+        "final_suite_passes": true,
+        "points": 10,
+        "maximum": 10
+      }
+    },
+    "quality_score": 100.0
+  },
+  "quality_score": 100.0,
+  "finished_epoch": 1792993000.3461037
+}

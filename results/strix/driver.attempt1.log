@@ -1,0 +1,8 @@
+copies done 11:17:58
+PACK_DONE iq3_xxs
+PACK_DONE ud-q4_k_xl
+packs done 11:18:07
+[q2_0] speed canary starting (qwen3.8-flash-next-q2_0)
+[q2_0] speed done: completed
+[q2_0] quality: starting server (qwen3.8-flash-next-q2_0)
+cat: /var/strata-models/osb/server.pgid: No such file or directory

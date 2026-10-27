@@ -1,0 +1,31 @@
+test_parser_consumes_only_the_line_it_needs (test_amendments.BoundedMemoryTests.test_parser_consumes_only_the_line_it_needs) ... ok
+test_peak_memory_does_not_grow_with_record_count (test_amendments.BoundedMemoryTests.test_peak_memory_does_not_grow_with_record_count) ... ok
+test_cli_bounds_compare_as_instants (test_amendments.BoundsAndMalformedLineTests.test_cli_bounds_compare_as_instants) ... ok
+test_cli_reads_a_file_without_abort_and_keeps_warnings_on_stderr (test_amendments.BoundsAndMalformedLineTests.test_cli_reads_a_file_without_abort_and_keeps_warnings_on_stderr) ... ok
+test_empty_stream_reports_zero_error_rate (test_amendments.BoundsAndMalformedLineTests.test_empty_stream_reports_zero_error_rate) ... ok
+test_malformed_lines_warn_once_without_aborting (test_amendments.BoundsAndMalformedLineTests.test_malformed_lines_warn_once_without_aborting) ... ok
+test_undecodable_bytes_warn_without_aborting (test_amendments.BoundsAndMalformedLineTests.test_undecodable_bytes_warn_without_aborting) ... ok
+test_until_is_exclusive_and_since_inclusive_across_offsets (test_amendments.BoundsAndMalformedLineTests.test_until_is_exclusive_and_since_inclusive_across_offsets) ... ok
+test_a_health_only_stream_still_reports_zero (test_amendments.HealthPathExclusionTests.test_a_health_only_stream_still_reports_zero) ... ok
+test_cli_excludes_health_records_and_keeps_output_shape (test_amendments.HealthPathExclusionTests.test_cli_excludes_health_records_and_keeps_output_shape) ... ok
+test_exact_health_path_is_excluded (test_amendments.HealthPathExclusionTests.test_exact_health_path_is_excluded) ... ok
+test_excluded_paths_hold_only_the_health_route (test_amendments.HealthPathExclusionTests.test_excluded_paths_hold_only_the_health_route) ... ok
+test_only_the_exact_health_path_is_excluded (test_amendments.HealthPathExclusionTests.test_only_the_exact_health_path_is_excluded) ... ok
+test_parser_still_yields_health_records (test_amendments.HealthPathExclusionTests.test_parser_still_yields_health_records) ... ok
+test_p95_boundaries (test_amendments.NearestRankPercentileTests.test_p95_boundaries) ... ok
+test_p95_covers_the_latency_domain_edges (test_amendments.NearestRankPercentileTests.test_p95_covers_the_latency_domain_edges) ... ok
+test_p95_ignores_excluded_and_unselected_records (test_amendments.NearestRankPercentileTests.test_p95_ignores_excluded_and_unselected_records) ... ok
+test_p95_is_a_real_latency_not_an_interpolation (test_amendments.NearestRankPercentileTests.test_p95_is_a_real_latency_not_an_interpolation) ... ok
+test_p95_matches_the_ceil_formula_over_many_counts (test_amendments.NearestRankPercentileTests.test_p95_matches_the_ceil_formula_over_many_counts) ... ok
+test_p95_rounds_up_to_the_next_record (test_amendments.NearestRankPercentileTests.test_p95_rounds_up_to_the_next_record) ... ok
+test_basic_summary (test_logstats.LogstatsTests.test_basic_summary) ... ok
+test_cli_key_order_is_deterministic (test_logstats.LogstatsTests.test_cli_key_order_is_deterministic) ... ok
+test_empty_input_has_zero_error_rate (test_logstats.LogstatsTests.test_empty_input_has_zero_error_rate) ... ok
+test_malformed_json_is_skipped_with_warning (test_logstats.LogstatsTests.test_malformed_json_is_skipped_with_warning) ... ok
+test_timezone_offsets_compare_as_instants (test_logstats.LogstatsTests.test_timezone_offsets_compare_as_instants) ... ok
+test_until_is_exclusive (test_logstats.LogstatsTests.test_until_is_exclusive) ... ok
+
+----------------------------------------------------------------------
+Ran 26 tests in 0.597s
+
+OK

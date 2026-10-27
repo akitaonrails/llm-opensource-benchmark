@@ -1,0 +1,29 @@
+{
+  "exe": "component:strata-engine",
+  "args": [
+    "--pack", "/mnt/data/Projects/llm-opensource-benchmark/.strata/data-q2_0/packs/q2_0",
+    "--native", "/mnt/data/Projects/llm-opensource-benchmark/.strata/models/qwen-q2_0/Q2_0/Qwen3.8-Flash-Next-GSQ-RCO-Q2_0-00001-of-00002.gguf",
+    "--ple-gguf", "/mnt/data/Projects/llm-opensource-benchmark/.strata/models/qwen-q2_0/Q2_0/Qwen3.8-Flash-Next-GSQ-RCO-Q2_0-00002-of-00002.gguf",
+    "--expert-profile", "/home/akitaonrails/.local/share/strata/components/control/0.1.51/data/expert-profile.bin",
+    "--expert-cache", "auto",
+    "--prefill", "auto",
+    "--spec", "4",
+    "--spec-min-p", "0.5",
+    "--mtp", "/mnt/data/strata-models/mtp/rt",
+    "--max-context", "131072",
+    "--kv", "int8",
+    "--kv-resident", "32768",
+    "--vram-elastic",
+    "--vram-reserve-mib", "4096"
+  ],
+  "cwd": "/home/akitaonrails/.local/share/strata/components/control/0.1.51",
+  "tokenizer": "/mnt/data/Projects/llm-opensource-benchmark/.strata/data-q2_0/packs/q2_0/tokenizer",
+  "model_name": "qwen3.8-flash-next-q2_0",
+  "log": "/mnt/data/Projects/llm-opensource-benchmark/.strata/qwen-q2_0.engine.log",
+  "lib_dirs": [],
+  "port": 18082,
+  "gpu": 0,
+  "gpus_asked": true,
+  "open_browser": false,
+  "parallel": 1
+}

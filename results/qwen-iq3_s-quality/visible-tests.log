@@ -1,0 +1,24 @@
+test_basic_summary (test_logstats.LogstatsTests.test_basic_summary) ... ok
+test_cli_key_order_is_deterministic (test_logstats.LogstatsTests.test_cli_key_order_is_deterministic) ... ok
+test_empty_input_has_zero_error_rate (test_logstats.LogstatsTests.test_empty_input_has_zero_error_rate) ... ok
+test_malformed_json_is_skipped_with_warning (test_logstats.LogstatsTests.test_malformed_json_is_skipped_with_warning) ... ok
+test_timezone_offsets_compare_as_instants (test_logstats.LogstatsTests.test_timezone_offsets_compare_as_instants) ... ok
+test_until_is_exclusive (test_logstats.LogstatsTests.test_until_is_exclusive) ... ok
+test_since_is_inclusive (test_regressions.BoundarySemanticsTests.test_since_is_inclusive) ... ok
+test_summarize_does_not_retain_input_records (test_regressions.BoundedMemoryTests.test_summarize_does_not_retain_input_records) ... ok
+test_cli_excludes_health_path (test_regressions.HealthPathExclusionTests.test_cli_excludes_health_path) ... ok
+test_health_record_is_excluded (test_regressions.HealthPathExclusionTests.test_health_record_is_excluded) ... ok
+test_only_exact_health_path_is_excluded (test_regressions.HealthPathExclusionTests.test_only_exact_health_path_is_excluded) ... ok
+test_only_health_records_give_empty_summary (test_regressions.HealthPathExclusionTests.test_only_health_records_give_empty_summary) ... ok
+test_cli_p95_is_nearest_rank_integer (test_regressions.NearestRankP95Tests.test_cli_p95_is_nearest_rank_integer) ... ok
+test_p95_ceil_not_round (test_regressions.NearestRankP95Tests.test_p95_ceil_not_round) ... ok
+test_p95_matches_nearest_rank_across_sizes (test_regressions.NearestRankP95Tests.test_p95_matches_nearest_rank_across_sizes) ... ok
+test_p95_never_blends_adjacent_values (test_regressions.NearestRankP95Tests.test_p95_never_blends_adjacent_values) ... ok
+test_p95_single_record (test_regressions.NearestRankP95Tests.test_p95_single_record) ... ok
+test_p95_takes_sorted_item_at_one_based_ceil_index (test_regressions.NearestRankP95Tests.test_p95_takes_sorted_item_at_one_based_ceil_index) ... ok
+test_percentile_helper_uses_nearest_rank (test_regressions.NearestRankP95Tests.test_percentile_helper_uses_nearest_rank) ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 0.116s
+
+OK

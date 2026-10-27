@@ -1,0 +1,782 @@
+{
+  "label": "hard-qwen-iq3_s-r3",
+  "model": "qwen3.8-flash-next-iq3_s",
+  "provider": "strata-5090",
+  "test": "hard-ledger-v1",
+  "isolation": "bwrap --unshare-all (no network); /work = project only; model-only Unix-socket gateway",
+  "base_url": "http://127.0.0.1:18082/v1",
+  "started_epoch": 1793046085.5924516,
+  "turns": [
+    {
+      "turn": 1,
+      "status": "completed",
+      "returncode": 0,
+      "elapsed_seconds": 118.54916425701231,
+      "command": [
+        "run",
+        "--standalone",
+        "--auto",
+        "--agent",
+        "build",
+        "--format",
+        "json",
+        "--model",
+        "bench/qwen3.8-flash-next-iq3_s",
+        "--title",
+        "bench-hard-qwen-iq3_s-r3",
+        "--file",
+        "/opt/prompt.md"
+      ],
+      "session_id": "ses_e861fff1cffeUK9J0FtopAYZY0",
+      "tokens": {
+        "input": 23,
+        "output": 566,
+        "reasoning": 0,
+        "cache": {
+          "read": 103757,
+          "write": 0
+        }
+      },
+      "token_events": [
+        {
+          "input": 78928,
+          "output": 104,
+          "reasoning": 0,
+          "cache": {
+            "read": 4461,
+            "write": 0
+          }
+        },
+        {
+          "input": 1500,
+          "output": 166,
+          "reasoning": 0,
+          "cache": {
+            "read": 83495,
+            "write": 0
+          }
+        },
+        {
+          "input": 1958,
+          "output": 6208,
+          "reasoning": 0,
+          "cache": {
+            "read": 85160,
+            "write": 0
+          }
+        },
+        {
+          "input": 63,
+          "output": 3594,
+          "reasoning": 0,
+          "cache": {
+            "read": 93326,
+            "write": 0
+          }
+        },
+        {
+          "input": 161,
+          "output": 1176,
+          "reasoning": 0,
+          "cache": {
+            "read": 96985,
+            "write": 0
+          }
+        },
+        {
+          "input": 26,
+          "output": 1071,
+          "reasoning": 0,
+          "cache": {
+            "read": 98321,
+            "write": 0
+          }
+        },
+        {
+          "input": 22,
+          "output": 412,
+          "reasoning": 0,
+          "cache": {
+            "read": 99421,
+            "write": 0
+          }
+        },
+        {
+          "input": 26,
+          "output": 69,
+          "reasoning": 0,
+          "cache": {
+            "read": 99854,
+            "write": 0
+          }
+        },
+        {
+          "input": 121,
+          "output": 3684,
+          "reasoning": 0,
+          "cache": {
+            "read": 99952,
+            "write": 0
+          }
+        },
+        {
+          "input": 23,
+          "output": 566,
+          "reasoning": 0,
+          "cache": {
+            "read": 103757,
+            "write": 0
+          }
+        }
+      ],
+      "provider_requests": 11,
+      "provider_seconds": 117.54,
+      "invalid_json_lines": 0,
+      "stdout": "turn-1.stdout.jsonl",
+      "stderr": "turn-1.stderr.log"
+    },
+    {
+      "turn": 2,
+      "status": "completed",
+      "returncode": 0,
+      "elapsed_seconds": 170.19963448203634,
+      "command": [
+        "run",
+        "--standalone",
+        "--auto",
+        "--agent",
+        "build",
+        "--format",
+        "json",
+        "--session",
+        "ses_e861fff1cffeUK9J0FtopAYZY0"
+      ],
+      "session_id": "ses_e861fff1cffeUK9J0FtopAYZY0",
+      "tokens": {
+        "input": 154,
+        "output": 527,
+        "reasoning": 0,
+        "cache": {
+          "read": 30984,
+          "write": 0
+        }
+      },
+      "token_events": [
+        {
+          "input": 931,
+          "output": 3989,
+          "reasoning": 0,
+          "cache": {
+            "read": 104440,
+            "write": 0
+          }
+        },
+        {
+          "input": 25,
+          "output": 2483,
+          "reasoning": 0,
+          "cache": {
+            "read": 109360,
+            "write": 0
+          }
+        },
+        {
+          "input": 5214,
+          "output": 10022,
+          "reasoning": 0,
+          "cache": {
+            "read": 4461,
+            "write": 0
+          }
+        },
+        {
+          "input": 51,
+          "output": 74,
+          "reasoning": 0,
+          "cache": {
+            "read": 19699,
+            "write": 0
+          }
+        },
+        {
+          "input": 1684,
+          "output": 403,
+          "reasoning": 0,
+          "cache": {
+            "read": 19826,
+            "write": 0
+          }
+        },
+        {
+          "input": 1410,
+          "output": 855,
+          "reasoning": 0,
+          "cache": {
+            "read": 21914,
+            "write": 0
+          }
+        },
+        {
+          "input": 124,
+          "output": 1331,
+          "reasoning": 0,
+          "cache": {
+            "read": 24179,
+            "write": 0
+          }
+        },
+        {
+          "input": 25,
+          "output": 48,
+          "reasoning": 0,
+          "cache": {
+            "read": 25635,
+            "write": 0
+          }
+        },
+        {
+          "input": 379,
+          "output": 166,
+          "reasoning": 0,
+          "cache": {
+            "read": 25708,
+            "write": 0
+          }
+        },
+        {
+          "input": 612,
+          "output": 633,
+          "reasoning": 0,
+          "cache": {
+            "read": 26253,
+            "write": 0
+          }
+        },
+        {
+          "input": 25,
+          "output": 2645,
+          "reasoning": 0,
+          "cache": {
+            "read": 27498,
+            "write": 0
+          }
+        },
+        {
+          "input": 499,
+          "output": 317,
+          "reasoning": 0,
+          "cache": {
+            "read": 30167,
+            "write": 0
+          }
+        },
+        {
+          "input": 154,
+          "output": 527,
+          "reasoning": 0,
+          "cache": {
+            "read": 30984,
+            "write": 0
+          }
+        }
+      ],
+      "provider_requests": 15,
+      "provider_seconds": 168.98,
+      "invalid_json_lines": 0,
+      "stdout": "turn-2.stdout.jsonl",
+      "stderr": "turn-2.stderr.log"
+    },
+    {
+      "turn": 3,
+      "status": "completed",
+      "returncode": 0,
+      "elapsed_seconds": 171.07477209501667,
+      "command": [
+        "run",
+        "--standalone",
+        "--auto",
+        "--agent",
+        "build",
+        "--format",
+        "json",
+        "--session",
+        "ses_e861fff1cffeUK9J0FtopAYZY0"
+      ],
+      "session_id": "ses_e861fff1cffeUK9J0FtopAYZY0",
+      "tokens": {
+        "input": 73,
+        "output": 172,
+        "reasoning": 0,
+        "cache": {
+          "read": 62421,
+          "write": 0
+        }
+      },
+      "token_events": [
+        {
+          "input": 268,
+          "output": 62,
+          "reasoning": 0,
+          "cache": {
+            "read": 32430,
+            "write": 0
+          }
+        },
+        {
+          "input": 397,
+          "output": 43,
+          "reasoning": 0,
+          "cache": {
+            "read": 32761,
+            "write": 0
+          }
+        },
+        {
+          "input": 1175,
+          "output": 11160,
+          "reasoning": 0,
+          "cache": {
+            "read": 33201,
+            "write": 0
+          }
+        },
+        {
+          "input": 193,
+          "output": 504,
+          "reasoning": 0,
+          "cache": {
+            "read": 45537,
+            "write": 0
+          }
+        },
+        {
+          "input": 54,
+          "output": 299,
+          "reasoning": 0,
+          "cache": {
+            "read": 46235,
+            "write": 0
+          }
+        },
+        {
+          "input": 26,
+          "output": 561,
+          "reasoning": 0,
+          "cache": {
+            "read": 46587,
+            "write": 0
+          }
+        },
+        {
+          "input": 25,
+          "output": 972,
+          "reasoning": 0,
+          "cache": {
+            "read": 47174,
+            "write": 0
+          }
+        },
+        {
+          "input": 26,
+          "output": 70,
+          "reasoning": 0,
+          "cache": {
+            "read": 48170,
+            "write": 0
+          }
+        },
+        {
+          "input": 769,
+          "output": 552,
+          "reasoning": 0,
+          "cache": {
+            "read": 48267,
+            "write": 0
+          }
+        },
+        {
+          "input": 26,
+          "output": 645,
+          "reasoning": 0,
+          "cache": {
+            "read": 49587,
+            "write": 0
+          }
+        },
+        {
+          "input": 40,
+          "output": 5651,
+          "reasoning": 0,
+          "cache": {
+            "read": 50258,
+            "write": 0
+          }
+        },
+        {
+          "input": 27,
+          "output": 187,
+          "reasoning": 0,
+          "cache": {
+            "read": 55948,
+            "write": 0
+          }
+        },
+        {
+          "input": 984,
+          "output": 288,
+          "reasoning": 0,
+          "cache": {
+            "read": 56162,
+            "write": 0
+          }
+        },
+        {
+          "input": 28,
+          "output": 2718,
+          "reasoning": 0,
+          "cache": {
+            "read": 57433,
+            "write": 0
+          }
+        },
+        {
+          "input": 164,
+          "output": 750,
+          "reasoning": 0,
+          "cache": {
+            "read": 60181,
+            "write": 0
+          }
+        },
+        {
+          "input": 47,
+          "output": 1275,
+          "reasoning": 0,
+          "cache": {
+            "read": 61097,
+            "write": 0
+          }
+        },
+        {
+          "input": 73,
+          "output": 172,
+          "reasoning": 0,
+          "cache": {
+            "read": 62421,
+            "write": 0
+          }
+        }
+      ],
+      "provider_requests": 18,
+      "provider_seconds": 169.31,
+      "invalid_json_lines": 0,
+      "stdout": "turn-3.stdout.jsonl",
+      "stderr": "turn-3.stderr.log"
+    },
+    {
+      "turn": 4,
+      "status": "completed",
+      "returncode": 0,
+      "elapsed_seconds": 204.34873864700785,
+      "command": [
+        "run",
+        "--standalone",
+        "--auto",
+        "--agent",
+        "build",
+        "--format",
+        "json",
+        "--session",
+        "ses_e861fff1cffeUK9J0FtopAYZY0"
+      ],
+      "session_id": "ses_e861fff1cffeUK9J0FtopAYZY0",
+      "tokens": {
+        "input": 38,
+        "output": 1453,
+        "reasoning": 0,
+        "cache": {
+          "read": 93297,
+          "write": 0
+        }
+      },
+      "token_events": [
+        {
+          "input": 148,
+          "output": 5475,
+          "reasoning": 0,
+          "cache": {
+            "read": 63665,
+            "write": 0
+          }
+        },
+        {
+          "input": 188,
+          "output": 393,
+          "reasoning": 0,
+          "cache": {
+            "read": 69289,
+            "write": 0
+          }
+        },
+        {
+          "input": 26,
+          "output": 677,
+          "reasoning": 0,
+          "cache": {
+            "read": 69869,
+            "write": 0
+          }
+        },
+        {
+          "input": 41,
+          "output": 418,
+          "reasoning": 0,
+          "cache": {
+            "read": 70571,
+            "write": 0
+          }
+        },
+        {
+          "input": 60,
+          "output": 2265,
+          "reasoning": 0,
+          "cache": {
+            "read": 71029,
+            "write": 0
+          }
+        },
+        {
+          "input": 28,
+          "output": 667,
+          "reasoning": 0,
+          "cache": {
+            "read": 73353,
+            "write": 0
+          }
+        },
+        {
+          "input": 26,
+          "output": 1927,
+          "reasoning": 0,
+          "cache": {
+            "read": 74049,
+            "write": 0
+          }
+        },
+        {
+          "input": 25,
+          "output": 312,
+          "reasoning": 0,
+          "cache": {
+            "read": 76004,
+            "write": 0
+          }
+        },
+        {
+          "input": 272,
+          "output": 745,
+          "reasoning": 0,
+          "cache": {
+            "read": 76341,
+            "write": 0
+          }
+        },
+        {
+          "input": 28,
+          "output": 156,
+          "reasoning": 0,
+          "cache": {
+            "read": 77357,
+            "write": 0
+          }
+        },
+        {
+          "input": 2144,
+          "output": 920,
+          "reasoning": 0,
+          "cache": {
+            "read": 77541,
+            "write": 0
+          }
+        },
+        {
+          "input": 2004,
+          "output": 1410,
+          "reasoning": 0,
+          "cache": {
+            "read": 80604,
+            "write": 0
+          }
+        },
+        {
+          "input": 21,
+          "output": 2446,
+          "reasoning": 0,
+          "cache": {
+            "read": 84020,
+            "write": 0
+          }
+        },
+        {
+          "input": 146,
+          "output": 2236,
+          "reasoning": 0,
+          "cache": {
+            "read": 86489,
+            "write": 0
+          }
+        },
+        {
+          "input": 67,
+          "output": 1967,
+          "reasoning": 0,
+          "cache": {
+            "read": 88871,
+            "write": 0
+          }
+        },
+        {
+          "input": 124,
+          "output": 1537,
+          "reasoning": 0,
+          "cache": {
+            "read": 90905,
+            "write": 0
+          }
+        },
+        {
+          "input": 101,
+          "output": 629,
+          "reasoning": 0,
+          "cache": {
+            "read": 92566,
+            "write": 0
+          }
+        },
+        {
+          "input": 38,
+          "output": 1453,
+          "reasoning": 0,
+          "cache": {
+            "read": 93297,
+            "write": 0
+          }
+        }
+      ],
+      "provider_requests": 19,
+      "provider_seconds": 202.37,
+      "invalid_json_lines": 0,
+      "stdout": "turn-4.stdout.jsonl",
+      "stderr": "turn-4.stderr.log"
+    }
+  ],
+  "status": "completed",
+  "evaluation": {
+    "visible_tests": {
+      "status": "completed",
+      "returncode": 0
+    },
+    "hidden_tests": {
+      "passed": 36,
+      "total": 36,
+      "returncode": 0,
+      "categories": {
+        "spec": {
+          "passed": 15,
+          "total": 15
+        },
+        "context": {
+          "passed": 6,
+          "total": 6
+        },
+        "turn2": {
+          "passed": 5,
+          "total": 5
+        },
+        "turn3": {
+          "passed": 8,
+          "total": 8
+        },
+        "turn4": {
+          "passed": 2,
+          "total": 2
+        }
+      },
+      "individual_results": {
+        "test_spec_charges_and_fees": "ok",
+        "test_spec_round_once_half_even": "ok",
+        "test_spec_multi_currency_exact": "ok",
+        "test_spec_invalid_amounts": "ok",
+        "test_spec_invalid_fields": "ok",
+        "test_spec_duplicate_first_wins": "ok",
+        "test_spec_invalid_line_does_not_reserve_id": "ok",
+        "test_spec_refund_limit_rejects_whole": "ok",
+        "test_spec_refund_must_match_currency_and_account": "ok",
+        "test_spec_window_offsets_and_bounds": "ok",
+        "test_spec_window_limit_uses_whole_input": "ok",
+        "test_spec_cli_format": "ok",
+        "test_spec_empty_input": "ok",
+        "test_spec_cli_rates_option": "ok",
+        "test_spec_load_rates_returns_decimals": "ok",
+        "test_context_account_ids_case_insensitive": "ok",
+        "test_context_refund_account_match_ignores_case": "ok",
+        "test_context_test_events_ignored_silently": "ok",
+        "test_context_test_event_ids_are_reserved": "ok",
+        "test_context_fees_must_be_usd": "ok",
+        "test_context_house_accounts_excluded_from_total": "ok",
+        "test_turn2_refund_before_charge_in_file": "ok",
+        "test_turn2_limit_in_timestamp_order": "ok",
+        "test_turn2_limit_ties_use_file_order": "ok",
+        "test_turn2_orphan_refund_rejected": "ok",
+        "test_turn2_duplicates_still_first_in_file": "ok",
+        "test_turn3_chargeback_ignores_refund_limit": "ok",
+        "test_turn3_chargeback_consumes_refund_limit": "ok",
+        "test_turn3_second_chargeback_rejected": "ok",
+        "test_turn3_chargeback_over_charge_amount_rejected": "ok",
+        "test_turn3_chargeback_before_charge_in_file": "ok",
+        "test_turn3_report_currency": "ok",
+        "test_turn3_report_currency_keeps_earlier_rules": "ok",
+        "test_turn3_unknown_report_currency": "ok",
+        "test_turn4_money_convert_exact": "ok",
+        "test_turn4_public_api_still_importable": "ok"
+      },
+      "failures": []
+    },
+    "requirements": {
+      "visible_tests_unchanged": true,
+      "no_dependencies": true,
+      "no_oracle_path_access": true,
+      "regression_tests_added": true,
+      "no_float_money": true
+    },
+    "dependency_audit": {
+      "passed": true,
+      "violations": []
+    },
+    "oracle_path_access_evidence": [],
+    "float_money_evidence": [],
+    "test_methods": {
+      "original": 4,
+      "final": 32
+    },
+    "score_components": {
+      "functional_correctness": {
+        "points": 70.0,
+        "maximum": 70
+      },
+      "requirement_retention": {
+        "points": 20,
+        "maximum": 20
+      },
+      "engineering_process": {
+        "tests_ran": true,
+        "final_suite_passes": true,
+        "points": 10,
+        "maximum": 10
+      }
+    },
+    "quality_score": 100.0
+  },
+  "quality_score": 100.0,
+  "finished_epoch": 1793046750.584742
+}

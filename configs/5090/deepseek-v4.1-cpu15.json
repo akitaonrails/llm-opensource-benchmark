@@ -1,0 +1,32 @@
+{
+  "exe": "/home/akitaonrails/.local/share/strata/install/engine-dsv41/0.1.51-linux-x86_64-cuda-cuda13/strata-dsv41",
+  "args": [
+    "--pack",
+    "/mnt/data/Projects/llm-opensource-benchmark/.strata/data/packs/deepseek-v4.1-flash-ist-das-2.00bpw",
+    "--max-context",
+    "32768",
+    "--eos",
+    "1",
+    "--dspark",
+    "auto",
+    "--dspark-conf",
+    "0.65",
+    "--reserve-mib",
+    "4096",
+    "--cpu-threads",
+    "15"
+  ],
+  "cwd": "/home/akitaonrails/.local/share/strata/components/control/0.1.51",
+  "tokenizer": "/mnt/data/Projects/llm-opensource-benchmark/.strata/data/packs/deepseek-v4.1-flash-ist-das-2.00bpw/tokenizer",
+  "model_name": "deepseek-v4.1-flash",
+  "arch": "deepseek41",
+  "log": "/mnt/data/Projects/llm-opensource-benchmark/.strata/deepseek-v4.1-cpu15.engine.log",
+  "lib_dirs": [
+    "/home/akitaonrails/.local/share/strata/install/engine-dsv41/0.1.51-linux-x86_64-cuda-cuda13"
+  ],
+  "port": 18082,
+  "engine_ready_s": 1200,
+  "gpu": 0,
+  "gpus_asked": true,
+  "open_browser": false
+}

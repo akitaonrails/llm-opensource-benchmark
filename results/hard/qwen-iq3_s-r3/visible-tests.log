@@ -1,0 +1,37 @@
+test_accepted_chargeback_consumes_refundable_amount (test_chargeback_and_currency.ChargebackTests.test_accepted_chargeback_consumes_refundable_amount) ... ok
+test_chargeback_before_charge_is_accepted (test_chargeback_and_currency.ChargebackTests.test_chargeback_before_charge_is_accepted) ... ok
+test_chargeback_exceeding_charge_is_rejected (test_chargeback_and_currency.ChargebackTests.test_chargeback_exceeding_charge_is_rejected) ... ok
+test_chargeback_must_match_charge_account (test_chargeback_and_currency.ChargebackTests.test_chargeback_must_match_charge_account) ... ok
+test_chargeback_must_match_charge_currency (test_chargeback_and_currency.ChargebackTests.test_chargeback_must_match_charge_currency) ... ok
+test_chargeback_needs_charge_id (test_chargeback_and_currency.ChargebackTests.test_chargeback_needs_charge_id) ... ok
+test_chargeback_not_limited_by_remaining_refundable (test_chargeback_and_currency.ChargebackTests.test_chargeback_not_limited_by_remaining_refundable) ... ok
+test_chargeback_tie_broken_by_file_order (test_chargeback_and_currency.ChargebackTests.test_chargeback_tie_broken_by_file_order) ... ok
+test_chargeback_without_accepted_charge_is_rejected (test_chargeback_and_currency.ChargebackTests.test_chargeback_without_accepted_charge_is_rejected) ... ok
+test_chargebacks_evaluated_with_refunds_in_timestamp_order (test_chargeback_and_currency.ChargebackTests.test_chargebacks_evaluated_with_refunds_in_timestamp_order) ... ok
+test_full_chargeback_is_allowed (test_chargeback_and_currency.ChargebackTests.test_full_chargeback_is_allowed) ... ok
+test_refund_fits_exactly_after_chargeback (test_chargeback_and_currency.ChargebackTests.test_refund_fits_exactly_after_chargeback) ... ok
+test_rejected_chargeback_does_not_count_or_consume (test_chargeback_and_currency.ChargebackTests.test_rejected_chargeback_does_not_count_or_consume) ... ok
+test_second_chargeback_is_rejected (test_chargeback_and_currency.ChargebackTests.test_second_chargeback_is_rejected) ... ok
+test_exact_multiplication_no_rounding (test_chargeback_and_currency.ConvertTests.test_exact_multiplication_no_rounding) ... ok
+test_precision_survives_a_long_exact_chain (test_chargeback_and_currency.ConvertTests.test_precision_survives_a_long_exact_chain) ... ok
+test_round_trip_to_same_currency_is_exact (test_chargeback_and_currency.ConvertTests.test_round_trip_to_same_currency_is_exact) ... ok
+test_unknown_currency_raises_keyerror (test_chargeback_and_currency.ConvertTests.test_unknown_currency_raises_keyerror) ... ok
+test_unrounded_result_keeps_at_least_40_significant_digits (test_chargeback_and_currency.ConvertTests.test_unrounded_result_keeps_at_least_40_significant_digits) ... ok
+test_cli_reports_in_requested_currency (test_chargeback_and_currency.CurrencyCliTests.test_cli_reports_in_requested_currency) ... ok
+test_cli_unknown_report_currency_exits_nonzero_silently (test_chargeback_and_currency.CurrencyCliTests.test_cli_unknown_report_currency_exits_nonzero_silently) ... ok
+test_balances_reported_in_target_currency (test_chargeback_and_currency.ReportCurrencyTests.test_balances_reported_in_target_currency) ... ok
+test_conversion_keeps_at_least_40_significant_digits (test_chargeback_and_currency.ReportCurrencyTests.test_conversion_keeps_at_least_40_significant_digits) ... ok
+test_converted_once_after_exact_summing (test_chargeback_and_currency.ReportCurrencyTests.test_converted_once_after_exact_summing) ... ok
+test_default_report_currency_is_usd (test_chargeback_and_currency.ReportCurrencyTests.test_default_report_currency_is_usd) ... ok
+test_round_trip_through_report_currency_is_exact (test_chargeback_and_currency.ReportCurrencyTests.test_round_trip_through_report_currency_is_exact) ... ok
+test_total_sums_rounded_balances_in_report_currency (test_chargeback_and_currency.ReportCurrencyTests.test_total_sums_rounded_balances_in_report_currency) ... ok
+test_unknown_report_currency_raises (test_chargeback_and_currency.ReportCurrencyTests.test_unknown_report_currency_raises) ... ok
+test_charge_and_fee (test_ledger.LedgerTests.test_charge_and_fee) ... ok
+test_cli_keys_are_sorted (test_ledger.LedgerTests.test_cli_keys_are_sorted) ... ok
+test_empty_input (test_ledger.LedgerTests.test_empty_input) ... ok
+test_malformed_line_is_skipped_with_warning (test_ledger.LedgerTests.test_malformed_line_is_skipped_with_warning) ... ok
+
+----------------------------------------------------------------------
+Ran 32 tests in 0.093s
+
+OK

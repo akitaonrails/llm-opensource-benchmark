@@ -1,0 +1,20 @@
+{
+  "label": "deepseek-v4.1-iq2_xxs-strata-0.1.51",
+  "model": "deepseek-v4.1-flash",
+  "base_url": "http://127.0.0.1:18082/v1",
+  "command": [
+    "/home/akitaonrails/.local/share/strata/components/control/0.1.51/bin/strata",
+    "serve",
+    "--config",
+    "/home/akitaonrails/.local/share/strata/install/strata-deepseek-v4.1-flash-ist-das-2.00bpw.json",
+    "--host",
+    "127.0.0.1",
+    "--port",
+    "18082"
+  ],
+  "started_epoch": 1792977062.0541775,
+  "platform": "Linux-7.2.8-9-omarchy-x86_64-with-glibc2.44",
+  "python": "3.12.12",
+  "reserve_mib": 4096,
+  "status": "starting"
+}

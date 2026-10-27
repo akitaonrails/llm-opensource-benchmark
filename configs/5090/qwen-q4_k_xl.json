@@ -1,0 +1,32 @@
+{
+  "exe": "component:strata-engine",
+  "args": [
+    "--pack", "/mnt/data/Projects/llm-opensource-benchmark/.strata/data-q4_k_xl/packs/unsloth-ud-q4_k_xl",
+    "--native", "/mnt/data/Projects/llm-opensource-benchmark/.strata/models/qwen-q4_k_xl/UD-Q4_K_XL/Qwen3.8-Flash-Next-UD-Q4_K_XL-00001-of-00004.gguf",
+    "--expert-profile", "/home/akitaonrails/.local/share/strata/components/control/0.1.51/data/expert-profile.bin",
+    "--expert-cache", "auto",
+    "--prefill", "auto",
+    "--spec", "4",
+    "--spec-min-p", "0.5",
+    "--mtp", "/mnt/data/strata-models/mtp/rt",
+    "--max-context", "131072",
+    "--kv", "int8",
+    "--kv-resident", "32768",
+    "--vram-elastic",
+    "--vram-reserve-mib", "4096"
+  ],
+  "cwd": "/home/akitaonrails/.local/share/strata/components/control/0.1.51",
+  "tokenizer": "/mnt/data/Projects/llm-opensource-benchmark/.strata/data-q4_k_xl/packs/unsloth-ud-q4_k_xl/tokenizer",
+  "model_name": "qwen3.8-flash-next-unsloth-ud-q4_k_xl",
+  "log": "/mnt/data/Projects/llm-opensource-benchmark/.strata/qwen-q4_k_xl.engine.log",
+  "lib_dirs": [],
+  "port": 18082,
+  "env": {
+    "STRATA_HC_Q8": "1",
+    "STRATA_ROUTE_TAIL_SKIP": "0"
+  },
+  "gpu": 0,
+  "gpus_asked": true,
+  "open_browser": false,
+  "parallel": 1
+}

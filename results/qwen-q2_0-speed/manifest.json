@@ -1,0 +1,20 @@
+{
+  "label": "qwen-q2_0-strata-0.1.50",
+  "model": "qwen3.8-flash-next-q2_0",
+  "base_url": "http://127.0.0.1:18082/v1",
+  "command": [
+    "/home/akitaonrails/.local/share/strata/components/control/0.1.51/bin/strata",
+    "serve",
+    "--config",
+    "/home/akitaonrails/.local/share/strata/install/strata-q2_0.json",
+    "--host",
+    "127.0.0.1",
+    "--port",
+    "18082"
+  ],
+  "started_epoch": 1792979973.7081597,
+  "platform": "Linux-7.2.8-9-omarchy-x86_64-with-glibc2.44",
+  "python": "3.12.12",
+  "reserve_mib": 4096,
+  "status": "starting"
+}

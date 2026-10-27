@@ -1,0 +1,542 @@
+{
+  "label": "strix-qwen-iq3_s-quality",
+  "model": "qwen3.8-flash-next-iq3_s",
+  "provider": "strata-strix",
+  "isolation": "bwrap --unshare-all (no network); /work = project only; model-only Unix-socket gateway",
+  "base_url": "http://127.0.0.1:18083/v1",
+  "started_epoch": 1793029630.4420383,
+  "turns": [
+    {
+      "turn": 1,
+      "status": "completed",
+      "returncode": 0,
+      "elapsed_seconds": 513.663972637034,
+      "command": [
+        "run",
+        "--standalone",
+        "--auto",
+        "--agent",
+        "build",
+        "--format",
+        "json",
+        "--model",
+        "bench/qwen3.8-flash-next-iq3_s",
+        "--title",
+        "bench-strix-qwen-iq3_s-quality",
+        "--file",
+        "/opt/prompt.md"
+      ],
+      "session_id": "ses_e871b14b6ffeDk337fRwKDzDp3",
+      "tokens": {
+        "input": 676,
+        "output": 255,
+        "reasoning": 0,
+        "cache": {
+          "read": 74824,
+          "write": 0
+        }
+      },
+      "token_events": [
+        {
+          "input": 55488,
+          "output": 95,
+          "reasoning": 0,
+          "cache": {
+            "read": 0,
+            "write": 0
+          }
+        },
+        {
+          "input": 1070,
+          "output": 132,
+          "reasoning": 0,
+          "cache": {
+            "read": 55582,
+            "write": 0
+          }
+        },
+        {
+          "input": 1197,
+          "output": 80,
+          "reasoning": 0,
+          "cache": {
+            "read": 56783,
+            "write": 0
+          }
+        },
+        {
+          "input": 1024,
+          "output": 2211,
+          "reasoning": 0,
+          "cache": {
+            "read": 58059,
+            "write": 0
+          }
+        },
+        {
+          "input": 35,
+          "output": 67,
+          "reasoning": 0,
+          "cache": {
+            "read": 61296,
+            "write": 0
+          }
+        },
+        {
+          "input": 535,
+          "output": 5797,
+          "reasoning": 0,
+          "cache": {
+            "read": 61398,
+            "write": 0
+          }
+        },
+        {
+          "input": 39,
+          "output": 319,
+          "reasoning": 0,
+          "cache": {
+            "read": 67731,
+            "write": 0
+          }
+        },
+        {
+          "input": 25,
+          "output": 136,
+          "reasoning": 0,
+          "cache": {
+            "read": 68089,
+            "write": 0
+          }
+        },
+        {
+          "input": 25,
+          "output": 303,
+          "reasoning": 0,
+          "cache": {
+            "read": 68250,
+            "write": 0
+          }
+        },
+        {
+          "input": 23,
+          "output": 73,
+          "reasoning": 0,
+          "cache": {
+            "read": 68580,
+            "write": 0
+          }
+        },
+        {
+          "input": 177,
+          "output": 1585,
+          "reasoning": 0,
+          "cache": {
+            "read": 68677,
+            "write": 0
+          }
+        },
+        {
+          "input": 15,
+          "output": 1740,
+          "reasoning": 0,
+          "cache": {
+            "read": 70440,
+            "write": 0
+          }
+        },
+        {
+          "input": 26,
+          "output": 299,
+          "reasoning": 0,
+          "cache": {
+            "read": 72197,
+            "write": 0
+          }
+        },
+        {
+          "input": 29,
+          "output": 279,
+          "reasoning": 0,
+          "cache": {
+            "read": 72522,
+            "write": 0
+          }
+        },
+        {
+          "input": 70,
+          "output": 74,
+          "reasoning": 0,
+          "cache": {
+            "read": 72833,
+            "write": 0
+          }
+        },
+        {
+          "input": 265,
+          "output": 1239,
+          "reasoning": 0,
+          "cache": {
+            "read": 72981,
+            "write": 0
+          }
+        },
+        {
+          "input": 133,
+          "output": 205,
+          "reasoning": 0,
+          "cache": {
+            "read": 74485,
+            "write": 0
+          }
+        },
+        {
+          "input": 676,
+          "output": 255,
+          "reasoning": 0,
+          "cache": {
+            "read": 74824,
+            "write": 0
+          }
+        }
+      ],
+      "provider_requests": 18,
+      "provider_seconds": 510.72,
+      "invalid_json_lines": 0,
+      "stdout": "turn-1.stdout.jsonl",
+      "stderr": "turn-1.stderr.log"
+    },
+    {
+      "turn": 2,
+      "status": "completed",
+      "returncode": 0,
+      "elapsed_seconds": 272.37863286200445,
+      "command": [
+        "run",
+        "--standalone",
+        "--auto",
+        "--agent",
+        "build",
+        "--format",
+        "json",
+        "--session",
+        "ses_e871b14b6ffeDk337fRwKDzDp3"
+      ],
+      "session_id": "ses_e871b14b6ffeDk337fRwKDzDp3",
+      "tokens": {
+        "input": 327,
+        "output": 288,
+        "reasoning": 0,
+        "cache": {
+          "read": 90062,
+          "write": 0
+        }
+      },
+      "token_events": [
+        {
+          "input": 1164,
+          "output": 292,
+          "reasoning": 0,
+          "cache": {
+            "read": 75863,
+            "write": 0
+          }
+        },
+        {
+          "input": 555,
+          "output": 3661,
+          "reasoning": 0,
+          "cache": {
+            "read": 77320,
+            "write": 0
+          }
+        },
+        {
+          "input": 26,
+          "output": 196,
+          "reasoning": 0,
+          "cache": {
+            "read": 81536,
+            "write": 0
+          }
+        },
+        {
+          "input": 344,
+          "output": 1678,
+          "reasoning": 0,
+          "cache": {
+            "read": 81759,
+            "write": 0
+          }
+        },
+        {
+          "input": 23,
+          "output": 263,
+          "reasoning": 0,
+          "cache": {
+            "read": 83783,
+            "write": 0
+          }
+        },
+        {
+          "input": 22,
+          "output": 266,
+          "reasoning": 0,
+          "cache": {
+            "read": 84072,
+            "write": 0
+          }
+        },
+        {
+          "input": 25,
+          "output": 81,
+          "reasoning": 0,
+          "cache": {
+            "read": 84362,
+            "write": 0
+          }
+        },
+        {
+          "input": 303,
+          "output": 1372,
+          "reasoning": 0,
+          "cache": {
+            "read": 84467,
+            "write": 0
+          }
+        },
+        {
+          "input": 27,
+          "output": 167,
+          "reasoning": 0,
+          "cache": {
+            "read": 86142,
+            "write": 0
+          }
+        },
+        {
+          "input": 513,
+          "output": 599,
+          "reasoning": 0,
+          "cache": {
+            "read": 86336,
+            "write": 0
+          }
+        },
+        {
+          "input": 16,
+          "output": 254,
+          "reasoning": 0,
+          "cache": {
+            "read": 87448,
+            "write": 0
+          }
+        },
+        {
+          "input": 25,
+          "output": 460,
+          "reasoning": 0,
+          "cache": {
+            "read": 87720,
+            "write": 0
+          }
+        },
+        {
+          "input": 25,
+          "output": 247,
+          "reasoning": 0,
+          "cache": {
+            "read": 88207,
+            "write": 0
+          }
+        },
+        {
+          "input": 23,
+          "output": 329,
+          "reasoning": 0,
+          "cache": {
+            "read": 88483,
+            "write": 0
+          }
+        },
+        {
+          "input": 358,
+          "output": 862,
+          "reasoning": 0,
+          "cache": {
+            "read": 88839,
+            "write": 0
+          }
+        },
+        {
+          "input": 327,
+          "output": 288,
+          "reasoning": 0,
+          "cache": {
+            "read": 90062,
+            "write": 0
+          }
+        }
+      ],
+      "provider_requests": 17,
+      "provider_seconds": 293.26,
+      "invalid_json_lines": 0,
+      "stdout": "turn-2.stdout.jsonl",
+      "stderr": "turn-2.stderr.log"
+    },
+    {
+      "turn": 3,
+      "status": "completed",
+      "returncode": 0,
+      "elapsed_seconds": 518.3357687860262,
+      "command": [
+        "run",
+        "--standalone",
+        "--auto",
+        "--agent",
+        "build",
+        "--format",
+        "json",
+        "--session",
+        "ses_e871b14b6ffeDk337fRwKDzDp3"
+      ],
+      "session_id": "ses_e871b14b6ffeDk337fRwKDzDp3",
+      "tokens": {
+        "input": 285,
+        "output": 1327,
+        "reasoning": 0,
+        "cache": {
+          "read": 110512,
+          "write": 0
+        }
+      },
+      "token_events": [
+        {
+          "input": 1220,
+          "output": 7485,
+          "reasoning": 0,
+          "cache": {
+            "read": 90854,
+            "write": 0
+          }
+        },
+        {
+          "input": 24,
+          "output": 6819,
+          "reasoning": 0,
+          "cache": {
+            "read": 99560,
+            "write": 0
+          }
+        },
+        {
+          "input": 24,
+          "output": 1224,
+          "reasoning": 0,
+          "cache": {
+            "read": 106404,
+            "write": 0
+          }
+        },
+        {
+          "input": 897,
+          "output": 1960,
+          "reasoning": 0,
+          "cache": {
+            "read": 107655,
+            "write": 0
+          }
+        },
+        {
+          "input": 285,
+          "output": 1327,
+          "reasoning": 0,
+          "cache": {
+            "read": 110512,
+            "write": 0
+          }
+        }
+      ],
+      "provider_requests": 7,
+      "provider_seconds": 499.3,
+      "invalid_json_lines": 0,
+      "stdout": "turn-3.stdout.jsonl",
+      "stderr": "turn-3.stderr.log"
+    }
+  ],
+  "status": "completed",
+  "evaluation": {
+    "visible_tests": {
+      "status": "completed",
+      "returncode": 0
+    },
+    "hidden_tests": {
+      "status": "completed",
+      "returncode": 0,
+      "passed": 9,
+      "total": 9,
+      "individual_results": {
+        "test_basic_count_errors_and_bytes": "ok",
+        "test_malformed_lines_warn_and_continue": "ok",
+        "test_empty_input": "ok",
+        "test_timezone_offsets": "ok",
+        "test_since_inclusive_until_exclusive": "ok",
+        "test_health_excluded": "ok",
+        "test_nearest_rank_p95": "ok",
+        "test_deterministic_json_key_order": "ok",
+        "test_bounded_memory_streaming": "ok"
+      },
+      "individual_failures": []
+    },
+    "dependency_audit": {
+      "passed": true,
+      "violations": []
+    },
+    "visible_tests_unchanged": true,
+    "oracle_path_access_evidence": [],
+    "model_test_execution_evidence": true,
+    "score_components": {
+      "functional_correctness": {
+        "passed": 9,
+        "total": 9,
+        "points": 70.0,
+        "maximum": 70
+      },
+      "requirement_retention": {
+        "checks": {
+          "deterministic_output": {
+            "passed": true,
+            "points": 4
+          },
+          "bounded_memory": {
+            "passed": true,
+            "points": 4
+          },
+          "no_dependencies": {
+            "passed": true,
+            "points": 4
+          },
+          "visible_tests_unchanged": {
+            "passed": true,
+            "points": 4
+          },
+          "no_oracle_path_access": {
+            "passed": true,
+            "points": 4
+          }
+        },
+        "points": 20,
+        "maximum": 20
+      },
+      "engineering_process": {
+        "tests_ran": true,
+        "final_suite_passes": true,
+        "points": 10,
+        "maximum": 10
+      }
+    },
+    "quality_score": 100.0
+  },
+  "quality_score": 100.0,
+  "finished_epoch": 1793030936.6098115
+}

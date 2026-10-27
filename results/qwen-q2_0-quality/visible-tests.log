@@ -1,0 +1,28 @@
+test_basic_summary (test_logstats.LogstatsTests.test_basic_summary) ... ok
+test_cli_key_order_is_deterministic (test_logstats.LogstatsTests.test_cli_key_order_is_deterministic) ... ok
+test_empty_input_has_zero_error_rate (test_logstats.LogstatsTests.test_empty_input_has_zero_error_rate) ... ok
+test_malformed_json_is_skipped_with_warning (test_logstats.LogstatsTests.test_malformed_json_is_skipped_with_warning) ... ok
+test_timezone_offsets_compare_as_instants (test_logstats.LogstatsTests.test_timezone_offsets_compare_as_instants) ... ok
+test_until_is_exclusive (test_logstats.LogstatsTests.test_until_is_exclusive) ... ok
+test_cli_peak_memory_is_independent_of_record_count (test_logstats_requirements.BoundedMemoryTests.test_cli_peak_memory_is_independent_of_record_count) ... ok
+test_summary_state_is_a_fixed_size_histogram (test_logstats_requirements.BoundedMemoryTests.test_summary_state_is_a_fixed_size_histogram) ... ok
+test_a_stream_of_only_health_records_reports_an_empty_summary (test_logstats_requirements.HealthPathFilterTests.test_a_stream_of_only_health_records_reports_an_empty_summary) ... ok
+test_cli_excludes_health_records_and_keeps_json_shape (test_logstats_requirements.HealthPathFilterTests.test_cli_excludes_health_records_and_keeps_json_shape) ... ok
+test_health_filter_combines_with_time_bounds (test_logstats_requirements.HealthPathFilterTests.test_health_filter_combines_with_time_bounds) ... ok
+test_health_records_are_excluded_from_every_field (test_logstats_requirements.HealthPathFilterTests.test_health_records_are_excluded_from_every_field) ... ok
+test_health_records_do_not_influence_p95 (test_logstats_requirements.HealthPathFilterTests.test_health_records_do_not_influence_p95) ... ok
+test_only_the_exact_health_path_is_excluded (test_logstats_requirements.HealthPathFilterTests.test_only_the_exact_health_path_is_excluded) ... ok
+test_the_parser_still_yields_health_records (test_logstats_requirements.HealthPathFilterTests.test_the_parser_still_yields_health_records) ... ok
+test_p95_follows_the_ceil_formula_for_every_count (test_logstats_requirements.NearestRankP95Tests.test_p95_follows_the_ceil_formula_for_every_count) ... ok
+test_p95_is_an_integer (test_logstats_requirements.NearestRankP95Tests.test_p95_is_an_integer) ... ok
+test_p95_is_nearest_rank_not_interpolated (test_logstats_requirements.NearestRankP95Tests.test_p95_is_nearest_rank_not_interpolated) ... ok
+test_p95_is_null_when_no_records_are_selected (test_logstats_requirements.NearestRankP95Tests.test_p95_is_null_when_no_records_are_selected) ... ok
+test_p95_of_tiny_counts (test_logstats_requirements.NearestRankP95Tests.test_p95_of_tiny_counts) ... ok
+test_p95_with_duplicates (test_logstats_requirements.NearestRankP95Tests.test_p95_with_duplicates) ... ok
+test_percentile_helper_matches_nearest_rank (test_logstats_requirements.NearestRankP95Tests.test_percentile_helper_matches_nearest_rank) ... ok
+test_rank_boundaries_at_exact_quantile_multiples (test_logstats_requirements.NearestRankP95Tests.test_rank_boundaries_at_exact_quantile_multiples) ... ok
+
+----------------------------------------------------------------------
+Ran 23 tests in 2.827s
+
+OK

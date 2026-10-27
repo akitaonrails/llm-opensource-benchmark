@@ -1,0 +1,22 @@
+[q2_0] starting server (qwen3.8-flash-next-q2_0)
+[q2_0] server ready (qwen3.8-flash-next-q2_0), running quality canary
+{
+  "status": "completed",
+  "quality_score": 100.0
+}
+[q2_0] done
+[iq3_xxs] starting server (qwen3.8-flash-next-iq3_xxs)
+[iq3_xxs] server ready (qwen3.8-flash-next-iq3_xxs), running quality canary
+{
+  "status": "completed",
+  "quality_score": 96.0
+}
+[iq3_xxs] done
+[iq3_s] starting server (qwen3.8-flash-next-iq3_s)
+[iq3_s] server ready (qwen3.8-flash-next-iq3_s), running quality canary
+{
+  "status": "completed",
+  "quality_score": 100.0
+}
+[iq3_s] done
+[q4_k_xl] starting server (qwen3.8-flash-next-unsloth-ud-q4_k_xl)

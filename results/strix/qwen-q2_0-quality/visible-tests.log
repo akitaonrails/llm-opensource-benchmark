@@ -1,0 +1,33 @@
+test_cli_bounds_match_the_internal_api (test_bounds_and_stream.BoundAndStreamTests.test_cli_bounds_match_the_internal_api) ... ok
+test_empty_stream_reports_zero_error_rate_and_null_percentile (test_bounds_and_stream.BoundAndStreamTests.test_empty_stream_reports_zero_error_rate_and_null_percentile) ... ok
+test_malformed_lines_are_skipped_and_never_abort (test_bounds_and_stream.BoundAndStreamTests.test_malformed_lines_are_skipped_and_never_abort) ... ok
+test_since_bound_is_inclusive (test_bounds_and_stream.BoundAndStreamTests.test_since_bound_is_inclusive) ... ok
+test_until_bound_is_exclusive (test_bounds_and_stream.BoundAndStreamTests.test_until_bound_is_exclusive) ... ok
+test_warnings_never_reach_standard_output (test_bounds_and_stream.BoundAndStreamTests.test_warnings_never_reach_standard_output) ... ok
+test_basic_summary (test_logstats.LogstatsTests.test_basic_summary) ... ok
+test_cli_key_order_is_deterministic (test_logstats.LogstatsTests.test_cli_key_order_is_deterministic) ... ok
+test_empty_input_has_zero_error_rate (test_logstats.LogstatsTests.test_empty_input_has_zero_error_rate) ... ok
+test_malformed_json_is_skipped_with_warning (test_logstats.LogstatsTests.test_malformed_json_is_skipped_with_warning) ... ok
+test_timezone_offsets_compare_as_instants (test_logstats.LogstatsTests.test_timezone_offsets_compare_as_instants) ... ok
+test_until_is_exclusive (test_logstats.LogstatsTests.test_until_is_exclusive) ... ok
+test_parser_does_not_buffer_the_input (test_selection_rules.BoundedMemoryTests.test_parser_does_not_buffer_the_input) ... ok
+test_summary_does_not_scale_with_input_size (test_selection_rules.BoundedMemoryTests.test_summary_does_not_scale_with_input_size) ... ok
+test_cli_excludes_health_records (test_selection_rules.HealthFilterTests.test_cli_excludes_health_records) ... ok
+test_exact_health_path_is_excluded_from_every_field (test_selection_rules.HealthFilterTests.test_exact_health_path_is_excluded_from_every_field) ... ok
+test_health_filter_combines_with_bounds (test_selection_rules.HealthFilterTests.test_health_filter_combines_with_bounds) ... ok
+test_health_only_stream_is_empty (test_selection_rules.HealthFilterTests.test_health_only_stream_is_empty) ... ok
+test_only_the_exact_health_path_is_excluded (test_selection_rules.HealthFilterTests.test_only_the_exact_health_path_is_excluded) ... ok
+test_ceil_is_applied_not_floor (test_selection_rules.NearestRankP95Tests.test_ceil_is_applied_not_floor) ... ok
+test_duplicates_are_counted_by_rank (test_selection_rules.NearestRankP95Tests.test_duplicates_are_counted_by_rank) ... ok
+test_extremes_of_the_latency_domain (test_selection_rules.NearestRankP95Tests.test_extremes_of_the_latency_domain) ... ok
+test_histogram_matches_a_sorted_reference (test_selection_rules.NearestRankP95Tests.test_histogram_matches_a_sorted_reference) ... ok
+test_hundred_records_take_the_95th_sample (test_selection_rules.NearestRankP95Tests.test_hundred_records_take_the_95th_sample) ... ok
+test_percentile_helper_uses_nearest_rank (test_selection_rules.NearestRankP95Tests.test_percentile_helper_uses_nearest_rank) ... ok
+test_percentile_is_always_an_observed_latency (test_selection_rules.NearestRankP95Tests.test_percentile_is_always_an_observed_latency) ... ok
+test_single_record (test_selection_rules.NearestRankP95Tests.test_single_record) ... ok
+test_two_records_take_the_larger_sample (test_selection_rules.NearestRankP95Tests.test_two_records_take_the_larger_sample) ... ok
+
+----------------------------------------------------------------------
+Ran 28 tests in 2.095s
+
+OK

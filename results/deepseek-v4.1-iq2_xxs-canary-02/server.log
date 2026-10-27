@@ -1,0 +1,98 @@
+loading the model (the first start takes a minute or two) ...
+[strata] starting the engine: reading the model's weights ...
+[strata] engine priority: nice +5 (this PC has built-in Radeon graphics that usually draw the desktop; STRATA_ENGINE_NICE=0 turns it off)
+[strata] this pack's chat template spells the tool-call block differently from the V4.1 model's; using the V4.1 template so tool calls come back as real calls
+ready: http://127.0.0.1:18082/v1  (OpenAI: /v1/chat/completions, Anthropic: /v1/messages, context 32768 tokens)
+       open http://127.0.0.1:18082/ in a browser to chat; close this window to stop the model
+[strata] thinking capped at 128 of max_tokens 256 to leave room for the answer (budget 32768)
+[strata] reading the prompt: 3,909 tokens, 10 s so far
+[strata] reading the prompt: 3,909 of 3,909 tokens, 18 s so far
+[strata] thinking: 12 of budget 128 (max 256) tokens, 11.5 tok/s, 19 s
+[strata] thinking: 25 of budget 128 (max 256) tokens, 12.1 tok/s, 20 s
+[strata] thinking: 41 of budget 128 (max 256) tokens, 13.0 tok/s, 21 s
+[strata] thinking: 60 of budget 128 (max 256) tokens, 14.2 tok/s, 22 s
+[strata] thinking: 79 of budget 128 (max 256) tokens, 15.0 tok/s, 23 s
+[strata] thinking: 98 of budget 128 (max 256) tokens, 15.7 tok/s, 24 s
+[strata] thinking: 115 of budget 128 (max 256) tokens, 15.8 tok/s, 26 s
+[strata] thinking budget reached (128 tokens): wrapping up the thinking
+[strata] thinking: 145 of max 256 tokens, 16.4 tok/s, 27 s
+[strata] answering: 162 of max 256 tokens, 16.4 tok/s, 28 s
+[strata] answering: 180 of max 256 tokens, 16.5 tok/s, 29 s
+[strata] answering: 197 of max 256 tokens, 16.5 tok/s, 30 s
+[strata] answering: 215 of max 256 tokens, 16.6 tok/s, 31 s
+[strata] answering: 234 of max 256 tokens, 16.7 tok/s, 32 s
+[strata] answering: 254 of max 256 tokens, 16.9 tok/s, 33 s
+[strata] done: 256 tokens in 33 s (16.5 tok/s) (length, cancel=False)
+[strata] thinking capped at 128 of max_tokens 256 to leave room for the answer (budget 32768)
+[strata] reading the prompt: 772 of 30,917 tokens, 4 s so far
+[strata] reading the prompt: 772 of 30,917 tokens, 5 s so far
+[strata] reading the prompt: 772 of 30,917 tokens, 6 s so far
+[strata] reading the prompt: 1,545 of 30,917 tokens, 7 s so far
+[strata] reading the prompt: 1,545 of 30,917 tokens, 8 s so far
+[strata] reading the prompt: 2,318 of 30,917 tokens, 9 s so far
+[strata] reading the prompt: 3,091 of 30,917 tokens, 10 s so far
+[strata] reading the prompt: 3,864 of 30,917 tokens, 11 s so far
+[strata] reading the prompt: 4,637 of 30,917 tokens, 12 s so far
+[strata] reading the prompt: 4,637 of 30,917 tokens, 13 s so far
+[strata] reading the prompt: 4,637 of 30,917 tokens, 14 s so far
+[strata] reading the prompt: 5,410 of 30,917 tokens, 15 s so far
+[strata] reading the prompt: 5,410 of 30,917 tokens, 16 s so far
+[strata] reading the prompt: 6,183 of 30,917 tokens, 17 s so far
+[strata] reading the prompt: 6,183 of 30,917 tokens, 18 s so far
+[strata] reading the prompt: 6,956 of 30,917 tokens, 19 s so far
+[strata] reading the prompt: 7,729 of 30,917 tokens, 20 s so far
+[strata] reading the prompt: 8,502 of 30,917 tokens, 21 s so far
+[strata] reading the prompt: 9,275 of 30,917 tokens, 22 s so far
+[strata] reading the prompt: 9,275 of 30,917 tokens, 23 s so far
+[strata] reading the prompt: 10,048 of 30,917 tokens, 24 s so far
+[strata] reading the prompt: 10,820 of 30,917 tokens, 25 s so far
+[strata] reading the prompt: 10,820 of 30,917 tokens, 26 s so far
+[strata] reading the prompt: 11,593 of 30,917 tokens, 27 s so far
+[strata] reading the prompt: 12,366 of 30,917 tokens, 28 s so far
+[strata] reading the prompt: 13,139 of 30,917 tokens, 29 s so far
+[strata] reading the prompt: 13,912 of 30,917 tokens, 30 s so far
+[strata] reading the prompt: 13,912 of 30,917 tokens, 31 s so far
+[strata] reading the prompt: 14,685 of 30,917 tokens, 32 s so far
+[strata] reading the prompt: 16,231 of 30,917 tokens, 33 s so far
+[strata] reading the prompt: 19,323 of 30,917 tokens, 34 s so far
+[strata] reading the prompt: 22,414 of 30,917 tokens, 35 s so far
+[strata] reading the prompt: 25,506 of 30,917 tokens, 36 s so far
+[strata] reading the prompt: 28,598 of 30,917 tokens, 37 s so far
+[strata] reading the prompt: 30,917 of 30,917 tokens, 43 s so far
+[strata] thinking: 12 of budget 128 (max 256) tokens, 11.7 tok/s, 44 s
+[strata] thinking: 24 of budget 128 (max 256) tokens, 11.7 tok/s, 45 s
+[strata] thinking: 39 of budget 128 (max 256) tokens, 12.7 tok/s, 46 s
+[strata] thinking: 56 of budget 128 (max 256) tokens, 13.7 tok/s, 47 s
+[strata] thinking: 71 of budget 128 (max 256) tokens, 13.9 tok/s, 48 s
+[strata] thinking: 91 of budget 128 (max 256) tokens, 14.8 tok/s, 49 s
+[strata] thinking: 109 of budget 128 (max 256) tokens, 15.3 tok/s, 50 s
+[strata] thinking: 127 of budget 128 (max 256) tokens, 15.6 tok/s, 51 s
+[strata] thinking budget reached (128 tokens): wrapping up the thinking
+[strata] answering: 150 of max 256 tokens, 16.3 tok/s, 52 s
+[strata] answering: 167 of max 256 tokens, 16.3 tok/s, 53 s
+[strata] answering: 184 of max 256 tokens, 16.3 tok/s, 54 s
+[strata] answering: 203 of max 256 tokens, 16.5 tok/s, 55 s
+[strata] answering: 222 of max 256 tokens, 16.6 tok/s, 56 s
+[strata] answering: 239 of max 256 tokens, 16.6 tok/s, 57 s
+[strata] answering: 256 of max 256 tokens, 16.6 tok/s, 58 s
+[strata] done: 256 tokens in 58 s (16.2 tok/s) (length, cancel=False)
+[strata] thinking capped at 128 of max_tokens 256 to leave room for the answer (budget 32768)
+[strata] thinking: 3 of budget 128 (max 256) tokens, 12.0 tok/s, 1 s
+[strata] thinking: 19 of budget 128 (max 256) tokens, 15.5 tok/s, 2 s
+[strata] thinking: 36 of budget 128 (max 256) tokens, 16.0 tok/s, 3 s
+[strata] thinking: 56 of budget 128 (max 256) tokens, 17.1 tok/s, 4 s
+[strata] thinking: 75 of budget 128 (max 256) tokens, 17.5 tok/s, 5 s
+[strata] thinking: 96 of budget 128 (max 256) tokens, 18.2 tok/s, 6 s
+[strata] thinking: 117 of budget 128 (max 256) tokens, 18.5 tok/s, 7 s
+[strata] thinking budget reached (128 tokens): wrapping up the thinking
+[strata] thinking: 145 of max 256 tokens, 19.3 tok/s, 8 s
+[strata] answering: 163 of max 256 tokens, 19.1 tok/s, 9 s
+[strata] answering: 179 of max 256 tokens, 18.7 tok/s, 10 s
+[strata] answering: 197 of max 256 tokens, 18.6 tok/s, 11 s
+[strata] answering: 214 of max 256 tokens, 18.3 tok/s, 13 s
+[strata] answering: 233 of max 256 tokens, 18.3 tok/s, 14 s
+[strata] answering: 252 of max 256 tokens, 18.4 tok/s, 15 s
+[strata] done: 256 tokens in 15 s (17.9 tok/s) (length, cancel=False)
+
+[strata] stopping (Ctrl+C again to end the engine at once) ...
+[strata] stopped

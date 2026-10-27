@@ -1,0 +1,8 @@
+[q2_0] starting server (qwen3.8-flash-next-q2_0)
+[q2_0] server ready, running quality canary
+{
+  "status": "harness_error",
+  "quality_score": null
+}
+[q2_0] done
+[iq3_xxs] starting server (qwen3.8-flash-next-iq3_xxs)

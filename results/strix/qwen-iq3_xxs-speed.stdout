@@ -1,0 +1,72 @@
+{
+  "status": "completed",
+  "gpu": {
+    "samples": 182,
+    "minimum_free_mib": 13524.0,
+    "maximum_free_mib": 62338.0,
+    "safety_violation": false
+  },
+  "system": {
+    "samples": 182,
+    "minimum_available_mib": 40094.43359375,
+    "maximum_swap_used_mib": 10401.3359375,
+    "swap_growth_mib": 45.015625,
+    "maximum_nvme_read_mib_s": 3930.5026936079785
+  },
+  "records": [
+    {
+      "name": "cold-4k",
+      "started_epoch": 1793028228.4465375,
+      "reserve_response": null,
+      "elapsed_seconds": 19.722143864026293,
+      "ttft_seconds": 15.228452214971185,
+      "prompt_tokens": 5368,
+      "completion_tokens": 256,
+      "prompt_tokens_per_second": 352.498069023895,
+      "decode_tokens_per_second": 56.74621667768838,
+      "tpot_p50_seconds": 7.276586256921291e-05,
+      "tpot_p95_seconds": 0.05309890615753829,
+      "tpot_p99_seconds": 0.05473392264451832,
+      "finish_reasons": [
+        "length"
+      ],
+      "status": "completed"
+    },
+    {
+      "name": "cold-32k",
+      "started_epoch": 1793028248.1717966,
+      "reserve_response": null,
+      "elapsed_seconds": 126.99266710109077,
+      "ttft_seconds": 122.05277679511346,
+      "prompt_tokens": 42400,
+      "completion_tokens": 256,
+      "prompt_tokens_per_second": 347.39070354110567,
+      "decode_tokens_per_second": 51.6205794471686,
+      "tpot_p50_seconds": 5.826796405017376e-05,
+      "tpot_p95_seconds": 0.055393150495365265,
+      "tpot_p99_seconds": 0.05677031732629985,
+      "finish_reasons": [
+        "length"
+      ],
+      "status": "completed"
+    },
+    {
+      "name": "append-32k",
+      "started_epoch": 1793028375.17135,
+      "reserve_response": null,
+      "elapsed_seconds": 5.602183860028163,
+      "ttft_seconds": 0.5052884870674461,
+      "prompt_tokens": 42431,
+      "completion_tokens": 256,
+      "prompt_tokens_per_second": 83973.81117123354,
+      "decode_tokens_per_second": 50.03045606013176,
+      "tpot_p50_seconds": 5.892012268304825e-05,
+      "tpot_p95_seconds": 0.05630558442790061,
+      "tpot_p99_seconds": 0.05717996311374009,
+      "finish_reasons": [
+        "length"
+      ],
+      "status": "completed"
+    }
+  ]
+}

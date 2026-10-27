@@ -1,0 +1,36 @@
+loading the model (the first start takes a minute or two) ...
+[strata] starting the engine: reading the model's weights ...
+[strata] engine priority: nice +5 (this PC has built-in Radeon graphics that usually draw the desktop; STRATA_ENGINE_NICE=0 turns it off)
+Traceback (most recent call last):
+  File "/home/akitaonrails/.local/share/strata/components/control/0.1.51/strata.py", line 43, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/home/akitaonrails/.local/share/strata/components/control/0.1.51/strata_cli/cli.py", line 2237, in main
+    return _run(a)
+           ^^^^^^^
+  File "/home/akitaonrails/.local/share/strata/components/control/0.1.51/strata_cli/cli.py", line 2122, in _run
+    return _serve(a)
+           ^^^^^^^^^
+  File "/home/akitaonrails/.local/share/strata/components/control/0.1.51/strata_cli/cli.py", line 953, in _serve
+    return _serve_foreground(server_main, args, plan, output=a.output, quiet=a.quiet)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akitaonrails/.local/share/strata/components/control/0.1.51/strata_cli/cli.py", line 912, in _serve_foreground
+    return server_main(args, interrupt_exit_code=130)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akitaonrails/.local/share/strata/components/control/0.1.51/serve/server.py", line 8418, in main
+    engine = StrataEngine(exe, engine_args(cfg) + (effort_end or []), cwd=cfg.get("cwd"), log=cfg.get("log"),
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akitaonrails/.local/share/strata/components/control/0.1.51/serve/server.py", line 1119, in __init__
+    raise EngineDied(why + (f" (see {log})" if log else "") + note +
+serve.server.EngineDied: the engine exited before it was ready (see /home/akitaonrails/.local/share/strata/install/strata-deepseek-v4.1-flash-ist-das-2.00bpw.log)
+the engine process ended: exit code 2
+the engine log's last lines:
+  [strata] 2026-10-25 22:11:02 engine started: /home/akitaonrails/.local/share/strata/install/engine-dsv41/0.1.51-linux-x86_64-cuda-cuda13/strata-dsv41 --serve --pack /mnt/data/Projects/llm-opensource-benchmark/.strata/data/packs/deepseek-v4.1-flash-ist-das-2.00bpw --max-context 32768 --eos 1 --dspark auto --dspark-conf 0.65 --vram-reserve-mib 4096
+  unknown option --vram-reserve-mib
+  maya-ds4 --pack <model>/maya-ds4 [--gpus 0,1,...] [--max-context N] [--reserve-mib N]
+             [--vram-experts F] [--cpu-threads N] [--expert-profile FILE|none] [--ssd-cache GB] [--ssd-policy lru|lfu|lfulru] [--no-expert-cache] [--verbose]
+             [--tp N] [--threads on|off] [--prefill-chunk N] [--dspark on|off|none|auto] [--dspark-block N] [--dspark-conf F] [--experts N|auto]
+             [--vision on|off] [--mmap-experts on|off|auto]
+             (--ids I,J,... [--images FILE] [--n N] [--dump-logits FILE] | --serve
+             | --encode-image FILE.rgb --size WxH --dump-image OUT
+             | --pack-info)
