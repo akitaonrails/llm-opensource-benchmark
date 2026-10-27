@@ -1,0 +1,39 @@
+test_a_charge_accepts_only_one_chargeback (test_chargeback_and_currency.ChargebackTests.test_a_charge_accepts_only_one_chargeback) ... ok
+test_accepted_chargeback_consumes_the_refundable_amount (test_chargeback_and_currency.ChargebackTests.test_accepted_chargeback_consumes_the_refundable_amount) ... ok
+test_chargeback_is_not_capped_by_remaining_refundable_amount (test_chargeback_and_currency.ChargebackTests.test_chargeback_is_not_capped_by_remaining_refundable_amount) ... ok
+test_chargeback_limit_applies_whatever_the_window_is (test_chargeback_and_currency.ChargebackTests.test_chargeback_limit_applies_whatever_the_window_is) ... ok
+test_chargeback_may_not_exceed_the_charge (test_chargeback_and_currency.ChargebackTests.test_chargeback_may_not_exceed_the_charge) ... ok
+test_chargeback_must_match_charge_account_and_currency (test_chargeback_and_currency.ChargebackTests.test_chargeback_must_match_charge_account_and_currency) ... ok
+test_chargeback_needs_charge_id (test_chargeback_and_currency.ChargebackTests.test_chargeback_needs_charge_id) ... ok
+test_chargeback_subtracts_and_finds_later_charge (test_chargeback_and_currency.ChargebackTests.test_chargeback_subtracts_and_finds_later_charge) ... ok
+test_chargeback_tie_is_broken_by_file_order (test_chargeback_and_currency.ChargebackTests.test_chargeback_tie_is_broken_by_file_order) ... ok
+test_chargeback_without_a_charge_is_rejected (test_chargeback_and_currency.ChargebackTests.test_chargeback_without_a_charge_is_rejected) ... ok
+test_refunds_and_chargebacks_are_evaluated_in_timestamp_order (test_chargeback_and_currency.ChargebackTests.test_refunds_and_chargebacks_are_evaluated_in_timestamp_order) ... ok
+test_balances_and_total_are_reported_in_the_given_currency (test_chargeback_and_currency.ReportCurrencyTests.test_balances_and_total_are_reported_in_the_given_currency) ... ok
+test_cli_defaults_to_us_dollars (test_chargeback_and_currency.ReportCurrencyTests.test_cli_defaults_to_us_dollars) ... ok
+test_cli_reports_in_the_requested_currency (test_chargeback_and_currency.ReportCurrencyTests.test_cli_reports_in_the_requested_currency) ... ok
+test_cli_unknown_currency_exits_nonzero_with_no_output (test_chargeback_and_currency.ReportCurrencyTests.test_cli_unknown_currency_exits_nonzero_with_no_output) ... ok
+test_conversion_divides_before_rounding (test_chargeback_and_currency.ReportCurrencyTests.test_conversion_divides_before_rounding) ... ok
+test_default_currency_is_us_dollars (test_chargeback_and_currency.ReportCurrencyTests.test_default_currency_is_us_dollars) ... ok
+test_division_keeps_at_least_forty_significant_digits (test_chargeback_and_currency.ReportCurrencyTests.test_division_keeps_at_least_forty_significant_digits) ... ok
+test_each_account_is_rounded_only_after_all_currencies_are_added (test_chargeback_and_currency.ReportCurrencyTests.test_each_account_is_rounded_only_after_all_currencies_are_added) ... ok
+test_internal_accounts_stay_out_of_the_total_in_any_currency (test_chargeback_and_currency.ReportCurrencyTests.test_internal_accounts_stay_out_of_the_total_in_any_currency) ... ok
+test_total_is_the_sum_of_rounded_balances (test_chargeback_and_currency.ReportCurrencyTests.test_total_is_the_sum_of_rounded_balances) ... ok
+test_unknown_report_currency_is_an_error (test_chargeback_and_currency.ReportCurrencyTests.test_unknown_report_currency_is_an_error) ... ok
+test_charge_and_fee (test_ledger.LedgerTests.test_charge_and_fee) ... ok
+test_cli_keys_are_sorted (test_ledger.LedgerTests.test_cli_keys_are_sorted) ... ok
+test_empty_input (test_ledger.LedgerTests.test_empty_input) ... ok
+test_malformed_line_is_skipped_with_warning (test_ledger.LedgerTests.test_malformed_line_is_skipped_with_warning) ... ok
+test_convert_accepts_rates_as_strings (test_money.ConvertTests.test_convert_accepts_rates_as_strings) ... ok
+test_convert_is_not_rounded_to_cents (test_money.ConvertTests.test_convert_is_not_rounded_to_cents) ... ok
+test_convert_matches_exact_rational_arithmetic_to_forty_digits (test_money.ConvertTests.test_convert_matches_exact_rational_arithmetic_to_forty_digits) ... ok
+test_convert_rejects_unknown_currencies (test_money.ConvertTests.test_convert_rejects_unknown_currencies) ... ok
+test_convert_to_the_same_currency_is_identity (test_money.ConvertTests.test_convert_to_the_same_currency_is_identity) ... ok
+test_format_money_never_shows_negative_zero (test_money.ConvertTests.test_format_money_never_shows_negative_zero) ... ok
+test_round_to_cents_is_half_even (test_money.ConvertTests.test_round_to_cents_is_half_even) ... ok
+test_report_currency_equals_convert_then_round_once (test_money.EngineUsesMoneyModuleTests.test_report_currency_equals_convert_then_round_once) ... ok
+
+----------------------------------------------------------------------
+Ran 34 tests in 0.119s
+
+OK

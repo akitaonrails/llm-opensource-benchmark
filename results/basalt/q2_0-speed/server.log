@@ -1,0 +1,19 @@
+[server] legend   pp=prompt read  tg=generation  c=cached  acc=drafts accepted  dl=tokens per window  hit=expert cache  pcie=routed experts over PCIe
+[server] engine   ctx=131072 kv=int8 vram-reserve=4608MiB (from config)
+[server] sampling temp=1.0 top_p=0.95 top_k=20 min_p=0.0 pres=0.0
+[server] vision   mode=off
+[server] auto     resident=26.9GB pool-affinity=auto pool=15
+[server] loaded   35.0GiB 11.8s  cuda0=20.4GiB ram=14.5GiB
+[server] kv       0.7/2.1GiB cuda0 elastic
+[server] ready    http://127.0.0.1:18082/v1  openai+anthropic  ctx=131072 images=off
+[server] stats    http://127.0.0.1:18082/
+[server] live | s1 tg=2/256 | total 0t/s
+[server] s1 done  pp=5368/0c 1.0s 5484t/s  tg=256 381.2t/s acc=77%  ttft=1.0s  end=length  hit=91.9%  pcie=0.0%
+[server] warning: max tokens reached while thinking, no answer (set reasoning_budget_tokens, or start with --reasoning-budget-tokens)
+[server] live | s1 tg=1/256 | total 0t/s
+[server] s1 done  pp=42400/0c 4.9s 8598t/s  tg=256 396.2t/s acc=72%  ttft=4.9s  end=length  hit=96.7%  pcie=0.0%
+[server] warning: max tokens reached while thinking, no answer (set reasoning_budget_tokens, or start with --reasoning-budget-tokens)
+[server] s1 done  pp=42431/42395c 0.1s  tg=256 373.4t/s acc=76%  ttft=0.1s  end=length  hit=97.9%  pcie=0.0%
+[server] warning: max tokens reached while thinking, no answer (set reasoning_budget_tokens, or start with --reasoning-budget-tokens)
+[server] stopping (Ctrl+C again to force)
+[server] stopped

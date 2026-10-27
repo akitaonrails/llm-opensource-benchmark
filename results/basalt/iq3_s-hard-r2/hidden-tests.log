@@ -1,0 +1,41 @@
+test_context_account_ids_case_insensitive (test_hidden.HiddenLedgerTests.test_context_account_ids_case_insensitive) ... ok
+test_context_fees_must_be_usd (test_hidden.HiddenLedgerTests.test_context_fees_must_be_usd) ... ok
+test_context_house_accounts_excluded_from_total (test_hidden.HiddenLedgerTests.test_context_house_accounts_excluded_from_total) ... ok
+test_context_refund_account_match_ignores_case (test_hidden.HiddenLedgerTests.test_context_refund_account_match_ignores_case) ... ok
+test_context_test_event_ids_are_reserved (test_hidden.HiddenLedgerTests.test_context_test_event_ids_are_reserved) ... ok
+test_context_test_events_ignored_silently (test_hidden.HiddenLedgerTests.test_context_test_events_ignored_silently) ... ok
+test_spec_charges_and_fees (test_hidden.HiddenLedgerTests.test_spec_charges_and_fees) ... ok
+test_spec_cli_format (test_hidden.HiddenLedgerTests.test_spec_cli_format) ... ok
+test_spec_cli_rates_option (test_hidden.HiddenLedgerTests.test_spec_cli_rates_option) ... ok
+test_spec_duplicate_first_wins (test_hidden.HiddenLedgerTests.test_spec_duplicate_first_wins) ... ok
+test_spec_empty_input (test_hidden.HiddenLedgerTests.test_spec_empty_input) ... ok
+test_spec_invalid_amounts (test_hidden.HiddenLedgerTests.test_spec_invalid_amounts) ... ok
+test_spec_invalid_fields (test_hidden.HiddenLedgerTests.test_spec_invalid_fields) ... ok
+test_spec_invalid_line_does_not_reserve_id (test_hidden.HiddenLedgerTests.test_spec_invalid_line_does_not_reserve_id) ... ok
+test_spec_load_rates_returns_decimals (test_hidden.HiddenLedgerTests.test_spec_load_rates_returns_decimals) ... ok
+test_spec_multi_currency_exact (test_hidden.HiddenLedgerTests.test_spec_multi_currency_exact) ... ok
+test_spec_refund_limit_rejects_whole (test_hidden.HiddenLedgerTests.test_spec_refund_limit_rejects_whole) ... ok
+test_spec_refund_must_match_currency_and_account (test_hidden.HiddenLedgerTests.test_spec_refund_must_match_currency_and_account) ... ok
+test_spec_round_once_half_even (test_hidden.HiddenLedgerTests.test_spec_round_once_half_even) ... ok
+test_spec_window_limit_uses_whole_input (test_hidden.HiddenLedgerTests.test_spec_window_limit_uses_whole_input) ... ok
+test_spec_window_offsets_and_bounds (test_hidden.HiddenLedgerTests.test_spec_window_offsets_and_bounds) ... ok
+test_turn2_duplicates_still_first_in_file (test_hidden.HiddenLedgerTests.test_turn2_duplicates_still_first_in_file) ... ok
+test_turn2_limit_in_timestamp_order (test_hidden.HiddenLedgerTests.test_turn2_limit_in_timestamp_order) ... ok
+test_turn2_limit_ties_use_file_order (test_hidden.HiddenLedgerTests.test_turn2_limit_ties_use_file_order) ... ok
+test_turn2_orphan_refund_rejected (test_hidden.HiddenLedgerTests.test_turn2_orphan_refund_rejected) ... ok
+test_turn2_refund_before_charge_in_file (test_hidden.HiddenLedgerTests.test_turn2_refund_before_charge_in_file) ... ok
+test_turn3_chargeback_before_charge_in_file (test_hidden.HiddenLedgerTests.test_turn3_chargeback_before_charge_in_file) ... ok
+test_turn3_chargeback_consumes_refund_limit (test_hidden.HiddenLedgerTests.test_turn3_chargeback_consumes_refund_limit) ... ok
+test_turn3_chargeback_ignores_refund_limit (test_hidden.HiddenLedgerTests.test_turn3_chargeback_ignores_refund_limit) ... ok
+test_turn3_chargeback_over_charge_amount_rejected (test_hidden.HiddenLedgerTests.test_turn3_chargeback_over_charge_amount_rejected) ... ok
+test_turn3_report_currency (test_hidden.HiddenLedgerTests.test_turn3_report_currency) ... ok
+test_turn3_report_currency_keeps_earlier_rules (test_hidden.HiddenLedgerTests.test_turn3_report_currency_keeps_earlier_rules) ... ok
+test_turn3_second_chargeback_rejected (test_hidden.HiddenLedgerTests.test_turn3_second_chargeback_rejected) ... ok
+test_turn3_unknown_report_currency (test_hidden.HiddenLedgerTests.test_turn3_unknown_report_currency) ... ok
+test_turn4_money_convert_exact (test_hidden.HiddenLedgerTests.test_turn4_money_convert_exact) ... ok
+test_turn4_public_api_still_importable (test_hidden.HiddenLedgerTests.test_turn4_public_api_still_importable) ... ok
+
+----------------------------------------------------------------------
+Ran 36 tests in 0.244s
+
+OK

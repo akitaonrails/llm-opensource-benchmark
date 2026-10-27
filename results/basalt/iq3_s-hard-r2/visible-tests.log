@@ -1,0 +1,32 @@
+test_charge_and_fee (test_ledger.LedgerTests.test_charge_and_fee) ... ok
+test_cli_keys_are_sorted (test_ledger.LedgerTests.test_cli_keys_are_sorted) ... ok
+test_empty_input (test_ledger.LedgerTests.test_empty_input) ... ok
+test_malformed_line_is_skipped_with_warning (test_ledger.LedgerTests.test_malformed_line_is_skipped_with_warning) ... ok
+test_at_most_one_chargeback_earliest_timestamp_wins (test_new_rules.ChargebackTests.test_at_most_one_chargeback_earliest_timestamp_wins) ... ok
+test_chargeback_after_refund_both_accepted (test_new_rules.ChargebackTests.test_chargeback_after_refund_both_accepted) ... ok
+test_chargeback_consumes_refundable_amount (test_new_rules.ChargebackTests.test_chargeback_consumes_refundable_amount) ... ok
+test_chargeback_found_before_charge_in_file (test_new_rules.ChargebackTests.test_chargeback_found_before_charge_in_file) ... ok
+test_chargeback_may_not_exceed_charge (test_new_rules.ChargebackTests.test_chargeback_may_not_exceed_charge) ... ok
+test_chargeback_needs_matched_charge (test_new_rules.ChargebackTests.test_chargeback_needs_matched_charge) ... ok
+test_chargeback_timestamp_tie_broken_by_file_order (test_new_rules.ChargebackTests.test_chargeback_timestamp_tie_broken_by_file_order) ... ok
+test_chargeback_without_charge_id_is_invalid (test_new_rules.ChargebackTests.test_chargeback_without_charge_id_is_invalid) ... ok
+test_refund_fits_in_remainder_after_chargeback (test_new_rules.ChargebackTests.test_refund_fits_in_remainder_after_chargeback) ... ok
+test_test_mode_chargeback_reserves_id (test_new_rules.ChargebackTests.test_test_mode_chargeback_reserves_id) ... ok
+test_window_does_not_affect_chargeback_limit (test_new_rules.ChargebackTests.test_window_does_not_affect_chargeback_limit) ... ok
+test_engine_reports_large_balances_exactly (test_new_rules.MoneyConvertTests.test_engine_reports_large_balances_exactly) ... ok
+test_exact_unrounded_result (test_new_rules.MoneyConvertTests.test_exact_unrounded_result) ... ok
+test_large_amounts_are_not_silently_rounded (test_new_rules.MoneyConvertTests.test_large_amounts_are_not_silently_rounded) ... ok
+test_unknown_currency_raises (test_new_rules.MoneyConvertTests.test_unknown_currency_raises) ... ok
+test_balances_and_total_reported_in_target_currency (test_new_rules.ReportCurrencyTests.test_balances_and_total_reported_in_target_currency) ... ok
+test_cli_reports_in_requested_currency (test_new_rules.ReportCurrencyTests.test_cli_reports_in_requested_currency) ... ok
+test_cli_unknown_currency_exits_nonzero_with_no_output (test_new_rules.ReportCurrencyTests.test_cli_unknown_currency_exits_nonzero_with_no_output) ... ok
+test_default_currency_is_usd (test_new_rules.ReportCurrencyTests.test_default_currency_is_usd) ... ok
+test_division_rounds_once_half_even (test_new_rules.ReportCurrencyTests.test_division_rounds_once_half_even) ... ok
+test_exact_roundtrip_in_event_currency (test_new_rules.ReportCurrencyTests.test_exact_roundtrip_in_event_currency) ... ok
+test_house_accounts_excluded_from_converted_total (test_new_rules.ReportCurrencyTests.test_house_accounts_excluded_from_converted_total) ... ok
+test_unknown_report_currency_raises (test_new_rules.ReportCurrencyTests.test_unknown_report_currency_raises) ... ok
+
+----------------------------------------------------------------------
+Ran 27 tests in 0.092s
+
+OK

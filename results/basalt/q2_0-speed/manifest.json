@@ -1,0 +1,18 @@
+{
+  "label": "basalt-q2_0",
+  "model": "basalt-qwen3.8-flash-next-q2_0",
+  "base_url": "http://127.0.0.1:18082/v1",
+  "command": [
+    "/mnt/data/Projects/llm-opensource-benchmark/.basalt/src/bin/basalt",
+    "serve",
+    "--config",
+    "/mnt/data/Projects/llm-opensource-benchmark/configs/5090/basalt-q2_0.json",
+    "--python",
+    "/mnt/data/Projects/llm-opensource-benchmark/.basalt/venv/bin/python"
+  ],
+  "started_epoch": 1793130572.2857969,
+  "platform": "Linux-7.2.8-9-omarchy-x86_64-with-glibc2.44",
+  "python": "3.12.12",
+  "reserve_mib": 4096,
+  "status": "starting"
+}

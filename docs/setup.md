@@ -4,6 +4,7 @@
 
 - **OS:** Linux, with [bubblewrap](https://github.com/containers/bubblewrap) (`bwrap`), `socat`, `git`, `curl`, `rsync` and Python 3.11 or newer.
 - **Strata:** installed. These runs used control 0.1.51 on the 5090, and 0.1.45.3 `hip-halo` on the Strix Halo.
+- **Basalt** (optional, 5090 only): see [Basalt on the 5090](#basalt-on-the-5090) below.
 - **opencode:** version 2.1.4. The sandbox binds the native binary, not the Node launcher. Its default path assumes a [mise](https://mise.jdx.dev) install; point `OPENCODE_BINARY` at your own copy if it lives elsewhere.
 - **Model files:** the GGUF files for each version, plus the Strata MTP draft (`--mtp`).
 
@@ -14,6 +15,9 @@
 | `STRATA` | `run_quality.sh`, `run_hard.sh` | `~/.local/share/strata/components/control/0.1.51/bin/strata` |
 | `OPENCODE_BINARY` | all coding canaries | the mise opencode 2.1.4 native binary |
 | `REPS` | `run_hard.sh` | `3` |
+| `BASALT_DIR` | `run_basalt.sh` | `.basalt/src` (a built Basalt checkout) |
+| `BASALT_PY` | `run_basalt.sh` | `.basalt/venv/bin/python` |
+| `REPS` | `run_basalt.sh` | `3` |
 | `STRIX_HOST` | `run_strix.sh`, `strix_relay.sh` | `192.168.0.90` |
 | `STRIX_PY`, `STRIX_STRATA` | `run_strix.sh` | the Strata 0.1.45.3 terminal install on the Strix |
 
@@ -30,6 +34,27 @@ The key flags:
   - `--resident-experts` (or `--resident-budget-gib 38` for Q4_K_XL);
   - `--kv int8 --max-context 131072`;
   - `STRATA_RESIDENT_HEADROOM_GIB=8`.
+
+## Basalt on the 5090
+
+[Basalt](https://github.com/jesdga95/basalt) is a Strata fork for Blackwell GPUs (sm_120, CUDA 13). It serves single-file `.basalt` packs instead of Strata's GGUF plus pack. Everything lives in `.basalt/`, which is not committed:
+
+```sh
+git clone https://github.com/jesdga95/basalt .basalt/src
+# build it as its README describes; the runs here used commit 5554887
+python3 -m venv .basalt/venv
+.basalt/venv/bin/pip install -r .basalt/src/requirements.txt
+hf download jesdga/Qwen3.8-Flash-Next-Basalt \
+  Qwen3.8-FN-GSQ-RCO-Q2_0.basalt Qwen3.8-FN-GSQ-RCO-IQ3_S.basalt \
+  --local-dir .basalt/models          # about 157 GB for both
+```
+
+The server configs are [`configs/5090/basalt-q2_0.json`](../configs/5090/basalt-q2_0.json) and [`basalt-iq3_s.json`](../configs/5090/basalt-iq3_s.json). Model paths in them are relative to the config file. The key settings:
+- `kv: int8` and `max-context: 131072`, the same as the Strata runs;
+- `vram-reserve-mib: 4608`. Basalt counts its scratch space against this reserve. At 4096, free VRAM came out at about 4.0 GB with the desktop running, so it was raised to keep a margin;
+- the defaults for everything else, including MTP speculative decoding and experts kept in system RAM. IQ3_S needs about 42 GB of free RAM.
+
+`basalt serve` needs absolute paths for `--python`; the driver passes them.
 
 ## Building packs
 
@@ -57,6 +82,14 @@ Both drivers:
 - check that the server reports the expected model name before any test runs;
 - stop the server's whole process group when they finish or are interrupted;
 - skip runs that already have a completed report, so a stopped batch can be resumed.
+
+For Basalt:
+
+```sh
+REPS=3 bench/run_basalt.sh q2_0 iq3_s       # speed canary, then three hard runs per version
+```
+
+It works the same way as the Strata drivers, and writes to `results/basalt/<version>-speed` and `results/basalt/<version>-hard-r<n>`.
 
 To run a single canary against a server that is already up:
 

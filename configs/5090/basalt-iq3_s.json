@@ -1,0 +1,14 @@
+{
+  "server": {
+    "model": "../../.basalt/models/Qwen3.8-FN-GSQ-RCO-IQ3_S.basalt",
+    "alias": "basalt-qwen3.8-flash-next-iq3_s",
+    "gpu": "0",
+    "host": "127.0.0.1",
+    "port": 18082
+  },
+  "engine": {
+    "max-context": 131072,
+    "kv": "int8",
+    "vram-reserve-mib": 4608
+  }
+}

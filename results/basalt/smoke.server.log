@@ -1,0 +1,13 @@
+[server] legend   pp=prompt read  tg=generation  c=cached  acc=drafts accepted  dl=tokens per window  hit=expert cache  pcie=routed experts over PCIe
+[server] engine   ctx=131072 kv=int8 vram-reserve=4096MiB (from config)
+[server] sampling temp=1.0 top_p=0.95 top_k=20 min_p=0.0 pres=0.0
+[server] vision   mode=off
+[server] auto     resident=42.2GB pool-affinity=auto pool=15
+[server] warning: fallback: glue off for the layer's experts (types 23 / 20)
+[server] kv       0.7/2.1GiB cuda0 elastic
+[server] ready    http://127.0.0.1:18082/v1  openai+anthropic  ctx=131072 images=off
+[server] stats    http://127.0.0.1:18082/
+[server] live | s1 tg=104/300 139.3t/s | total 139t/s
+[server] s1 done  pp=67/0c 0.3s  tg=297 157.8t/s acc=80%  ttft=0.3s  end=stop  hit=73.9%  pcie=0.0%
+[server] stopping (Ctrl+C again to force)
+[server] stopped

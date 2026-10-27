@@ -10,3 +10,4 @@ results/**/grading-home/
 results/**/oracle/
 results/**/turn-*.prompt.md
 results/**/turn-*.stdout.jsonl
+.basalt/

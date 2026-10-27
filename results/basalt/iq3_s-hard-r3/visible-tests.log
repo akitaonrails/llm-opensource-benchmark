@@ -1,0 +1,41 @@
+test_accepted_chargeback_consumes_refundable_amount (test_chargeback_currency.ChargebackTests.test_accepted_chargeback_consumes_refundable_amount) ... ok
+test_at_most_one_chargeback_per_charge (test_chargeback_currency.ChargebackTests.test_at_most_one_chargeback_per_charge) ... ok
+test_chargeback_basic (test_chargeback_currency.ChargebackTests.test_chargeback_basic) ... ok
+test_chargeback_matches_charge_anywhere_in_input (test_chargeback_currency.ChargebackTests.test_chargeback_matches_charge_anywhere_in_input) ... ok
+test_chargeback_may_equal_charge_amount (test_chargeback_currency.ChargebackTests.test_chargeback_may_equal_charge_amount) ... ok
+test_chargeback_must_match_currency_and_account (test_chargeback_currency.ChargebackTests.test_chargeback_must_match_currency_and_account) ... ok
+test_chargeback_not_limited_by_remaining_refundable (test_chargeback_currency.ChargebackTests.test_chargeback_not_limited_by_remaining_refundable) ... ok
+test_chargeback_over_charge_amount_rejected (test_chargeback_currency.ChargebackTests.test_chargeback_over_charge_amount_rejected) ... ok
+test_chargeback_requires_charge_id (test_chargeback_currency.ChargebackTests.test_chargeback_requires_charge_id) ... ok
+test_chargeback_unknown_charge_rejected (test_chargeback_currency.ChargebackTests.test_chargeback_unknown_charge_rejected) ... ok
+test_chargeback_window_applies_to_its_own_timestamp (test_chargeback_currency.ChargebackTests.test_chargeback_window_applies_to_its_own_timestamp) ... ok
+test_refund_available_never_below_zero (test_chargeback_currency.ChargebackTests.test_refund_available_never_below_zero) ... ok
+test_rejected_chargeback_reserves_its_id (test_chargeback_currency.ChargebackTests.test_rejected_chargeback_reserves_its_id) ... ok
+test_reversal_ties_broken_by_file_order (test_chargeback_currency.ChargebackTests.test_reversal_ties_broken_by_file_order) ... ok
+test_reversals_evaluated_in_timestamp_not_file_order (test_chargeback_currency.ChargebackTests.test_reversals_evaluated_in_timestamp_not_file_order) ... ok
+test_cli_currency_option (test_chargeback_currency.ReportCurrencyTests.test_cli_currency_option) ... ok
+test_cli_unknown_currency_exits_nonzero_with_empty_stdout (test_chargeback_currency.ReportCurrencyTests.test_cli_unknown_currency_exits_nonzero_with_empty_stdout) ... ok
+test_default_is_usd (test_chargeback_currency.ReportCurrencyTests.test_default_is_usd) ... ok
+test_multi_currency_converted_then_reported (test_chargeback_currency.ReportCurrencyTests.test_multi_currency_converted_then_reported) ... ok
+test_negative_balance_rounds_half_even (test_chargeback_currency.ReportCurrencyTests.test_negative_balance_rounds_half_even) ... ok
+test_reconcile_currency_kwarg (test_chargeback_currency.ReportCurrencyTests.test_reconcile_currency_kwarg) ... ok
+test_report_currency_round_trip (test_chargeback_currency.ReportCurrencyTests.test_report_currency_round_trip) ... ok
+test_total_and_house_in_report_currency (test_chargeback_currency.ReportCurrencyTests.test_total_and_house_in_report_currency) ... ok
+test_unknown_report_currency_raises (test_chargeback_currency.ReportCurrencyTests.test_unknown_report_currency_raises) ... ok
+test_window_and_currency_combine (test_chargeback_currency.ReportCurrencyTests.test_window_and_currency_combine) ... ok
+test_charge_and_fee (test_ledger.LedgerTests.test_charge_and_fee) ... ok
+test_cli_keys_are_sorted (test_ledger.LedgerTests.test_cli_keys_are_sorted) ... ok
+test_empty_input (test_ledger.LedgerTests.test_empty_input) ... ok
+test_malformed_line_is_skipped_with_warning (test_ledger.LedgerTests.test_malformed_line_is_skipped_with_warning) ... ok
+test_division_keeps_at_least_40_significant_digits (test_money.ConvertTests.test_division_keeps_at_least_40_significant_digits) ... ok
+test_identity_conversion_is_exact (test_money.ConvertTests.test_identity_conversion_is_exact) ... ok
+test_multiplication_stays_exact_beyond_the_floor (test_money.ConvertTests.test_multiplication_stays_exact_beyond_the_floor) ... ok
+test_non_decimal_amount_is_accepted (test_money.ConvertTests.test_non_decimal_amount_is_accepted) ... ok
+test_round_trip_returns_original_amount (test_money.ConvertTests.test_round_trip_returns_original_amount) ... ok
+test_unknown_currency_raises (test_money.ConvertTests.test_unknown_currency_raises) ... ok
+test_usd_conversion_is_exact (test_money.ConvertTests.test_usd_conversion_is_exact) ... ok
+
+----------------------------------------------------------------------
+Ran 36 tests in 0.107s
+
+OK

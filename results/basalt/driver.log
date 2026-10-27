@@ -1,0 +1,315 @@
+[iq3_s] speed canary starting (basalt-qwen3.8-flash-next-iq3_s)
+{
+  "status": "completed",
+  "gpu": {
+    "samples": 31,
+    "minimum_free_mib": 4353.0,
+    "maximum_free_mib": 28489.0,
+    "safety_violation": false
+  },
+  "system": {
+    "samples": 32,
+    "minimum_available_mib": 18541.45703125,
+    "maximum_swap_used_mib": 20416.5078125,
+    "swap_growth_mib": 259.203125,
+    "maximum_nvme_read_mib_s": 6893.715199742212
+  },
+  "records": [
+    {
+      "name": "cold-4k",
+      "started_epoch": 1793128905.4602928,
+      "reserve_response": null,
+      "elapsed_seconds": 2.4779661649954505,
+      "ttft_seconds": 1.3369289899710566,
+      "prompt_tokens": 5368,
+      "completion_tokens": 256,
+      "prompt_tokens_per_second": 4015.1721148003626,
+      "decode_tokens_per_second": 223.4808870224131,
+      "tpot_p50_seconds": 2.216099528595805e-05,
+      "tpot_p95_seconds": 0.021004867518786337,
+      "tpot_p99_seconds": 0.029357771275099396,
+      "finish_reasons": [
+        "length"
+      ],
+      "status": "completed"
+    },
+    {
+      "name": "cold-32k",
+      "started_epoch": 1793128907.941313,
+      "reserve_response": null,
+      "elapsed_seconds": 6.276058461051434,
+      "ttft_seconds": 5.173377744038589,
+      "prompt_tokens": 42400,
+      "completion_tokens": 256,
+      "prompt_tokens_per_second": 8195.805931406916,
+      "decode_tokens_per_second": 231.25461075513624,
+      "tpot_p50_seconds": 2.5901012122631073e-05,
+      "tpot_p95_seconds": 0.01796667440212329,
+      "tpot_p99_seconds": 0.02587675191112794,
+      "finish_reasons": [
+        "length"
+      ],
+      "status": "completed"
+    },
+    {
+      "name": "append-32k",
+      "started_epoch": 1793128914.2247005,
+      "reserve_response": null,
+      "elapsed_seconds": 1.2607570039690472,
+      "ttft_seconds": 0.14550342498114333,
+      "prompt_tokens": 42431,
+      "completion_tokens": 256,
+      "prompt_tokens_per_second": 291615.1286851075,
+      "decode_tokens_per_second": 228.64755137698216,
+      "tpot_p50_seconds": 2.089102054014802e-05,
+      "tpot_p95_seconds": 0.020037932542618354,
+      "tpot_p99_seconds": 0.028997566639445742,
+      "finish_reasons": [
+        "length"
+      ],
+      "status": "completed"
+    }
+  ]
+}
+[iq3_s] speed done
+[iq3_s] starting server for the hard canary
+[iq3_s r1] running hard canary
+{
+  "status": "completed",
+  "quality_score": 100.0,
+  "categories": {
+    "spec": {
+      "passed": 15,
+      "total": 15
+    },
+    "context": {
+      "passed": 6,
+      "total": 6
+    },
+    "turn2": {
+      "passed": 5,
+      "total": 5
+    },
+    "turn3": {
+      "passed": 8,
+      "total": 8
+    },
+    "turn4": {
+      "passed": 2,
+      "total": 2
+    }
+  }
+}
+[iq3_s r2] running hard canary
+{
+  "status": "completed",
+  "quality_score": 96.0,
+  "categories": {
+    "spec": {
+      "passed": 15,
+      "total": 15
+    },
+    "context": {
+      "passed": 6,
+      "total": 6
+    },
+    "turn2": {
+      "passed": 5,
+      "total": 5
+    },
+    "turn3": {
+      "passed": 8,
+      "total": 8
+    },
+    "turn4": {
+      "passed": 2,
+      "total": 2
+    }
+  }
+}
+[iq3_s r3] running hard canary
+{
+  "status": "completed",
+  "quality_score": 100.0,
+  "categories": {
+    "spec": {
+      "passed": 15,
+      "total": 15
+    },
+    "context": {
+      "passed": 6,
+      "total": 6
+    },
+    "turn2": {
+      "passed": 5,
+      "total": 5
+    },
+    "turn3": {
+      "passed": 8,
+      "total": 8
+    },
+    "turn4": {
+      "passed": 2,
+      "total": 2
+    }
+  }
+}
+[iq3_s] done
+[q2_0] speed canary starting (basalt-qwen3.8-flash-next-q2_0)
+{
+  "status": "completed",
+  "gpu": {
+    "samples": 26,
+    "minimum_free_mib": 4132.0,
+    "maximum_free_mib": 27388.0,
+    "safety_violation": false
+  },
+  "system": {
+    "samples": 27,
+    "minimum_available_mib": 34373.8359375,
+    "maximum_swap_used_mib": 23986.234375,
+    "swap_growth_mib": 94.5078125,
+    "maximum_nvme_read_mib_s": 6645.193634415958
+  },
+  "records": [
+    {
+      "name": "cold-4k",
+      "started_epoch": 1793130588.30281,
+      "reserve_response": null,
+      "elapsed_seconds": 1.653203123016283,
+      "ttft_seconds": 0.9937494299956597,
+      "prompt_tokens": 5368,
+      "completion_tokens": 256,
+      "prompt_tokens_per_second": 5401.764104683255,
+      "decode_tokens_per_second": 386.6837091046897,
+      "tpot_p50_seconds": 2.1781015675514936e-05,
+      "tpot_p95_seconds": 0.013476440880913286,
+      "tpot_p99_seconds": 0.01750963335973211,
+      "finish_reasons": [
+        "length"
+      ],
+      "status": "completed"
+    },
+    {
+      "name": "cold-32k",
+      "started_epoch": 1793130589.959306,
+      "reserve_response": null,
+      "elapsed_seconds": 5.583449713012669,
+      "ttft_seconds": 4.945668061962351,
+      "prompt_tokens": 42400,
+      "completion_tokens": 256,
+      "prompt_tokens_per_second": 8573.159271667022,
+      "decode_tokens_per_second": 399.82335581473427,
+      "tpot_p50_seconds": 2.414098707959056e-05,
+      "tpot_p95_seconds": 0.009793799929320812,
+      "tpot_p99_seconds": 0.01216668557142839,
+      "finish_reasons": [
+        "length"
+      ],
+      "status": "completed"
+    },
+    {
+      "name": "append-32k",
+      "started_epoch": 1793130595.5497139,
+      "reserve_response": null,
+      "elapsed_seconds": 0.7963890309911221,
+      "ttft_seconds": 0.12010727199958637,
+      "prompt_tokens": 42431,
+      "completion_tokens": 256,
+      "prompt_tokens_per_second": 353275.86159933865,
+      "decode_tokens_per_second": 377.06177434129427,
+      "tpot_p50_seconds": 2.079096157103777e-05,
+      "tpot_p95_seconds": 0.009012175985844806,
+      "tpot_p99_seconds": 0.01275279328459876,
+      "finish_reasons": [
+        "length"
+      ],
+      "status": "completed"
+    }
+  ]
+}
+[q2_0] speed done
+[q2_0] starting server for the hard canary
+[q2_0 r1] running hard canary
+{
+  "status": "completed",
+  "quality_score": 100.0,
+  "categories": {
+    "spec": {
+      "passed": 15,
+      "total": 15
+    },
+    "context": {
+      "passed": 6,
+      "total": 6
+    },
+    "turn2": {
+      "passed": 5,
+      "total": 5
+    },
+    "turn3": {
+      "passed": 8,
+      "total": 8
+    },
+    "turn4": {
+      "passed": 2,
+      "total": 2
+    }
+  }
+}
+[q2_0 r2] running hard canary
+{
+  "status": "completed",
+  "quality_score": 100.0,
+  "categories": {
+    "spec": {
+      "passed": 15,
+      "total": 15
+    },
+    "context": {
+      "passed": 6,
+      "total": 6
+    },
+    "turn2": {
+      "passed": 5,
+      "total": 5
+    },
+    "turn3": {
+      "passed": 8,
+      "total": 8
+    },
+    "turn4": {
+      "passed": 2,
+      "total": 2
+    }
+  }
+}
+[q2_0 r3] running hard canary
+{
+  "status": "completed",
+  "quality_score": 100.0,
+  "categories": {
+    "spec": {
+      "passed": 15,
+      "total": 15
+    },
+    "context": {
+      "passed": 6,
+      "total": 6
+    },
+    "turn2": {
+      "passed": 5,
+      "total": 5
+    },
+    "turn3": {
+      "passed": 8,
+      "total": 8
+    },
+    "turn4": {
+      "passed": 2,
+      "total": 2
+    }
+  }
+}
+[q2_0] done
+BASALT_ALL_DONE

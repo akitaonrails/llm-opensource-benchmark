@@ -72,3 +72,9 @@ The model writes and runs code, so every turn and the grading run in a sandbox (
 - **No other config:** opencode runs with project config, auto-update and model fetching disabled. The `task`, `webfetch` and `websearch` tools are denied.
 - **Hidden tests:** bound in read-only, only for grading, after the model's last turn.
 - **Contamination check:** the logs are scanned for paths that would show an attempt to find the hidden tests.
+
+### Known gap
+
+Inside the sandbox, `bwrap` itself runs as process 1. A model that runs `ps aux` sees its command line, which includes host paths such as the run folder. This reveals where the run lives but gives no access to it: the hidden tests aren't mounted until grading, and nothing outside the bind mounts is reachable.
+
+It happened once, in Basalt IQ3_S run 2. The contamination check flagged the host paths in the log and cost the run 4 points, although the model never used them. Running the agent with `bwrap --as-pid-1` would hide the `bwrap` command line. It wasn't changed mid-study, so that all runs used the same harness.
