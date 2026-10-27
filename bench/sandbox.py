@@ -9,6 +9,7 @@ to a gateway on the host that forwards GET /v1/models and POST
 import http.client
 import http.server
 import json
+import os
 from pathlib import Path
 import socketserver
 import threading
@@ -16,10 +17,11 @@ import time
 import urllib.parse
 from typing import Callable
 
-OPENCODE_BINARY = Path(
-    "/home/akitaonrails/.local/share/mise/installs/opencode/2.1.4/node_modules/.mise/"
+# The native opencode binary (not the Node launcher), bound into the sandbox.
+OPENCODE_BINARY = Path(os.environ.get("OPENCODE_BINARY") or Path.home() / (
+    ".local/share/mise/installs/opencode/2.1.4/node_modules/.mise/"
     "@opencode+cli-linux-x64@2.1.4/node_modules/@opencode/cli-linux-x64/bin/opencode"
-)
+))
 BRIDGE_PORT = 18080  # localhost port inside the sandbox, bridged to the gateway socket
 MAX_TOKENS_CAP = 32768
 

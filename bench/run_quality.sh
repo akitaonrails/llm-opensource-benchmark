@@ -3,7 +3,7 @@
 # Usage: bench/run_quality.sh q2_0 iq3_xxs iq3_s
 set -u
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
-STRATA=/home/akitaonrails/.local/share/strata/components/control/0.1.51/bin/strata
+STRATA=${STRATA:-$HOME/.local/share/strata/components/control/0.1.51/bin/strata}
 PORT=18082
 server=""
 

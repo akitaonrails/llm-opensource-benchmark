@@ -3,7 +3,7 @@
 # Usage: REPS=3 bench/run_hard.sh q2_0 iq3_s
 set -u
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
-STRATA=/home/akitaonrails/.local/share/strata/components/control/0.1.51/bin/strata
+STRATA=${STRATA:-$HOME/.local/share/strata/components/control/0.1.51/bin/strata}
 PORT=18082
 REPS=${REPS:-3}
 server=""

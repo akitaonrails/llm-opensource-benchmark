@@ -5,10 +5,10 @@
 # Usage: bench/run_strix.sh q2_0 iq3_xxs iq3_s q4_k_xl
 set -u
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
-HOST=192.168.0.90
+HOST=${STRIX_HOST:-192.168.0.90}
 O=/var/strata-models/osb
-PY=/home/akitaonrails/.local/share/strata/terminal/0.1.45.3/python/bin/python3.12
-STRATA=/home/akitaonrails/.local/share/strata/terminal/0.1.45.3/strata.py
+PY=${STRIX_PY:-/home/akitaonrails/.local/share/strata/terminal/0.1.45.3/python/bin/python3.12}
+STRATA=${STRIX_STRATA:-/home/akitaonrails/.local/share/strata/terminal/0.1.45.3/strata.py}
 PORT=18083
 OUT="$ROOT/results/strix"
 mkdir -p "$OUT"
