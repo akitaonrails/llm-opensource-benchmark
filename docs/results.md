@@ -96,7 +96,7 @@ Every run passed all 36 hidden tests. Average time per 4-turn session:
 
 The time saved is smaller than the raw speed gain because each session also spends time running tests and tools, and output length varies a lot between runs (61k to 121k tokens).
 
-**IQ3_S r2's 96 is a false alarm.** The model ran `ps aux` while exploring the sandbox. That listed the sandbox's own `bwrap` process, whose command line contains host paths, and the snooping check flagged them. The model never used those paths, and the hidden tests aren't mounted until grading. See [the known gap in methodology](methodology.md#known-gap).
+**IQ3_S r2's 96 is a false alarm.** The model ran `ps aux` while exploring the sandbox. That listed the sandbox's own `bwrap` process, whose command line contains host paths, and the snooping check flagged them. The model never used those paths, and the hidden tests aren't mounted until grading. The sandbox has since been fixed; see [methodology](methodology.md#fixed-gap-ps-showed-host-paths).
 
 ## Conclusions
 

@@ -146,7 +146,7 @@ class Gateway:
 def sandbox_command(command, *, work, home, ro_binds=(), env=None):
     """bwrap with no network: /usr, the work folder at /work, a private home, and the given read-only files."""
     cmd = [
-        "bwrap", "--die-with-parent", "--unshare-all", "--new-session",
+        "bwrap", "--die-with-parent", "--unshare-all", "--new-session", "--as-pid-1",
         "--ro-bind", "/usr", "/usr", "--symlink", "usr/bin", "/bin",
         "--symlink", "usr/lib", "/lib", "--symlink", "usr/lib64", "/lib64",
         "--ro-bind", "/etc/ld.so.cache", "/etc/ld.so.cache",

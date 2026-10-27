@@ -73,8 +73,12 @@ The model writes and runs code, so every turn and the grading run in a sandbox (
 - **Hidden tests:** bound in read-only, only for grading, after the model's last turn.
 - **Contamination check:** the logs are scanned for paths that would show an attempt to find the hidden tests.
 
-### Known gap
+### Fixed gap: `ps` showed host paths
 
-Inside the sandbox, `bwrap` itself runs as process 1. A model that runs `ps aux` sees its command line, which includes host paths such as the run folder. This reveals where the run lives but gives no access to it: the hidden tests aren't mounted until grading, and nothing outside the bind mounts is reachable.
+Until commit `1def71c`, `bwrap` itself ran as process 1 inside the sandbox. A model that ran `ps aux` saw its command line, which includes host paths such as the run folder. That revealed where the run lives but gave no access to it: the hidden tests aren't mounted until grading, and nothing outside the bind mounts is reachable.
 
-It happened once, in Basalt IQ3_S run 2. The contamination check flagged the host paths in the log and cost the run 4 points, although the model never used them. Running the agent with `bwrap --as-pid-1` would hide the `bwrap` command line. It wasn't changed mid-study, so that all runs used the same harness.
+It happened once, in Basalt IQ3_S run 2. The contamination check flagged the host paths in the log and cost the run 4 points, although the model never used them. All runs in [results](results.md) used the old sandbox, so they're comparable with each other.
+
+The sandbox now passes `--as-pid-1`, so the agent's own shell is process 1 and `ps` shows only the agent's processes. Timeouts still stop everything inside: the harness kills `bwrap`, and `--die-with-parent` takes the rest down.
+
+One smaller leak remains: `/proc/self/mountinfo` lists the host folders behind each bind mount. Reading it takes a deliberate look at kernel mount tables, and a run that does it is flagged by the same contamination check.
