@@ -1,0 +1,18 @@
+{
+  "label": "basalt-ud-q4_k_xl",
+  "model": "qwen3.8-flash-next-ud-q4_k_xl",
+  "base_url": "http://127.0.0.1:18082/v1",
+  "command": [
+    ".basalt/src/bin/basalt",
+    "serve",
+    "--config",
+    "configs/6000/basalt-ud-q4_k_xl.json",
+    "--python",
+    ".basalt/venv/bin/python"
+  ],
+  "started_epoch": 1793736152.0298026,
+  "platform": "Linux-7.0.0-42-generic-x86_64-with-glibc2.43",
+  "python": "3.14.4",
+  "reserve_mib": 4096,
+  "status": "starting"
+}

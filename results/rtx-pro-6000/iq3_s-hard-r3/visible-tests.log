@@ -1,0 +1,40 @@
+test_charge_and_fee (test_ledger.LedgerTests.test_charge_and_fee) ... ok
+test_cli_keys_are_sorted (test_ledger.LedgerTests.test_cli_keys_are_sorted) ... ok
+test_empty_input (test_ledger.LedgerTests.test_empty_input) ... ok
+test_malformed_line_is_skipped_with_warning (test_ledger.LedgerTests.test_malformed_line_is_skipped_with_warning) ... ok
+test_accepted_chargeback_consumes_the_refundable_amount (test_regressions.ChargebackTests.test_accepted_chargeback_consumes_the_refundable_amount) ... ok
+test_at_most_one_chargeback_per_charge (test_regressions.ChargebackTests.test_at_most_one_chargeback_per_charge) ... ok
+test_chargeback_account_match_is_case_insensitive (test_regressions.ChargebackTests.test_chargeback_account_match_is_case_insensitive) ... ok
+test_chargeback_may_not_exceed_the_charge_amount (test_regressions.ChargebackTests.test_chargeback_may_not_exceed_the_charge_amount) ... ok
+test_chargeback_may_precede_the_charge_in_the_file (test_regressions.ChargebackTests.test_chargeback_may_precede_the_charge_in_the_file) ... ok
+test_chargeback_must_match_charge_account_and_currency (test_regressions.ChargebackTests.test_chargeback_must_match_charge_account_and_currency) ... ok
+test_chargeback_needs_a_charge_id (test_regressions.ChargebackTests.test_chargeback_needs_a_charge_id) ... ok
+test_chargeback_of_test_event_id_does_not_match (test_regressions.ChargebackTests.test_chargeback_of_test_event_id_does_not_match) ... ok
+test_chargeback_slot_goes_to_the_earliest_in_timestamp_order (test_regressions.ChargebackTests.test_chargeback_slot_goes_to_the_earliest_in_timestamp_order) ... ok
+test_chargeback_subtracts_from_the_charge_account (test_regressions.ChargebackTests.test_chargeback_subtracts_from_the_charge_account) ... ok
+test_chargeback_timestamp_tie_broken_by_file_order (test_regressions.ChargebackTests.test_chargeback_timestamp_tie_broken_by_file_order) ... ok
+test_chargeback_without_a_charge_is_rejected (test_regressions.ChargebackTests.test_chargeback_without_a_charge_is_rejected) ... ok
+test_chargebacks_are_not_limited_by_remaining_refundable_amount (test_regressions.ChargebackTests.test_chargebacks_are_not_limited_by_remaining_refundable_amount) ... ok
+test_out_of_window_chargeback_still_consumes_the_slot_and_amount (test_regressions.ChargebackTests.test_out_of_window_chargeback_still_consumes_the_slot_and_amount) ... ok
+test_refundable_amount_never_goes_below_zero (test_regressions.ChargebackTests.test_refundable_amount_never_goes_below_zero) ... ok
+test_cli_report_currency (test_regressions.CliCurrencyTests.test_cli_report_currency) ... ok
+test_cli_still_prints_sorted_json_by_default (test_regressions.CliCurrencyTests.test_cli_still_prints_sorted_json_by_default) ... ok
+test_cli_unknown_report_currency_fails_without_stdout (test_regressions.CliCurrencyTests.test_cli_unknown_report_currency_fails_without_stdout) ... ok
+test_convert_matches_manual_prec_50_division (test_regressions.MoneyConvertTests.test_convert_matches_manual_prec_50_division) ... ok
+test_convert_rejects_unknown_currencies (test_regressions.MoneyConvertTests.test_convert_rejects_unknown_currencies) ... ok
+test_convert_returns_unrounded_high_precision_decimal (test_regressions.MoneyConvertTests.test_convert_returns_unrounded_high_precision_decimal) ... ok
+test_convert_round_trip_through_usd_is_exact (test_regressions.MoneyConvertTests.test_convert_round_trip_through_usd_is_exact) ... ok
+test_default_report_currency_is_usd (test_regressions.ReportCurrencyTests.test_default_report_currency_is_usd) ... ok
+test_multi_currency_account_converts_before_rounding (test_regressions.ReportCurrencyTests.test_multi_currency_account_converts_before_rounding) ... ok
+test_no_negative_zero_in_report_currency (test_regressions.ReportCurrencyTests.test_no_negative_zero_in_report_currency) ... ok
+test_report_in_eur (test_regressions.ReportCurrencyTests.test_report_in_eur) ... ok
+test_report_in_gbp (test_regressions.ReportCurrencyTests.test_report_in_gbp) ... ok
+test_report_in_the_source_currency_is_exact (test_regressions.ReportCurrencyTests.test_report_in_the_source_currency_is_exact) ... ok
+test_total_excludes_house_accounts_in_report_currency (test_regressions.ReportCurrencyTests.test_total_excludes_house_accounts_in_report_currency) ... ok
+test_total_sums_rounded_converted_balances (test_regressions.ReportCurrencyTests.test_total_sums_rounded_converted_balances) ... ok
+test_unknown_report_currency_raises (test_regressions.ReportCurrencyTests.test_unknown_report_currency_raises) ... ok
+
+----------------------------------------------------------------------
+Ran 35 tests in 0.127s
+
+OK

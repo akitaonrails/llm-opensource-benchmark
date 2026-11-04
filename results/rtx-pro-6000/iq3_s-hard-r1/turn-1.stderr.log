@@ -1,0 +1,23 @@
+2026/11/03 16:17:07 socat[93] E read(6, 0x641124357000, 8192): Connection reset by peer
+2026/11/03 16:17:07 socat[106] E read(6, 0x641124357000, 8192): Connection reset by peer
+2026/11/03 16:17:21 socat[119] E read(6, 0x641124357000, 8192): Connection reset by peer
+2026/11/03 16:17:53 socat[129] E read(6, 0x641124357000, 8192): Connection reset by peer
+2026/11/03 16:17:56 socat[150] E read(6, 0x641124357000, 8192): Connection reset by peer
+2026/11/03 16:17:58 socat[170] E read(6, 0x641124357000, 8192): Connection reset by peer
+2026/11/03 16:17:58 socat[189] E read(6, 0x641124357000, 8192): Connection reset by peer
+2026/11/03 16:18:01 socat[209] E read(6, 0x641124357000, 8192): Connection reset by peer
+2026/11/03 16:18:13 socat[214] E read(6, 0x641124357000, 8192): Connection reset by peer
+2026/11/03 16:18:40 socat[221] E read(6, 0x641124357000, 8192): Connection reset by peer
+2026/11/03 16:18:43 socat[263] E read(6, 0x641124357000, 8192): Connection reset by peer
+2026/11/03 16:18:47 socat[273] E read(6, 0x641124357000, 8192): Connection reset by peer
+2026/11/03 16:18:48 socat[290] E read(6, 0x641124357000, 8192): Connection reset by peer
+2026/11/03 16:18:55 socat[313] E read(6, 0x641124357000, 8192): Connection reset by peer
+2026/11/03 16:19:02 socat[324] E read(6, 0x641124357000, 8192): Connection reset by peer
+2026/11/03 16:19:07 socat[338] E read(6, 0x641124357000, 8192): Connection reset by peer
+2026/11/03 16:19:12 socat[345] E read(6, 0x641124357000, 8192): Connection reset by peer
+2026/11/03 16:19:15 socat[354] E read(6, 0x641124357000, 8192): Connection reset by peer
+2026/11/03 16:19:16 socat[361] E read(6, 0x641124357000, 8192): Connection reset by peer
+2026/11/03 16:19:17 socat[370] E read(6, 0x641124357000, 8192): Connection reset by peer
+2026/11/03 16:19:17 socat[380] E read(6, 0x641124357000, 8192): Connection reset by peer
+2026/11/03 16:19:19 socat[394] E read(6, 0x641124357000, 8192): Connection reset by peer
+2026/11/03 16:19:19 socat[2] W exiting on signal 15

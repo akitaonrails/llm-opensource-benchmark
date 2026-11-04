@@ -7,6 +7,7 @@ This repo answers that for two home machines, using [opencode](https://opencode.
 | Machine | GPU memory | Notes |
 |---|---|---|
 | RTX 5090 desktop | 32 GB VRAM | 4 GB always kept free for the desktop |
+| RTX PRO 6000 Blackwell workstation | 96 GB VRAM | 450 W power limit; Q2_0, IQ3_S and UD-Q4_K_XL tested with Basalt |
 | AMD Strix Halo (headless) | 64 GB VRAM + 31 GB GTT | whole GPU available |
 
 Versions tested: **Q2_0, IQ3_XXS, IQ3_S** and **Unsloth UD-Q4_K_XL**.
@@ -28,7 +29,7 @@ Versions tested: **Q2_0, IQ3_XXS, IQ3_S** and **Unsloth UD-Q4_K_XL**.
 | IQ3_S | 160–210 tok/s | 7 s | 47–51 tok/s | 100 / 100 / 100, avg 12.0 min |
 | UD-Q4_K_XL | 44–52 tok/s | 19 s | did not fit | did not fit |
 
-### Basalt (5090 only)
+### Basalt on the RTX 5090
 
 | Version | Output | First token (32k prompt) | Hard coding test |
 |---|---|---|---|
@@ -41,6 +42,10 @@ Versions tested: **Q2_0, IQ3_XXS, IQ3_S** and **Unsloth UD-Q4_K_XL**.
 - Basalt is about 1.5× faster than Strata for Q2_0, and about 1.3× faster for IQ3_S, with the same coding results.
 - Q2_0 matched IQ3_S on every coding test and finished sooner.
 - If you'd rather have more accuracy headroom, use IQ3_S on Basalt. It writes output almost as fast as Q2_0 did on Strata, and reads prompts faster. Basalt's own measurements put IQ3_S closer to the full-precision model than Q2_0 (top-token agreement with Q8_0: 87% vs 78%).
+
+### RTX PRO 6000 Blackwell (Q2_0, IQ3_S and UD-Q4_K_XL)
+
+On the PRO 6000, Q2_0 on Basalt reached **471 tok/s** while reading a cold 42.4k-token prompt, with a 4.62 s first token. IQ3_S reached 441 tok/s, and UD-Q4_K_XL reached 329 tok/s. All nine hard coding runs passed all 36 hidden tests. Mean four-turn times were 5.2 minutes for Q2_0, 5.8 for IQ3_S and 12.5 for Q4. This development run used OpenCode 2.2.0 rather than the 2.1.4 used elsewhere, so its coding times are not directly comparable. See [full results](docs/results.md#rtx-pro-6000-blackwell-on-basalt-450-w).
 
 Caveat: the coding tests cover small Python projects with up to about 85k tokens of context. Very long contexts and large codebases weren't tested.
 

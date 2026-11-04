@@ -1,0 +1,55 @@
+test_charge_and_fee (test_ledger.LedgerTests.test_charge_and_fee) ... ok
+test_cli_keys_are_sorted (test_ledger.LedgerTests.test_cli_keys_are_sorted) ... ok
+test_empty_input (test_ledger.LedgerTests.test_empty_input) ... ok
+test_malformed_line_is_skipped_with_warning (test_ledger.LedgerTests.test_malformed_line_is_skipped_with_warning) ... ok
+test_accepted_chargeback_consumes_refundable_amount (test_ledger_extra.ChargebackTests.test_accepted_chargeback_consumes_refundable_amount) ... ok
+test_chargeback_account_and_currency_must_match (test_ledger_extra.ChargebackTests.test_chargeback_account_and_currency_must_match) ... ok
+test_chargeback_duplicate_id_is_first_in_file (test_ledger_extra.ChargebackTests.test_chargeback_duplicate_id_is_first_in_file) ... ok
+test_chargeback_exactly_charge_amount_is_accepted (test_ledger_extra.ChargebackTests.test_chargeback_exactly_charge_amount_is_accepted) ... ok
+test_chargeback_fractional_digits_follow_currency (test_ledger_extra.ChargebackTests.test_chargeback_fractional_digits_follow_currency) ... ok
+test_chargeback_is_not_limited_by_remaining_refundable_amount (test_ledger_extra.ChargebackTests.test_chargeback_is_not_limited_by_remaining_refundable_amount) ... ok
+test_chargeback_may_appear_before_its_charge (test_ledger_extra.ChargebackTests.test_chargeback_may_appear_before_its_charge) ... ok
+test_chargeback_may_not_exceed_charge_amount (test_ledger_extra.ChargebackTests.test_chargeback_may_not_exceed_charge_amount) ... ok
+test_chargeback_needs_charge_id (test_ledger_extra.ChargebackTests.test_chargeback_needs_charge_id) ... ok
+test_chargeback_outside_window_still_consumes_refundable_amount (test_ledger_extra.ChargebackTests.test_chargeback_outside_window_still_consumes_refundable_amount) ... ok
+test_chargeback_subtracts_from_charge_account (test_ledger_extra.ChargebackTests.test_chargeback_subtracts_from_charge_account) ... ok
+test_chargeback_unknown_charge_is_rejected (test_ledger_extra.ChargebackTests.test_chargeback_unknown_charge_is_rejected) ... ok
+test_cli_accepts_chargeback (test_ledger_extra.ChargebackTests.test_cli_accepts_chargeback) ... ok
+test_equal_timestamps_break_ties_by_file_order (test_ledger_extra.ChargebackTests.test_equal_timestamps_break_ties_by_file_order) ... ok
+test_only_one_chargeback_per_charge (test_ledger_extra.ChargebackTests.test_only_one_chargeback_per_charge) ... ok
+test_refund_and_chargeback_limits_use_timestamp_order (test_ledger_extra.ChargebackTests.test_refund_and_chargeback_limits_use_timestamp_order) ... ok
+test_refundable_floor_is_never_below_zero (test_ledger_extra.ChargebackTests.test_refundable_floor_is_never_below_zero) ... ok
+test_account_ids_are_case_insensitive_and_lowercased (test_ledger_extra.DecisionTests.test_account_ids_are_case_insensitive_and_lowercased) ... ok
+test_fees_must_be_in_usd (test_ledger_extra.DecisionTests.test_fees_must_be_in_usd) ... ok
+test_internal_accounts_are_reported_but_not_totalled (test_ledger_extra.DecisionTests.test_internal_accounts_are_reported_but_not_totalled) ... ok
+test_large_amounts_stay_exact (test_ledger_extra.DecisionTests.test_large_amounts_stay_exact) ... ok
+test_refund_limit_uses_charges_outside_the_window (test_ledger_extra.DecisionTests.test_refund_limit_uses_charges_outside_the_window) ... ok
+test_refund_may_reference_a_charge_that_appears_later (test_ledger_extra.DecisionTests.test_refund_may_reference_a_charge_that_appears_later) ... ok
+test_sandbox_events_are_ignored_silently (test_ledger_extra.DecisionTests.test_sandbox_events_are_ignored_silently) ... ok
+test_sandbox_events_need_not_be_valid_events (test_ledger_extra.DecisionTests.test_sandbox_events_need_not_be_valid_events) ... ok
+test_sandbox_events_reserve_their_ids (test_ledger_extra.DecisionTests.test_sandbox_events_reserve_their_ids) ... ok
+test_warnings_are_printed_in_line_order (test_ledger_extra.DecisionTests.test_warnings_are_printed_in_line_order) ... ok
+test_window_bounds_are_inclusive_and_exclusive (test_ledger_extra.DecisionTests.test_window_bounds_are_inclusive_and_exclusive) ... ok
+test_zero_balance_is_never_negative_zero (test_ledger_extra.DecisionTests.test_zero_balance_is_never_negative_zero) ... ok
+test_convert_keeps_at_least_forty_significant_digits (test_ledger_extra.MoneyConversionTests.test_convert_keeps_at_least_forty_significant_digits) ... ok
+test_convert_rejects_binary_floats (test_ledger_extra.MoneyConversionTests.test_convert_rejects_binary_floats) ... ok
+test_convert_rejects_unknown_currency (test_ledger_extra.MoneyConversionTests.test_convert_rejects_unknown_currency) ... ok
+test_convert_returns_exact_unrounded_value (test_ledger_extra.MoneyConversionTests.test_convert_returns_exact_unrounded_value) ... ok
+test_round_to_cents_is_half_even (test_ledger_extra.MoneyConversionTests.test_round_to_cents_is_half_even) ... ok
+test_balances_are_reported_in_target_currency (test_ledger_extra.ReportCurrencyTests.test_balances_are_reported_in_target_currency) ... ok
+test_cli_currency_flag (test_ledger_extra.ReportCurrencyTests.test_cli_currency_flag) ... ok
+test_cli_unknown_currency_exits_nonzero_with_empty_stdout (test_ledger_extra.ReportCurrencyTests.test_cli_unknown_currency_exits_nonzero_with_empty_stdout) ... ok
+test_conversion_divides_with_high_precision (test_ledger_extra.ReportCurrencyTests.test_conversion_divides_with_high_precision) ... ok
+test_default_report_currency_is_usd (test_ledger_extra.ReportCurrencyTests.test_default_report_currency_is_usd) ... ok
+test_empty_input_in_report_currency (test_ledger_extra.ReportCurrencyTests.test_empty_input_in_report_currency) ... ok
+test_half_even_rounding_after_conversion (test_ledger_extra.ReportCurrencyTests.test_half_even_rounding_after_conversion) ... ok
+test_internal_accounts_excluded_from_total_in_report_currency (test_ledger_extra.ReportCurrencyTests.test_internal_accounts_excluded_from_total_in_report_currency) ... ok
+test_mixed_currencies_convert_then_divide_once (test_ledger_extra.ReportCurrencyTests.test_mixed_currencies_convert_then_divide_once) ... ok
+test_unknown_report_currency_raises (test_ledger_extra.ReportCurrencyTests.test_unknown_report_currency_raises) ... ok
+test_window_still_applies_in_report_currency (test_ledger_extra.ReportCurrencyTests.test_window_still_applies_in_report_currency) ... ok
+test_zero_balance_is_never_negative_zero_in_report_currency (test_ledger_extra.ReportCurrencyTests.test_zero_balance_is_never_negative_zero_in_report_currency) ... ok
+
+----------------------------------------------------------------------
+Ran 50 tests in 0.135s
+
+OK
