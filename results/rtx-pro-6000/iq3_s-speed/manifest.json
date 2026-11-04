@@ -1,0 +1,18 @@
+{
+  "label": "basalt-iq3_s",
+  "model": "basalt-qwen3.8-flash-next-iq3_s-rtx-pro-6000",
+  "base_url": "http://127.0.0.1:18082/v1",
+  "command": [
+    ".basalt/src/bin/basalt",
+    "serve",
+    "--config",
+    "configs/6000/basalt-iq3_s.json",
+    "--python",
+    ".basalt/venv/bin/python"
+  ],
+  "started_epoch": 1793722328.7209735,
+  "platform": "Linux-7.0.0-42-generic-x86_64-with-glibc2.43",
+  "python": "3.14.4",
+  "reserve_mib": 4096,
+  "status": "starting"
+}

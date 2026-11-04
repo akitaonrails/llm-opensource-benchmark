@@ -1,0 +1,1256 @@
+[server] legend   pp=prompt read  tg=generation  c=cached  acc=drafts accepted  dl=tokens per window  hit=expert cache  pcie=routed experts over PCIe
+[server] engine   ctx=131072 kv=int8 vram-reserve=4608MiB (from config)
+[server] sampling temp=1.0 top_p=0.95 top_k=20 min_p=0.0
+[server] vision   mode=off
+[server] ready    http://127.0.0.1:18082/v1  openai+anthropic  stats http://127.0.0.1:18082/
+[server] warning: this CPU has no AVX-512: the expert kernels run on AVX-2 (multi-token for the i-quant gate/up rows)
+[server] auto     resident=12.3GB pool-affinity=auto pool=11
+[server] warning: the device-planned MoE tail is off: every expert is resident
+[server] loaded   35.0GiB 12.2s  cuda0=35.0GiB
+[server] kv       0.7/2.1GiB cuda0 elastic
+[server] weights  loaded, ctx=131072 images=off
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 read  pp=48109/83389 9301t/s 5s
+[server] live | s1 tg=1/32768 | total 0t/s
+[server] s1 done  pp=83389/0c 9.4s 8907t/s  tg=66 615.1t/s acc=79%  ttft=9.4s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=83798/83456c 0.2s  tg=40 512.2t/s acc=64%  ttft=0.2s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=85013/83837c 0.4s 3188t/s  tg=48 507.4t/s acc=65%  ttft=0.4s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=85516/85060c 0.2s  tg=44 605.2t/s acc=79%  ttft=0.2s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=85887/85559c 0.2s  tg=44 565.6t/s acc=80%  ttft=0.2s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=86298/85932c 0.2s  tg=65 433.0t/s acc=66%  ttft=0.2s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=87138/86364c 0.3s 2490t/s  tg=89 485.8t/s acc=72%  ttft=0.3s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=454/32768 512.0t/s | total 512t/s
+[server] live | s1 tg=1342/32768 463.9t/s | total 464t/s
+[server] live | s1 tg=2130/32768 435.2t/s | total 435t/s
+[server] live | s1 tg=2918/32768 423.2t/s | total 423t/s
+[server] live | s1 tg=3864/32768 433.9t/s | total 434t/s
+[server] live | s1 tg=4699/32768 430.9t/s | total 431t/s
+[server] live | s1 tg=5533/32768 428.3t/s | total 428t/s
+[server] live | s1 tg=6292/32768 421.7t/s | total 422t/s
+[server] live | s1 tg=7038/32768 415.8t/s | total 416t/s
+[server] live | s1 tg=7798/32768 412.0t/s | total 412t/s
+[server] s1 done  pp=87300/87226c 0.1s  tg=7925 412.8t/s acc=64%  ttft=0.1s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=95262/87295c 1.2s 6600t/s  tg=59 503.4t/s acc=61%  ttft=1.2s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=589/32768 667.0t/s | total 667t/s
+[server] live | s1 tg=1645/32768 569.2t/s | total 569t/s
+[server] live | s1 tg=2499/32768 510.5t/s | total 510t/s
+[server] s1 done  pp=95419/95322c 0.1s  tg=3578 528.0t/s acc=73%  ttft=0.1s  end=stop
+[server] error: engine reported request exceeds the context window: prompt (99022 tokens) + max tokens (32062) exceeds the context (131072); requests are never truncated. Send a smaller max_tokens (at most 32042 here), or start the server with --fit-max-tokens (or set "fit-max-tokens": true in the "server" section of the --config file) to shorten it to the room left
+[server] s1 done  pp=99022/0c  tg=0  end=error
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 read  pp=47815/86334 9252t/s 5s
+[server] live | s1 tg=1/32768 | total 0t/s
+[server] live | s1 tg=898/32768 447.2t/s | total 447t/s
+[server] s1 done  pp=86334/0c 9.8s 8840t/s  tg=1459 452.1t/s acc=67%  ttft=9.8s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=25/32768 | total 0t/s
+[server] s1 done  pp=5439/0c 1.0s 5678t/s  tg=70 712.1t/s acc=90%  ttft=1.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=7129/5510c 0.4s 4246t/s  tg=131 578.1t/s acc=75%  ttft=0.4s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=9577/7260c 0.5s 4549t/s  tg=81 556.7t/s acc=72%  ttft=0.5s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=393/32768 462.9t/s | total 463t/s
+[server] live | s1 tg=1320/32768 462.0t/s | total 462t/s
+[server] live | s1 tg=2281/32768 469.3t/s | total 469t/s
+[server] s1 done  pp=9817/9659c 0.1s  tg=2976 460.6t/s acc=67%  ttft=0.2s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=527/32768 629.4t/s | total 629t/s
+[server] s1 done  pp=12919/12794c 0.2s  tg=1072 653.7t/s acc=82%  ttft=0.2s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=14016/13992c 0.0s  tg=103 512.9t/s acc=71%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=14147/14120c 0.0s  tg=78 581.2t/s acc=81%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=14261/14226c 0.0s  tg=57 582.2t/s acc=74%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=397/32768 466.6t/s | total 467t/s
+[server] s1 done  pp=14442/14319c 0.1s  tg=1447 583.8t/s acc=73%  ttft=0.2s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=627/32768 749.0t/s | total 749t/s
+[server] s1 done  pp=16170/15890c 0.2s  tg=1321 687.1t/s acc=82%  ttft=0.2s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=339/32768 460.5t/s | total 461t/s
+[server] live | s1 tg=1280/32768 467.4t/s | total 467t/s
+[server] s1 done  pp=18342/17492c 0.3s 3304t/s  tg=1345 472.1t/s acc=68%  ttft=0.3s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=776/32768 415.3t/s | total 415t/s
+[server] s1 done  pp=19881/19688c 0.1s  tg=1307 459.1t/s acc=65%  ttft=0.1s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=404/32768 461.9t/s | total 462t/s
+[server] live | s1 tg=1289/32768 447.7t/s | total 448t/s
+[server] s1 done  pp=21341/21189c 0.1s  tg=1421 450.3t/s acc=67%  ttft=0.1s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=22918/22763c 0.1s  tg=558 480.9t/s acc=66%  ttft=0.1s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=358/32768 402.8t/s | total 403t/s
+[server] live | s1 tg=1104/32768 381.1t/s | total 381t/s
+[server] live | s1 tg=2009/32768 410.0t/s | total 410t/s
+[server] s1 done  pp=23601/23477c 0.1s  tg=2556 408.5t/s acc=64%  ttft=0.1s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=361/32768 594.6t/s | total 595t/s
+[server] s1 done  pp=27614/26158c 0.4s 3686t/s  tg=1676 680.1t/s acc=88%  ttft=0.4s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=29315/29291c 0.0s  tg=380 449.2t/s acc=72%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=29720/29694c 0.0s  tg=134 727.1t/s acc=90%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=29879/29853c 0.0s  tg=87 582.7t/s acc=77%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=30858/29967c 0.3s 3270t/s  tg=202 511.0t/s acc=79%  ttft=0.3s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=31085/31061c 0.0s  tg=466 622.5t/s acc=82%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=31574/31552c 0.0s  tg=310 420.2t/s acc=66%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=533/32768 601.4t/s | total 601t/s
+[server] s1 done  pp=31988/31883c 0.1s  tg=1001 596.3t/s acc=74%  ttft=0.1s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=1052/32768 580.7t/s | total 581t/s
+[server] s1 done  pp=33430/32990c 0.2s  tg=1055 581.0t/s acc=74%  ttft=0.2s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=34711/34486c 0.1s  tg=263 451.7t/s acc=73%  ttft=0.1s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=36254/34975c 0.3s 3844t/s  tg=410 623.0t/s acc=80%  ttft=0.3s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=404/32768 461.7t/s | total 462t/s
+[server] s1 done  pp=36825/36665c 0.1s  tg=578 445.2t/s acc=63%  ttft=0.1s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=405/32768 474.4t/s | total 474t/s
+[server] live | s1 tg=1223/32768 427.5t/s | total 427t/s
+[server] live | s1 tg=2096/32768 430.9t/s | total 431t/s
+[server] live | s1 tg=2930/32768 426.7t/s | total 427t/s
+[server] s1 done  pp=37671/37402c 0.1s  tg=3069 430.3t/s acc=64%  ttft=0.2s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=40765/40741c 0.0s  tg=210 628.0t/s acc=84%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=1258/32768 637.8t/s | total 638t/s
+[server] s1 done  pp=41000/40976c 0.0s  tg=1805 663.0t/s acc=82%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=42830/42806c 0.0s  tg=509 594.1t/s acc=81%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=512/32768 528.8t/s | total 529t/s
+[server] s1 done  pp=43364/43340c 0.0s  tg=768 573.3t/s acc=80%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=44157/44133c 0.0s  tg=201 425.8t/s acc=58%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=45566/44359c 0.3s 3740t/s  tg=131 557.7t/s acc=83%  ttft=0.3s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=45720/45698c 0.0s  tg=149 576.4t/s acc=76%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=45892/45870c 0.0s  tg=394 593.0t/s acc=78%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=46309/46286c 0.0s  tg=312 623.9t/s acc=81%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=46644/46622c 0.0s  tg=249 621.4t/s acc=81%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=46916/46894c 0.0s  tg=214 634.1t/s acc=85%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=47153/47131c 0.0s  tg=164 591.0t/s acc=78%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=500/32768 518.8t/s | total 519t/s
+[server] live | s1 tg=1482/32768 498.2t/s | total 498t/s
+[server] s1 done  pp=47340/47318c 0.0s  tg=1916 509.3t/s acc=69%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=447/32768 519.6t/s | total 520t/s
+[server] live | s1 tg=1492/32768 520.5t/s | total 521t/s
+[server] s1 done  pp=49510/49257c 0.1s  tg=2554 524.2t/s acc=71%  ttft=0.1s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=52198/52065c 0.1s  tg=580 693.7t/s acc=85%  ttft=0.1s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=380/32768 519.8t/s | total 520t/s
+[server] live | s1 tg=1841/32768 672.1t/s | total 672t/s
+[server] live | s1 tg=3249/32768 684.9t/s | total 685t/s
+[server] s1 done  pp=53591/52779c 0.3s 3142t/s  tg=4102 677.7t/s acc=86%  ttft=0.3s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=568/32768 590.9t/s | total 591t/s
+[server] live | s1 tg=1631/32768 548.9t/s | total 549t/s
+[server] s1 done  pp=57719/57694c 0.0s  tg=1796 563.3t/s acc=76%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=59542/59516c 0.0s  tg=342 715.5t/s acc=92%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=59911/59885c 0.0s  tg=139 626.7t/s acc=79%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=60077/60051c 0.0s  tg=226 726.7t/s acc=90%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=60330/60302c 0.0s  tg=527 727.0t/s acc=93%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=60884/60858c 0.0s  tg=71 735.8t/s acc=91%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=417/32768 582.9t/s | total 583t/s
+[server] s1 done  pp=61873/60956c 0.3s 3264t/s  tg=436 589.3t/s acc=83%  ttft=0.3s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=62397/62310c 0.1s  tg=175 390.1t/s acc=67%  ttft=0.1s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=62832/62573c 0.1s  tg=93 560.6t/s acc=81%  ttft=0.2s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=377/32768 429.2t/s | total 429t/s
+[server] s1 done  pp=63022/62926c 0.1s  tg=852 442.0t/s acc=64%  ttft=0.1s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=355/32768 405.5t/s | total 405t/s
+[server] live | s1 tg=1072/32768 371.8t/s | total 372t/s
+[server] live | s1 tg=1858/32768 379.7t/s | total 380t/s
+[server] live | s1 tg=2804/32768 406.1t/s | total 406t/s
+[server] live | s1 tg=3576/32768 401.4t/s | total 401t/s
+[server] s1 done  pp=64021/63873c 0.1s  tg=4072 415.0t/s acc=65%  ttft=0.1s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=68118/68094c 0.0s  tg=442 631.9t/s acc=84%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=68585/68561c 0.0s  tg=132 388.6t/s acc=53%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=69419/68718c 0.2s 2894t/s  tg=358 512.7t/s acc=74%  ttft=0.3s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=69802/69778c 0.0s  tg=339 662.0t/s acc=91%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=70166/70140c 0.0s  tg=403 667.3t/s acc=88%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=70594/70570c 0.0s  tg=49 483.7t/s acc=81%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=213/32768 | total 0t/s
+[server] s1 done  pp=72847/70643c 0.5s 4354t/s  tg=717 394.6t/s acc=64%  ttft=0.5s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=263/32768 417.8t/s | total 418t/s
+[server] live | s1 tg=1067/32768 404.5t/s | total 405t/s
+[server] s1 done  pp=74956/73565c 0.4s 3803t/s  tg=1676 408.4t/s acc=63%  ttft=0.4s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=76655/76633c 0.0s  tg=200 728.1t/s acc=91%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=455/32768 473.3t/s | total 473t/s
+[server] s1 done  pp=76878/76854c 0.0s  tg=1293 489.3t/s acc=70%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=78372/78172c 0.1s  tg=264 584.7t/s acc=79%  ttft=0.1s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=78663/78637c 0.0s  tg=541 636.1t/s acc=80%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=79231/79205c 0.0s  tg=412 609.3t/s acc=86%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=79670/79642c 0.0s  tg=163 469.2t/s acc=66%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=80884/79834c 0.3s 3348t/s  tg=120 428.6t/s acc=68%  ttft=0.3s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=81026/81005c 0.0s  tg=119 435.1t/s acc=69%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=201/32768 372.0t/s | total 372t/s
+[server] live | s1 tg=927/32768 363.0t/s | total 363t/s
+[server] s1 done  pp=82910/81145c 0.4s 3925t/s  tg=1474 378.2t/s acc=65%  ttft=0.5s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=84409/84383c 0.0s  tg=134 498.5t/s acc=69%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=446/32768 465.7t/s | total 466t/s
+[server] live | s1 tg=1226/32768 414.0t/s | total 414t/s
+[server] live | s1 tg=1952/32768 393.0t/s | total 393t/s
+[server] live | s1 tg=2728/32768 391.3t/s | total 391t/s
+[server] live | s1 tg=3627/32768 403.9t/s | total 404t/s
+[server] s1 done  pp=84568/84542c 0.0s  tg=4030 421.8t/s acc=66%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=88624/88599c 0.0s  tg=225 528.7t/s acc=78%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=423/32768 439.5t/s | total 439t/s
+[server] s1 done  pp=88872/88850c 0.0s  tg=1086 440.1t/s acc=68%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=383/32768 399.3t/s | total 399t/s
+[server] s1 done  pp=89981/89958c 0.0s  tg=574 421.2t/s acc=66%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=811/32768 422.4t/s | total 422t/s
+[server] live | s1 tg=1552/32768 395.5t/s | total 395t/s
+[server] s1 done  pp=90619/90556c 0.1s  tg=1767 404.4t/s acc=65%  ttft=0.1s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=92411/92387c 0.0s  tg=215 595.9t/s acc=83%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=92651/92627c 0.0s  tg=221 632.2t/s acc=90%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=460/32768 476.6t/s | total 477t/s
+[server] live | s1 tg=1279/32768 430.8t/s | total 431t/s
+[server] s1 done  pp=92897/92873c 0.0s  tg=1623 444.2t/s acc=66%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=717/32768 382.7t/s | total 383t/s
+[server] s1 done  pp=94683/94521c 0.1s  tg=1122 379.5t/s acc=62%  ttft=0.1s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=372/32768 422.7t/s | total 423t/s
+[server] s1 done  pp=95918/95806c 0.1s  tg=557 490.7t/s acc=74%  ttft=0.1s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=96501/96476c 0.0s  tg=350 462.9t/s acc=75%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=356/32768 371.7t/s | total 372t/s
+[server] live | s1 tg=1239/32768 418.3t/s | total 418t/s
+[server] s1 done  pp=96874/96852c 0.0s  tg=1878 427.3t/s acc=64%  ttft=0.0s  end=stop
+[server] error: engine reported request exceeds the context window: prompt (98788 tokens) + max tokens (32295) exceeds the context (131072); requests are never truncated. Send a smaller max_tokens (at most 32276 here), or start the server with --fit-max-tokens (or set "fit-max-tokens": true in the "server" section of the --config file) to shorten it to the room left
+[server] s1 done  pp=98788/0c  tg=0  end=error
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=1/32768 | total 0t/s
+[server] live | s1 tg=970/32768 483.0t/s | total 483t/s
+[server] s1 done  pp=38112/4461c 4.1s 8179t/s  tg=1410 479.5t/s acc=66%  ttft=4.1s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=1/32768 | total 0t/s
+[server] s1 done  pp=28577/4461c 3.0s 8093t/s  tg=190 468.2t/s acc=70%  ttft=3.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=32279/28768c 0.7s 5206t/s  tg=235 474.3t/s acc=72%  ttft=0.7s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=32922/32515c 0.2s  tg=112 517.6t/s acc=82%  ttft=0.2s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=197/32768 | total 0t/s
+[server] live | s1 tg=949/32768 382.4t/s | total 382t/s
+[server] live | s1 tg=1791/32768 399.0t/s | total 399t/s
+[server] s1 done  pp=35465/33033c 0.5s 4686t/s  tg=2242 408.4t/s acc=64%  ttft=0.5s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=320/32768 474.9t/s | total 475t/s
+[server] live | s1 tg=1039/32768 387.5t/s | total 387t/s
+[server] live | s1 tg=1797/32768 383.5t/s | total 383t/s
+[server] live | s1 tg=2539/32768 379.3t/s | total 379t/s
+[server] live | s1 tg=3358/32768 386.1t/s | total 386t/s
+[server] s1 done  pp=38716/37706c 0.3s 3129t/s  tg=3738 404.7t/s acc=65%  ttft=0.3s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=42495/42455c 0.0s  tg=352 643.5t/s acc=83%  ttft=0.1s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=42872/42846c 0.0s  tg=550 739.7t/s acc=93%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=455/32768 472.7t/s | total 473t/s
+[server] live | s1 tg=1704/32768 574.3t/s | total 574t/s
+[server] s1 done  pp=43447/43421c 0.0s  tg=2480 569.4t/s acc=73%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=45955/45928c 0.0s  tg=228 495.0t/s acc=75%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=352/32768 438.2t/s | total 438t/s
+[server] live | s1 tg=1339/32768 476.0t/s | total 476t/s
+[server] s1 done  pp=46634/46184c 0.2s  tg=1356 478.1t/s acc=72%  ttft=0.2s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=48035/47991c 0.0s  tg=138 558.5t/s acc=78%  ttft=0.1s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=611/32768 397.8t/s | total 398t/s
+[server] s1 done  pp=50224/48174c 0.5s 4418t/s  tg=1223 419.6t/s acc=66%  ttft=0.5s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=51476/51448c 0.0s  tg=110 498.2t/s acc=78%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=51968/51587c 0.2s  tg=277 657.8t/s acc=84%  ttft=0.2s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=52274/52246c 0.0s  tg=548 627.9t/s acc=87%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=421/32768 441.7t/s | total 442t/s
+[server] s1 done  pp=52862/52823c 0.0s  tg=516 476.6t/s acc=70%  ttft=0.1s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=801/32768 414.4t/s | total 414t/s
+[server] s1 done  pp=53437/53379c 0.1s  tg=1130 408.6t/s acc=64%  ttft=0.1s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=444/32768 405.6t/s | total 406t/s
+[server] s1 done  pp=59721/54568c 0.9s 5721t/s  tg=1278 450.3t/s acc=65%  ttft=0.9s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=555/32768 626.4t/s | total 626t/s
+[server] live | s1 tg=1493/32768 516.8t/s | total 517t/s
+[server] live | s1 tg=2468/32768 504.2t/s | total 504t/s
+[server] s1 done  pp=61141/61000c 0.1s  tg=3613 558.3t/s acc=78%  ttft=0.1s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=457/32768 476.1t/s | total 476t/s
+[server] live | s1 tg=1430/32768 482.4t/s | total 482t/s
+[server] s1 done  pp=64781/64755c 0.0s  tg=2170 477.6t/s acc=67%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=472/32768 546.7t/s | total 547t/s
+[server] live | s1 tg=1598/32768 556.0t/s | total 556t/s
+[server] s1 done  pp=67142/66952c 0.1s  tg=2264 558.0t/s acc=76%  ttft=0.1s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=263/32768 | total 0t/s
+[server] s1 done  pp=69425/67137c 0.5s 4627t/s  tg=992 659.8t/s acc=85%  ttft=0.5s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=573/32768 606.4t/s | total 606t/s
+[server] s1 done  pp=70461/70416c 0.1s  tg=670 622.9t/s acc=80%  ttft=0.1s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=71175/71130c 0.0s  tg=81 620.7t/s acc=86%  ttft=0.1s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=71740/71257c 0.2s  tg=187 466.5t/s acc=70%  ttft=0.2s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=329/32768 423.2t/s | total 423t/s
+[server] s1 done  pp=72453/71928c 0.2s 2451t/s  tg=1159 569.0t/s acc=81%  ttft=0.2s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=73637/73611c 0.0s  tg=129 414.5t/s acc=68%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=74146/73765c 0.2s  tg=350 581.7t/s acc=81%  ttft=0.2s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=74525/74496c 0.0s  tg=399 629.3t/s acc=90%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=74953/74925c 0.0s  tg=414 488.4t/s acc=75%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=75396/75367c 0.0s  tg=231 499.8t/s acc=75%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=75656/75628c 0.0s  tg=75 506.8t/s acc=82%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=75913/75732c 0.1s  tg=144 622.3t/s acc=88%  ttft=0.2s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=76086/76058c 0.0s  tg=71 439.1t/s acc=69%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=76367/76158c 0.1s  tg=140 666.7t/s acc=87%  ttft=0.1s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=76639/76508c 0.1s  tg=359 656.9t/s acc=88%  ttft=0.1s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=77046/76999c 0.1s  tg=139 432.3t/s acc=74%  ttft=0.1s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=370/32768 384.4t/s | total 384t/s
+[server] s1 done  pp=77212/77186c 0.0s  tg=541 427.3t/s acc=66%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=78186/77754c 0.2s  tg=645 623.2t/s acc=80%  ttft=0.2s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=343/32768 488.5t/s | total 488t/s
+[server] s1 done  pp=79846/78832c 0.3s 3471t/s  tg=654 472.6t/s acc=69%  ttft=0.3s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=602/32768 372.2t/s | total 372t/s
+[server] live | s1 tg=1490/32768 410.5t/s | total 411t/s
+[server] s1 done  pp=81242/79841c 0.4s 3716t/s  tg=1781 438.7t/s acc=69%  ttft=0.4s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=83063/83024c 0.0s  tg=886 694.7t/s acc=92%  ttft=0.1s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=83974/83950c 0.0s  tg=296 596.7t/s acc=83%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=475/32768 495.9t/s | total 496t/s
+[server] s1 done  pp=84295/84269c 0.0s  tg=507 498.0t/s acc=72%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=705/32768 377.0t/s | total 377t/s
+[server] live | s1 tg=1507/32768 388.7t/s | total 389t/s
+[server] live | s1 tg=2275/32768 386.9t/s | total 387t/s
+[server] live | s1 tg=3382/32768 428.7t/s | total 429t/s
+[server] s1 done  pp=84964/84803c 0.1s  tg=3736 441.2t/s acc=67%  ttft=0.1s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=88740/84959c 0.7s 5172t/s  tg=593 598.0t/s acc=79%  ttft=0.7s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=337/32768 388.9t/s | total 389t/s
+[server] s1 done  pp=89491/89334c 0.1s  tg=639 432.4t/s acc=66%  ttft=0.1s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=790/32768 427.2t/s | total 427t/s
+[server] s1 done  pp=90373/90130c 0.1s  tg=903 452.7t/s acc=72%  ttft=0.2s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=91317/91277c 0.0s  tg=502 527.2t/s acc=79%  ttft=0.1s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=395/32768 463.8t/s | total 464t/s
+[server] live | s1 tg=1496/32768 522.7t/s | total 523t/s
+[server] s1 done  pp=92070/91818c 0.1s  tg=2260 532.0t/s acc=74%  ttft=0.2s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=447/32768 501.3t/s | total 501t/s
+[server] s1 done  pp=94411/94331c 0.1s  tg=1151 519.6t/s acc=73%  ttft=0.1s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=362/32768 412.2t/s | total 412t/s
+[server] s1 done  pp=95727/95563c 0.1s  tg=1305 499.2t/s acc=76%  ttft=0.1s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=97076/97033c 0.0s  tg=99 538.3t/s acc=80%  ttft=0.1s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=299/32768 374.7t/s | total 375t/s
+[server] s1 done  pp=97632/97175c 0.2s  tg=813 383.8t/s acc=64%  ttft=0.2s  end=stop
+[server] error: engine reported request exceeds the context window: prompt (99850 tokens) + max tokens (31258) exceeds the context (131072); requests are never truncated. Send a smaller max_tokens (at most 31214 here), or start the server with --fit-max-tokens (or set "fit-max-tokens": true in the "server" section of the --config file) to shorten it to the room left
+[server] s1 done  pp=99850/0c  tg=0  end=error
+[server] error: engine reported request exceeds the context window: prompt (100553 tokens) + max tokens (32768) exceeds the context (131072); requests are never truncated. Send a smaller max_tokens (at most 30511 here), or start the server with --fit-max-tokens (or set "fit-max-tokens": true in the "server" section of the --config file) to shorten it to the room left
+[server] s1 done  pp=100553/0c  tg=0  end=error
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=1/32768 | total 0t/s
+[server] live | s1 tg=903/32768 450.1t/s | total 450t/s
+[server] live | s1 tg=1955/32768 487.2t/s | total 487t/s
+[server] s1 done  pp=29280/4461c 3.0s 8160t/s  tg=2399 500.9t/s acc=70%  ttft=3.1s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=1/32768 | total 0t/s
+[server] s1 done  pp=33497/4461c 3.5s 8271t/s  tg=159 459.8t/s acc=68%  ttft=3.5s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=37613/33655c 0.7s 5503t/s  tg=498 417.3t/s acc=68%  ttft=0.7s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=195/32768 385.2t/s | total 385t/s
+[server] live | s1 tg=941/32768 374.9t/s | total 375t/s
+[server] s1 done  pp=40412/38110c 0.5s 4732t/s  tg=1585 393.5t/s acc=64%  ttft=0.5s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=46520/41998c 0.8s 5697t/s  tg=125 664.5t/s acc=83%  ttft=0.8s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=110/32768 | total 0t/s
+[server] live | s1 tg=903/32768 389.8t/s | total 390t/s
+[server] s1 done  pp=50010/46644c 0.7s 4926t/s  tg=1151 408.3t/s acc=64%  ttft=0.7s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=51211/51162c 0.1s  tg=173 460.0t/s acc=76%  ttft=0.1s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=487/32768 504.0t/s | total 504t/s
+[server] s1 done  pp=51407/51385c 0.0s  tg=1081 559.7t/s acc=75%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=292/32768 358.6t/s | total 359t/s
+[server] live | s1 tg=1096/32768 388.1t/s | total 388t/s
+[server] s1 done  pp=52866/52489c 0.2s  tg=1517 417.3t/s acc=66%  ttft=0.2s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=54409/54383c 0.0s  tg=352 677.3t/s acc=86%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=54786/54760c 0.0s  tg=209 593.9t/s acc=80%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=55020/54994c 0.0s  tg=507 574.4t/s acc=79%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=55554/55528c 0.0s  tg=151 441.5t/s acc=65%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=55793/55706c 0.1s  tg=302 673.7t/s acc=87%  ttft=0.1s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=56122/56096c 0.0s  tg=256 648.1t/s acc=83%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=403/32768 454.5t/s | total 454t/s
+[server] s1 done  pp=56478/56379c 0.1s  tg=420 460.9t/s acc=65%  ttft=0.1s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=57128/56897c 0.1s  tg=445 418.3t/s acc=66%  ttft=0.1s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=585/32768 665.7t/s | total 666t/s
+[server] s1 done  pp=57734/57574c 0.1s  tg=1195 703.1t/s acc=91%  ttft=0.1s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=58954/58928c 0.0s  tg=617 648.2t/s acc=85%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=59596/59572c 0.0s  tg=202 517.0t/s acc=78%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=59823/59797c 0.0s  tg=59 415.5t/s acc=82%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=60365/59881c 0.2s  tg=222 542.4t/s acc=78%  ttft=0.2s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=292/32768 376.7t/s | total 377t/s
+[server] s1 done  pp=61254/60588c 0.2s 2981t/s  tg=549 445.5t/s acc=73%  ttft=0.2s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=61845/61802c 0.0s  tg=651 667.1t/s acc=90%  ttft=0.1s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=62523/62495c 0.0s  tg=401 424.9t/s acc=72%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=63093/62925c 0.1s  tg=108 506.8t/s acc=71%  ttft=0.1s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=265/32768 374.1t/s | total 374t/s
+[server] s1 done  pp=64166/63202c 0.3s 3344t/s  tg=848 420.4t/s acc=65%  ttft=0.3s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 read  pp=52077/83389 9282t/s 5s
+[server] live | s1 tg=1/32768 | total 0t/s
+[server] s1 done  pp=83389/4461c 9.1s 8684t/s  tg=60 591.1t/s acc=77%  ttft=9.1s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=83531/83448c 0.1s  tg=40 548.7t/s acc=76%  ttft=0.1s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=84746/83570c 0.4s 3323t/s  tg=42 555.6t/s acc=78%  ttft=0.4s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=85243/84787c 0.2s  tg=77 412.4t/s acc=70%  ttft=0.2s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=85647/85319c 0.2s  tg=80 399.8t/s acc=71%  ttft=0.2s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=86502/85728c 0.3s 2941t/s  tg=77 463.6t/s acc=78%  ttft=0.3s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=86652/86578c 0.1s  tg=63 594.9t/s acc=80%  ttft=0.1s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=382/32768 465.7t/s | total 466t/s
+[server] live | s1 tg=1211/32768 428.2t/s | total 428t/s
+[server] live | s1 tg=1972/32768 407.5t/s | total 407t/s
+[server] live | s1 tg=2770/32768 404.7t/s | total 405t/s
+[server] live | s1 tg=3590/32768 405.8t/s | total 406t/s
+[server] live | s1 tg=4447/32768 410.0t/s | total 410t/s
+[server] live | s1 tg=5303/32768 412.6t/s | total 413t/s
+[server] live | s1 tg=6083/32768 409.4t/s | total 409t/s
+[server] live | s1 tg=7111/32768 421.5t/s | total 422t/s
+[server] live | s1 tg=8190/32768 433.9t/s | total 434t/s
+[server] s1 done  pp=87082/86714c 0.2s  tg=8664 431.8t/s acc=67%  ttft=0.2s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=558/32768 604.4t/s | total 604t/s
+[server] s1 done  pp=95809/95746c 0.1s  tg=968 627.0t/s acc=79%  ttft=0.1s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=96802/96778c 0.0s  tg=1055 623.9t/s acc=80%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=97882/97858c 0.0s  tg=209 582.3t/s acc=78%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=98116/98092c 0.0s  tg=484 617.5t/s acc=83%  ttft=0.0s  end=stop
+[server] error: engine reported request exceeds the context window: prompt (98625 tokens) + max tokens (32459) exceeds the context (131072); requests are never truncated. Send a smaller max_tokens (at most 32439 here), or start the server with --fit-max-tokens (or set "fit-max-tokens": true in the "server" section of the --config file) to shorten it to the room left
+[server] s1 done  pp=98625/0c  tg=0  end=error
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 read  pp=45063/87655 8841t/s 5s
+[server] live | s1 tg=1/32768 | total 0t/s
+[server] live | s1 tg=743/32768 370.3t/s | total 370t/s
+[server] live | s1 tg=1507/32768 375.4t/s | total 375t/s
+[server] s1 done  pp=87655/0c 10.4s 8453t/s  tg=2057 394.6t/s acc=63%  ttft=10.4s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=1/32768 | total 0t/s
+[server] s1 done  pp=5412/0c 1.0s 5382t/s  tg=62 623.7t/s acc=77%  ttft=1.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=5502/5473c 0.0s  tg=60 674.9t/s acc=82%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=5686/5563c 0.1s  tg=99 604.8t/s acc=84%  ttft=0.1s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=7725/5786c 0.5s 4259t/s  tg=107 729.9t/s acc=94%  ttft=0.5s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=168/32768 | total 0t/s
+[server] live | s1 tg=994/32768 419.7t/s | total 420t/s
+[server] s1 done  pp=10984/7833c 0.6s 4996t/s  tg=1230 430.7t/s acc=67%  ttft=0.6s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=1045/32768 575.3t/s | total 575t/s
+[server] live | s1 tg=2310/32768 602.5t/s | total 603t/s
+[server] s1 done  pp=12540/12215c 0.2s  tg=3230 612.4t/s acc=76%  ttft=0.2s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=15797/15771c 0.0s  tg=359 579.2t/s acc=81%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=16184/16157c 0.0s  tg=99 562.5t/s acc=76%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=265/32768 405.6t/s | total 406t/s
+[server] live | s1 tg=1139/32768 428.2t/s | total 428t/s
+[server] live | s1 tg=1898/32768 406.5t/s | total 407t/s
+[server] s1 done  pp=17584/16284c 0.3s 3813t/s  tg=2413 438.7t/s acc=66%  ttft=0.3s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=789/32768 425.7t/s | total 426t/s
+[server] s1 done  pp=20266/19998c 0.1s  tg=1264 466.1t/s acc=68%  ttft=0.2s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=21799/21531c 0.1s  tg=645 425.2t/s acc=65%  ttft=0.2s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=22561/22443c 0.1s  tg=273 583.5t/s acc=75%  ttft=0.1s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=23028/22834c 0.1s  tg=306 469.8t/s acc=73%  ttft=0.1s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=468/32768 479.4t/s | total 479t/s
+[server] s1 done  pp=23354/23335c 0.0s  tg=760 475.7t/s acc=67%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=338/32768 377.8t/s | total 378t/s
+[server] live | s1 tg=1175/32768 405.6t/s | total 406t/s
+[server] live | s1 tg=2158/32768 440.1t/s | total 440t/s
+[server] live | s1 tg=3139/32768 454.6t/s | total 455t/s
+[server] live | s1 tg=4163/32768 467.3t/s | total 467t/s
+[server] s1 done  pp=24239/24115c 0.1s  tg=5314 498.3t/s acc=74%  ttft=0.1s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=29578/29554c 0.0s  tg=257 608.4t/s acc=77%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=412/32768 427.4t/s | total 427t/s
+[server] live | s1 tg=1745/32768 585.7t/s | total 586t/s
+[server] s1 done  pp=29858/29836c 0.0s  tg=2631 592.9t/s acc=78%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=517/32768 534.2t/s | total 534t/s
+[server] s1 done  pp=32517/32490c 0.0s  tg=627 560.6t/s acc=78%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=33173/33145c 0.0s  tg=118 561.4t/s acc=74%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=34077/33292c 0.2s 3142t/s  tg=382 673.0t/s acc=86%  ttft=0.3s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=34488/34458c 0.0s  tg=329 615.3t/s acc=79%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=34846/34818c 0.0s  tg=426 514.3t/s acc=80%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=35313/35271c 0.0s  tg=61 546.6t/s acc=77%  ttft=0.1s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=35499/35375c 0.1s  tg=526 630.5t/s acc=85%  ttft=0.1s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=331/32768 450.8t/s | total 451t/s
+[server] s1 done  pp=36880/36025c 0.3s 3292t/s  tg=698 420.6t/s acc=65%  ttft=0.3s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=709/32768 420.8t/s | total 421t/s
+[server] s1 done  pp=38667/37579c 0.3s 3422t/s  tg=991 452.7t/s acc=69%  ttft=0.3s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=326/32768 487.5t/s | total 487t/s
+[server] live | s1 tg=1147/32768 429.2t/s | total 429t/s
+[server] live | s1 tg=1981/32768 423.1t/s | total 423t/s
+[server] live | s1 tg=2886/32768 431.8t/s | total 432t/s
+[server] live | s1 tg=3828/32768 440.7t/s | total 441t/s
+[server] live | s1 tg=4861/32768 454.7t/s | total 455t/s
+[server] live | s1 tg=5849/32768 460.6t/s | total 461t/s
+[server] live | s1 tg=6777/32768 460.8t/s | total 461t/s
+[server] live | s1 tg=7690/32768 460.1t/s | total 460t/s
+[server] s1 done  pp=39926/38662c 0.3s 3875t/s  tg=8261 465.4t/s acc=69%  ttft=0.3s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=406/32768 468.8t/s | total 469t/s
+[server] s1 done  pp=48417/48188c 0.1s  tg=1460 509.7t/s acc=73%  ttft=0.1s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=423/32768 483.7t/s | total 484t/s
+[server] live | s1 tg=1415/32768 491.2t/s | total 491t/s
+[server] live | s1 tg=2341/32768 479.2t/s | total 479t/s
+[server] live | s1 tg=3215/32768 466.2t/s | total 466t/s
+[server] s1 done  pp=50001/49876c 0.1s  tg=3247 467.9t/s acc=68%  ttft=0.1s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=53273/53247c 0.0s  tg=176 686.4t/s acc=90%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=53474/53448c 0.0s  tg=201 577.9t/s acc=82%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=53700/53676c 0.0s  tg=310 658.3t/s acc=86%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=54035/54009c 0.0s  tg=150 561.4t/s acc=77%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=54210/54184c 0.0s  tg=245 737.7t/s acc=97%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=54480/54454c 0.0s  tg=116 430.4t/s acc=61%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=476/32768 704.2t/s | total 704t/s
+[server] s1 done  pp=55708/54597c 0.3s 3487t/s  tg=1651 715.3t/s acc=92%  ttft=0.3s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=57384/57360c 0.0s  tg=574 624.2t/s acc=84%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=57983/57959c 0.0s  tg=117 475.4t/s acc=67%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=59320/58101c 0.3s 3624t/s  tg=253 597.5t/s acc=79%  ttft=0.3s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=59596/59574c 0.0s  tg=113 645.3t/s acc=86%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=59732/59710c 0.0s  tg=117 629.0t/s acc=87%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=59872/59850c 0.0s  tg=566 633.5t/s acc=84%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=60461/60439c 0.0s  tg=248 602.2t/s acc=80%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=60732/60710c 0.0s  tg=227 640.3t/s acc=87%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=60982/60960c 0.0s  tg=128 577.1t/s acc=76%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=61133/61111c 0.0s  tg=218 622.0t/s acc=85%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=574/32768 599.3t/s | total 599t/s
+[server] live | s1 tg=1691/32768 568.8t/s | total 569t/s
+[server] s1 done  pp=61374/61351c 0.0s  tg=2563 569.4t/s acc=76%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=451/32768 524.0t/s | total 524t/s
+[server] live | s1 tg=1904/32768 663.6t/s | total 664t/s
+[server] s1 done  pp=64183/63938c 0.1s  tg=3206 683.8t/s acc=89%  ttft=0.1s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=565/32768 591.8t/s | total 592t/s
+[server] live | s1 tg=1863/32768 629.4t/s | total 629t/s
+[server] s1 done  pp=67413/67390c 0.0s  tg=1991 631.0t/s acc=81%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=69428/69405c 0.0s  tg=379 575.5t/s acc=80%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=378/32768 523.6t/s | total 524t/s
+[server] s1 done  pp=70623/69808c 0.3s 2984t/s  tg=795 633.2t/s acc=86%  ttft=0.3s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=71443/71419c 0.0s  tg=110 670.3t/s acc=85%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=71578/71554c 0.0s  tg=220 699.7t/s acc=87%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=71823/71799c 0.0s  tg=216 677.8t/s acc=87%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=72064/72038c 0.0s  tg=65 625.0t/s acc=82%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=307/32768 424.6t/s | total 425t/s
+[server] s1 done  pp=72980/72130c 0.3s 3161t/s  tg=544 512.5t/s acc=75%  ttft=0.3s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=73629/73525c 0.1s  tg=231 548.0t/s acc=79%  ttft=0.1s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=302/32768 403.7t/s | total 404t/s
+[server] live | s1 tg=1783/32768 646.8t/s | total 647t/s
+[server] live | s1 tg=3298/32768 692.6t/s | total 693t/s
+[server] s1 done  pp=74547/73861c 0.2s 2824t/s  tg=3412 694.5t/s acc=93%  ttft=0.3s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=77984/77960c 0.0s  tg=110 562.7t/s acc=83%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=78338/78095c 0.2s  tg=95 547.9t/s acc=79%  ttft=0.2s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=380/32768 429.4t/s | total 429t/s
+[server] s1 done  pp=78558/78434c 0.1s  tg=817 470.9t/s acc=65%  ttft=0.1s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=352/32768 399.9t/s | total 400t/s
+[server] live | s1 tg=1174/32768 407.2t/s | total 407t/s
+[server] live | s1 tg=2057/32768 420.7t/s | total 421t/s
+[server] live | s1 tg=2799/32768 406.0t/s | total 406t/s
+[server] live | s1 tg=3626/32768 407.3t/s | total 407t/s
+[server] live | s1 tg=4600/32768 421.5t/s | total 422t/s
+[server] s1 done  pp=79522/79374c 0.1s  tg=4907 431.4t/s acc=66%  ttft=0.1s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=84454/84430c 0.0s  tg=398 699.1t/s acc=90%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=84877/84853c 0.0s  tg=312 762.6t/s acc=96%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=85214/85190c 0.0s  tg=110 652.0t/s acc=86%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=85349/85323c 0.0s  tg=84 507.6t/s acc=70%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=399/32768 467.2t/s | total 467t/s
+[server] live | s1 tg=1229/32768 429.4t/s | total 429t/s
+[server] live | s1 tg=2222/32768 456.6t/s | total 457t/s
+[server] s1 done  pp=85658/85434c 0.1s  tg=2741 472.3t/s acc=69%  ttft=0.1s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=88422/88400c 0.0s  tg=78 546.6t/s acc=76%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=89972/88501c 0.4s 3869t/s  tg=227 587.8t/s acc=82%  ttft=0.4s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=90222/90200c 0.0s  tg=218 572.9t/s acc=76%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=90463/90441c 0.0s  tg=350 606.3t/s acc=82%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=90836/90814c 0.0s  tg=150 658.2t/s acc=88%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=91009/90987c 0.0s  tg=152 710.6t/s acc=88%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=91184/91161c 0.0s  tg=229 647.3t/s acc=85%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=91436/91414c 0.0s  tg=80 574.7t/s acc=86%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=309/32768 452.9t/s | total 453t/s
+[server] live | s1 tg=1112/32768 414.0t/s | total 414t/s
+[server] live | s1 tg=2464/32768 524.7t/s | total 525t/s
+[server] live | s1 tg=3689/32768 549.4t/s | total 549t/s
+[server] live | s1 tg=4812/32768 551.8t/s | total 552t/s
+[server] s1 done  pp=92597/91517c 0.3s 3485t/s  tg=4927 551.5t/s acc=76%  ttft=0.3s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=97550/97525c 0.0s  tg=403 513.2t/s acc=75%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=97980/97954c 0.0s  tg=340 546.4t/s acc=77%  ttft=0.0s  end=stop
+[server] error: engine reported request exceeds the context window: prompt (98347 tokens) + max tokens (32739) exceeds the context (131072); requests are never truncated. Send a smaller max_tokens (at most 32717 here), or start the server with --fit-max-tokens (or set "fit-max-tokens": true in the "server" section of the --config file) to shorten it to the room left
+[server] s1 done  pp=98347/0c  tg=0  end=error
+[server] error: engine reported request exceeds the context window: prompt (99050 tokens) + max tokens (32768) exceeds the context (131072); requests are never truncated. Send a smaller max_tokens (at most 32014 here), or start the server with --fit-max-tokens (or set "fit-max-tokens": true in the "server" section of the --config file) to shorten it to the room left
+[server] s1 done  pp=99050/0c  tg=0  end=error
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=1/32768 | total 0t/s
+[server] live | s1 tg=941/32768 467.6t/s | total 468t/s
+[server] s1 done  pp=40367/4461c 4.3s 8276t/s  tg=1458 482.5t/s acc=67%  ttft=4.4s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=1/32768 | total 0t/s
+[server] s1 done  pp=33697/4461c 3.5s 8246t/s  tg=176 697.9t/s acc=87%  ttft=3.6s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=734/32768 466.9t/s | total 467t/s
+[server] s1 done  pp=35622/33874c 0.4s 4110t/s  tg=1377 442.4t/s acc=69%  ttft=0.4s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=57/32768 | total 0t/s
+[server] live | s1 tg=752/32768 330.2t/s | total 330t/s
+[server] s1 done  pp=40676/37000c 0.7s 5073t/s  tg=1329 361.6t/s acc=63%  ttft=0.7s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=238/32768 385.8t/s | total 386t/s
+[server] live | s1 tg=1031/32768 392.2t/s | total 392t/s
+[server] live | s1 tg=1927/32768 415.8t/s | total 416t/s
+[server] live | s1 tg=2811/32768 423.1t/s | total 423t/s
+[server] s1 done  pp=43411/42006c 0.4s 3749t/s  tg=3180 438.6t/s acc=67%  ttft=0.4s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=46617/46592c 0.0s  tg=432 553.0t/s acc=80%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=47075/47050c 0.0s  tg=259 504.9t/s acc=72%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=420/32768 436.1t/s | total 436t/s
+[server] s1 done  pp=47359/47335c 0.0s  tg=725 510.1t/s acc=77%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=48109/48083c 0.0s  tg=330 620.4t/s acc=80%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=469/32768 487.2t/s | total 487t/s
+[server] s1 done  pp=48464/48438c 0.0s  tg=1355 558.7t/s acc=77%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=49843/49820c 0.0s  tg=438 739.6t/s acc=95%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=50306/50282c 0.0s  tg=160 510.0t/s acc=74%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=571/32768 592.3t/s | total 592t/s
+[server] s1 done  pp=50491/50467c 0.0s  tg=854 615.1t/s acc=80%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=51382/51346c 0.0s  tg=349 573.7t/s acc=82%  ttft=0.1s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=51758/51731c 0.0s  tg=245 449.2t/s acc=66%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=52434/52004c 0.2s  tg=80 519.5t/s acc=67%  ttft=0.2s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=52674/52515c 0.1s  tg=468 741.2t/s acc=95%  ttft=0.1s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=53186/53141c 0.0s  tg=226 505.0t/s acc=75%  ttft=0.1s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=369/32768 383.5t/s | total 383t/s
+[server] live | s1 tg=1330/32768 447.7t/s | total 448t/s
+[server] s1 done  pp=53439/53413c 0.0s  tg=1825 484.4t/s acc=71%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=55291/55265c 0.0s  tg=215 593.8t/s acc=84%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=433/32768 451.9t/s | total 452t/s
+[server] s1 done  pp=55533/55505c 0.0s  tg=1086 490.4t/s acc=68%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=624/32768 651.0t/s | total 651t/s
+[server] s1 done  pp=56646/56620c 0.0s  tg=1435 678.1t/s acc=89%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=383/32768 400.0t/s | total 400t/s
+[server] live | s1 tg=1512/32768 508.9t/s | total 509t/s
+[server] s1 done  pp=58108/58080c 0.0s  tg=2248 542.7t/s acc=72%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=502/32768 519.8t/s | total 520t/s
+[server] live | s1 tg=1849/32768 621.1t/s | total 621t/s
+[server] s1 done  pp=60382/60355c 0.0s  tg=2652 646.3t/s acc=85%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=332/32768 347.0t/s | total 347t/s
+[server] s1 done  pp=63061/63035c 0.0s  tg=715 427.8t/s acc=71%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=63803/63777c 0.0s  tg=144 520.2t/s acc=74%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=380/32768 508.9t/s | total 509t/s
+[server] s1 done  pp=64652/63948c 0.2s 2860t/s  tg=1159 586.0t/s acc=83%  ttft=0.3s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=65853/65812c 0.1s  tg=141 517.1t/s acc=74%  ttft=0.1s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=66442/65995c 0.2s  tg=159 498.7t/s acc=74%  ttft=0.2s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=1/32768 | total 0t/s
+[server] s1 done  pp=82361/66602c 2.2s 7228t/s  tg=830 448.7t/s acc=69%  ttft=2.2s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=83218/83192c 0.0s  tg=102 472.7t/s acc=65%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=83347/83321c 0.0s  tg=178 569.1t/s acc=82%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=83552/83526c 0.0s  tg=76 569.7t/s acc=75%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=83761/83627c 0.1s  tg=149 576.0t/s acc=82%  ttft=0.1s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=83937/83911c 0.0s  tg=106 412.9t/s acc=65%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=84064/84042c 0.0s  tg=176 514.9t/s acc=75%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=84808/84241c 0.2s 2569t/s  tg=357 571.0t/s acc=74%  ttft=0.2s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=85192/85166c 0.0s  tg=360 700.5t/s acc=93%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=85579/85553c 0.0s  tg=109 452.1t/s acc=75%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=85943/85689c 0.2s  tg=341 575.9t/s acc=82%  ttft=0.2s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=86328/86285c 0.1s  tg=273 392.0t/s acc=71%  ttft=0.1s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=308/32768 362.3t/s | total 362t/s
+[server] s1 done  pp=86852/86602c 0.1s  tg=422 388.0t/s acc=61%  ttft=0.2s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=1025/32768 533.5t/s | total 534t/s
+[server] s1 done  pp=87342/87275c 0.1s  tg=2088 570.4t/s acc=78%  ttft=0.1s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=89457/89431c 0.0s  tg=406 526.5t/s acc=71%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=90399/89864c 0.2s 2491t/s  tg=294 601.7t/s acc=85%  ttft=0.2s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=90721/90694c 0.0s  tg=156 550.1t/s acc=76%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=266/32768 380.2t/s | total 380t/s
+[server] s1 done  pp=91825/90878c 0.3s 3224t/s  tg=432 404.3t/s acc=65%  ttft=0.3s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=696/32768 399.4t/s | total 399t/s
+[server] s1 done  pp=92992/92258c 0.3s 2866t/s  tg=1252 425.7t/s acc=65%  ttft=0.3s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 read  pp=52077/83389 9206t/s 5s
+[server] live | s1 tg=1/32768 | total 0t/s
+[server] s1 done  pp=83389/4461c 9.1s 8654t/s  tg=75 506.8t/s acc=65%  ttft=9.1s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=83964/83463c 0.2s  tg=126 440.1t/s acc=66%  ttft=0.2s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=85265/84089c 0.3s 3449t/s  tg=43 511.9t/s acc=62%  ttft=0.4s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=85763/85307c 0.2s  tg=40 659.0t/s acc=86%  ttft=0.2s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=86130/85802c 0.2s  tg=316 484.1t/s acc=71%  ttft=0.2s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=87221/86445c 0.3s 2947t/s  tg=99 395.8t/s acc=59%  ttft=0.3s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=87687/87319c 0.2s  tg=139 440.2t/s acc=72%  ttft=0.2s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=374/32768 416.6t/s | total 417t/s
+[server] live | s1 tg=1181/32768 406.5t/s | total 407t/s
+[server] live | s1 tg=1936/32768 394.3t/s | total 394t/s
+[server] live | s1 tg=2795/32768 404.0t/s | total 404t/s
+[server] live | s1 tg=3760/32768 421.3t/s | total 421t/s
+[server] live | s1 tg=4628/32768 423.4t/s | total 423t/s
+[server] live | s1 tg=5329/32768 411.9t/s | total 412t/s
+[server] live | s1 tg=6355/32768 425.3t/s | total 425t/s
+[server] s1 done  pp=87899/87825c 0.1s  tg=7004 423.2t/s acc=66%  ttft=0.1s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=389/32768 433.4t/s | total 433t/s
+[server] live | s1 tg=1498/32768 514.7t/s | total 515t/s
+[server] s1 done  pp=94981/94904c 0.1s  tg=1796 535.8t/s acc=79%  ttft=0.1s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=1231/32768 625.9t/s | total 626t/s
+[server] s1 done  pp=96802/96778c 0.0s  tg=1235 626.4t/s acc=82%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=98062/98038c 0.0s  tg=250 498.2t/s acc=74%  ttft=0.0s  end=stop
+[server] error: engine reported request exceeds the context window: prompt (98337 tokens) + max tokens (32747) exceeds the context (131072); requests are never truncated. Send a smaller max_tokens (at most 32727 here), or start the server with --fit-max-tokens (or set "fit-max-tokens": true in the "server" section of the --config file) to shorten it to the room left
+[server] s1 done  pp=98337/0c  tg=0  end=error
+[server] error: engine reported request exceeds the context window: prompt (98922 tokens) + max tokens (32768) exceeds the context (131072); requests are never truncated. Send a smaller max_tokens (at most 32142 here), or start the server with --fit-max-tokens (or set "fit-max-tokens": true in the "server" section of the --config file) to shorten it to the room left
+[server] s1 done  pp=98922/0c  tg=0  end=error
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 read  pp=46428/82962 8896t/s 5s
+[server] live | s1 tg=1/32768 | total 0t/s
+[server] live | s1 tg=938/32768 468.3t/s | total 468t/s
+[server] s1 done  pp=82962/0c 9.9s 8404t/s  tg=1145 460.5t/s acc=68%  ttft=9.9s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=5176/0c 1.0s 5223t/s  tg=76 690.9t/s acc=81%  ttft=1.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=7959/5253c 0.5s 4969t/s  tg=74 601.1t/s acc=83%  ttft=0.6s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=9973/8034c 0.4s 4479t/s  tg=143 598.6t/s acc=81%  ttft=0.4s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=10569/10117c 0.2s  tg=244 454.4t/s acc=67%  ttft=0.2s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=10909/10814c 0.1s  tg=171 415.3t/s acc=62%  ttft=0.1s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=11116/11080c 0.0s  tg=70 585.3t/s acc=80%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=355/32768 404.2t/s | total 404t/s
+[server] live | s1 tg=1196/32768 414.3t/s | total 414t/s
+[server] live | s1 tg=2027/32768 414.2t/s | total 414t/s
+[server] s1 done  pp=11310/11187c 0.1s  tg=2252 426.8t/s acc=65%  ttft=0.1s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=1386/32768 702.4t/s | total 702t/s
+[server] s1 done  pp=13587/13561c 0.0s  tg=2196 710.1t/s acc=87%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=15811/15784c 0.0s  tg=177 678.4t/s acc=90%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=16017/15989c 0.0s  tg=97 491.1t/s acc=78%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=300/32768 419.4t/s | total 419t/s
+[server] s1 done  pp=17080/16115c 0.3s 3414t/s  tg=705 412.0t/s acc=66%  ttft=0.3s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=17858/17784c 0.1s  tg=235 551.3t/s acc=69%  ttft=0.1s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=380/32768 440.9t/s | total 441t/s
+[server] s1 done  pp=18262/18094c 0.1s  tg=1043 450.7t/s acc=67%  ttft=0.1s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=352/32768 397.5t/s | total 398t/s
+[server] live | s1 tg=1219/32768 421.5t/s | total 421t/s
+[server] live | s1 tg=2000/32768 408.2t/s | total 408t/s
+[server] s1 done  pp=19430/19304c 0.1s  tg=2061 410.7t/s acc=65%  ttft=0.1s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=1072/32768 644.9t/s | total 645t/s
+[server] s1 done  pp=22751/21492c 0.3s 3673t/s  tg=1421 668.4t/s acc=85%  ttft=0.4s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=1133/32768 574.7t/s | total 575t/s
+[server] s1 done  pp=24197/24173c 0.0s  tg=1742 580.9t/s acc=76%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=25967/24192c 0.4s 4176t/s  tg=110 522.6t/s acc=76%  ttft=0.4s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=358/32768 468.0t/s | total 468t/s
+[server] s1 done  pp=26764/26076c 0.2s 2943t/s  tg=738 467.9t/s acc=68%  ttft=0.2s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=27655/27503c 0.1s  tg=404 606.4t/s acc=80%  ttft=0.1s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=28082/28060c 0.0s  tg=519 553.0t/s acc=80%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=28628/28602c 0.0s  tg=128 428.2t/s acc=82%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=430/32768 462.7t/s | total 463t/s
+[server] s1 done  pp=28816/28757c 0.1s  tg=572 468.2t/s acc=67%  ttft=0.1s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=775/32768 417.3t/s | total 417t/s
+[server] live | s1 tg=1582/32768 408.8t/s | total 409t/s
+[server] live | s1 tg=2465/32768 419.3t/s | total 419t/s
+[server] live | s1 tg=3479/32768 441.2t/s | total 441t/s
+[server] live | s1 tg=4229/32768 427.4t/s | total 427t/s
+[server] live | s1 tg=5174/32768 434.4t/s | total 434t/s
+[server] s1 done  pp=29656/29387c 0.1s  tg=5460 436.9t/s acc=66%  ttft=0.1s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=35141/35115c 0.0s  tg=189 690.3t/s acc=91%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=35355/35331c 0.0s  tg=315 683.9t/s acc=88%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=641/32768 660.6t/s | total 661t/s
+[server] s1 done  pp=35695/35669c 0.0s  tg=1185 688.9t/s acc=89%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=36905/36881c 0.0s  tg=327 508.3t/s acc=77%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=37257/37231c 0.0s  tg=199 663.6t/s acc=90%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=598/32768 620.5t/s | total 620t/s
+[server] s1 done  pp=37481/37457c 0.0s  tg=602 622.0t/s acc=82%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=1297/32768 657.6t/s | total 658t/s
+[server] s1 done  pp=38108/38084c 0.0s  tg=1617 649.8t/s acc=81%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=39752/39726c 0.0s  tg=68 483.0t/s acc=75%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=827/32768 474.0t/s | total 474t/s
+[server] live | s1 tg=2124/32768 565.4t/s | total 565t/s
+[server] live | s1 tg=3626/32768 629.0t/s | total 629t/s
+[server] live | s1 tg=4959/32768 638.3t/s | total 638t/s
+[server] s1 done  pp=40585/39821c 0.3s 3029t/s  tg=5048 638.6t/s acc=84%  ttft=0.3s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=45658/45634c 0.0s  tg=377 631.3t/s acc=82%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=46061/46036c 0.0s  tg=122 560.1t/s acc=79%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=46209/46184c 0.0s  tg=273 554.8t/s acc=79%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=46524/46483c 0.0s  tg=186 684.8t/s acc=87%  ttft=0.1s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=46736/46711c 0.0s  tg=94 497.1t/s acc=79%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=47968/46831c 0.3s 3474t/s  tg=231 561.0t/s acc=82%  ttft=0.3s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=48225/48200c 0.0s  tg=73 701.2t/s acc=86%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=357/32768 477.8t/s | total 478t/s
+[server] s1 done  pp=49031/48299c 0.2s 2991t/s  tg=554 515.3t/s acc=74%  ttft=0.3s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=49627/49586c 0.0s  tg=262 540.7t/s acc=77%  ttft=0.1s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=49915/49890c 0.0s  tg=772 569.2t/s acc=81%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=613/32768 637.1t/s | total 637t/s
+[server] s1 done  pp=50713/50688c 0.0s  tg=618 639.6t/s acc=87%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=51357/51332c 0.0s  tg=165 564.5t/s acc=85%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=52596/51523c 0.3s 3341t/s  tg=167 539.6t/s acc=75%  ttft=0.3s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=52789/52764c 0.0s  tg=102 545.5t/s acc=81%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=53124/52892c 0.1s  tg=149 490.6t/s acc=65%  ttft=0.2s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=54477/53274c 0.3s 3489t/s  tg=305 477.1t/s acc=78%  ttft=0.4s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=54805/54781c 0.0s  tg=180 595.2t/s acc=83%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=55008/54986c 0.0s  tg=526 619.2t/s acc=85%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=55557/55535c 0.0s  tg=286 589.6t/s acc=80%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=55866/55844c 0.0s  tg=265 599.8t/s acc=84%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=56154/56132c 0.0s  tg=212 666.9t/s acc=88%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=56389/56367c 0.0s  tg=297 412.5t/s acc=67%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=389/32768 553.2t/s | total 553t/s
+[server] s1 done  pp=57686/56687c 0.3s 3431t/s  tg=420 562.3t/s acc=80%  ttft=0.3s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=58161/58107c 0.1s  tg=190 526.9t/s acc=73%  ttft=0.1s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=730/32768 475.7t/s | total 476t/s
+[server] s1 done  pp=60024/58156c 0.5s 4069t/s  tg=978 453.9t/s acc=66%  ttft=0.5s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=296/32768 434.5t/s | total 435t/s
+[server] live | s1 tg=1074/32768 399.8t/s | total 400t/s
+[server] live | s1 tg=1807/32768 385.0t/s | total 385t/s
+[server] s1 done  pp=61149/60019c 0.3s 3638t/s  tg=2551 400.6t/s acc=64%  ttft=0.3s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=420/32768 438.0t/s | total 438t/s
+[server] s1 done  pp=63725/63701c 0.0s  tg=471 448.4t/s acc=70%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=64652/63720c 0.3s 3216t/s  tg=252 490.8t/s acc=74%  ttft=0.3s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=65198/64647c 0.2s 2515t/s  tg=565 678.8t/s acc=92%  ttft=0.2s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=355/32768 369.9t/s | total 370t/s
+[server] live | s1 tg=1165/32768 393.2t/s | total 393t/s
+[server] s1 done  pp=65788/65762c 0.0s  tg=1989 406.2t/s acc=66%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=67802/67778c 0.0s  tg=341 417.5t/s acc=66%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=304/32768 401.9t/s | total 402t/s
+[server] s1 done  pp=68431/67797c 0.2s 2709t/s  tg=562 439.6t/s acc=69%  ttft=0.2s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=69018/68992c 0.0s  tg=559 531.9t/s acc=77%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=408/32768 423.5t/s | total 423t/s
+[server] live | s1 tg=1193/32768 402.0t/s | total 402t/s
+[server] s1 done  pp=69602/69578c 0.0s  tg=1432 409.3t/s acc=66%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=735/32768 442.8t/s | total 443t/s
+[server] s1 done  pp=72212/71035c 0.3s 3561t/s  tg=1524 420.7t/s acc=68%  ttft=0.3s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=73940/73737c 0.1s  tg=86 441.0t/s acc=72%  ttft=0.1s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=75669/74026c 0.4s 3962t/s  tg=82 453.5t/s acc=76%  ttft=0.4s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=249/32768 379.4t/s | total 379t/s
+[server] live | s1 tg=1128/32768 423.2t/s | total 423t/s
+[server] live | s1 tg=1930/32768 413.0t/s | total 413t/s
+[server] live | s1 tg=2793/32768 418.3t/s | total 418t/s
+[server] s1 done  pp=76969/75752c 0.3s 3586t/s  tg=2889 424.0t/s acc=69%  ttft=0.4s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=79883/79859c 0.0s  tg=518 405.9t/s acc=65%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=197/32768 | total 0t/s
+[server] live | s1 tg=948/32768 379.9t/s | total 380t/s
+[server] s1 done  pp=82624/80402c 0.5s 4445t/s  tg=1483 405.6t/s acc=65%  ttft=0.5s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=347/32768 361.0t/s | total 361t/s
+[server] live | s1 tg=1168/32768 393.4t/s | total 393t/s
+[server] live | s1 tg=2562/32768 514.2t/s | total 514t/s
+[server] s1 done  pp=84132/84108c 0.0s  tg=2572 514.7t/s acc=81%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=819/32768 417.2t/s | total 417t/s
+[server] live | s1 tg=1717/32768 431.6t/s | total 432t/s
+[server] s1 done  pp=86729/86705c 0.0s  tg=1770 436.9t/s acc=69%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=88522/88500c 0.0s  tg=307 510.0t/s acc=70%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=88852/88830c 0.0s  tg=217 614.9t/s acc=87%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=89092/89070c 0.0s  tg=201 494.5t/s acc=69%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=387/32768 401.5t/s | total 401t/s
+[server] s1 done  pp=89316/89294c 0.0s  tg=846 429.4t/s acc=70%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=90185/90163c 0.0s  tg=324 491.7t/s acc=73%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=462/32768 483.3t/s | total 483t/s
+[server] live | s1 tg=1224/32768 412.8t/s | total 413t/s
+[server] s1 done  pp=90532/90510c 0.0s  tg=1392 422.7t/s acc=67%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=91950/91925c 0.0s  tg=385 586.7t/s acc=75%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=593/32768 617.8t/s | total 618t/s
+[server] s1 done  pp=92361/92336c 0.0s  tg=649 621.2t/s acc=82%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=93036/93011c 0.0s  tg=158 493.8t/s acc=73%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=736/32768 443.4t/s | total 443t/s
+[server] live | s1 tg=1525/32768 415.2t/s | total 415t/s
+[server] live | s1 tg=2359/32768 415.5t/s | total 415t/s
+[server] s1 done  pp=94310/93195c 0.3s 3373t/s  tg=2553 423.9t/s acc=67%  ttft=0.3s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=96890/96864c 0.0s  tg=74 504.4t/s acc=78%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=754/32768 407.2t/s | total 407t/s
+[server] s1 done  pp=97188/96964c 0.1s  tg=1239 404.8t/s acc=64%  ttft=0.2s  end=stop
+[server] error: engine reported request exceeds the context window: prompt (98460 tokens) + max tokens (32616) exceeds the context (131072); requests are never truncated. Send a smaller max_tokens (at most 32604 here), or start the server with --fit-max-tokens (or set "fit-max-tokens": true in the "server" section of the --config file) to shorten it to the room left
+[server] s1 done  pp=98460/0c  tg=0  end=error
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=1/32768 | total 0t/s
+[server] live | s1 tg=987/32768 490.0t/s | total 490t/s
+[server] s1 done  pp=30097/4461c 3.2s 8007t/s  tg=1250 492.8t/s acc=69%  ttft=3.2s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=1/32768 | total 0t/s
+[server] s1 done  pp=31140/4461c 3.3s 8199t/s  tg=154 530.5t/s acc=74%  ttft=3.3s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=601/32768 417.0t/s | total 417t/s
+[server] s1 done  pp=34077/31295c 0.6s 4944t/s  tg=653 433.9t/s acc=66%  ttft=0.6s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=37505/34729c 0.6s 4917t/s  tg=239 510.9t/s acc=81%  ttft=0.6s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=37796/37745c 0.1s  tg=224 454.4t/s acc=69%  ttft=0.1s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=91/32768 | total 0t/s
+[server] live | s1 tg=922/32768 415.5t/s | total 415t/s
+[server] live | s1 tg=1728/32768 409.2t/s | total 409t/s
+[server] s1 done  pp=41907/38021c 0.8s 4948t/s  tg=1860 410.7t/s acc=65%  ttft=0.8s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=402/32768 400.5t/s | total 400t/s
+[server] live | s1 tg=1168/32768 388.0t/s | total 388t/s
+[server] live | s1 tg=2068/32768 411.7t/s | total 412t/s
+[server] live | s1 tg=3442/32768 489.6t/s | total 490t/s
+[server] s1 done  pp=49883/43768c 1.1s 5645t/s  tg=3788 505.0t/s acc=76%  ttft=1.1s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=53699/53670c 0.0s  tg=96 461.5t/s acc=68%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=725/32768 407.2t/s | total 407t/s
+[server] s1 done  pp=54388/53796c 0.2s 2741t/s  tg=1197 405.1t/s acc=65%  ttft=0.2s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=355/32768 403.2t/s | total 403t/s
+[server] s1 done  pp=55721/55585c 0.1s  tg=745 504.2t/s acc=74%  ttft=0.1s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=56502/56465c 0.0s  tg=682 644.1t/s acc=85%  ttft=0.1s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=390/32768 410.2t/s | total 410t/s
+[server] s1 done  pp=57220/57185c 0.0s  tg=595 474.6t/s acc=77%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=57857/57816c 0.0s  tg=486 609.7t/s acc=81%  ttft=0.1s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=58383/58342c 0.0s  tg=54 507.5t/s acc=73%  ttft=0.1s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=58866/58438c 0.2s  tg=450 641.6t/s acc=86%  ttft=0.2s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=59369/59315c 0.1s  tg=393 704.6t/s acc=92%  ttft=0.1s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=397/32768 410.3t/s | total 410t/s
+[server] s1 done  pp=59787/59763c 0.0s  tg=1326 458.6t/s acc=68%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=376/32768 426.8t/s | total 427t/s
+[server] live | s1 tg=1688/32768 583.4t/s | total 583t/s
+[server] s1 done  pp=61261/61114c 0.1s  tg=2311 613.0t/s acc=81%  ttft=0.1s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=63598/63571c 0.0s  tg=114 610.3t/s acc=81%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=63738/63713c 0.0s  tg=97 544.3t/s acc=78%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=65385/63836c 0.4s 3774t/s  tg=331 663.7t/s acc=91%  ttft=0.4s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=65742/65717c 0.0s  tg=376 532.7t/s acc=71%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=66354/66119c 0.1s  tg=384 505.9t/s acc=77%  ttft=0.2s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=66763/66737c 0.0s  tg=224 458.9t/s acc=73%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=67055/66988c 0.1s  tg=313 523.1t/s acc=81%  ttft=0.1s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] s1 done  pp=67391/67369c 0.0s  tg=107 515.2t/s acc=69%  ttft=0.0s  end=stop
+[server] thinking budget 24576 tokens, output cap 32768 (--no-answer-room disables)
+[server] live | s1 tg=394/32768 443.9t/s | total 444t/s
+[server] s1 done  pp=67632/67499c 0.1s  tg=1274 453.8t/s acc=67%  ttft=0.1s  end=stop
+[server] stopping (Ctrl+C again to force)
+[server] stopped

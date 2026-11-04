@@ -2,7 +2,8 @@
 
 Servers:
 - **Strata:** control 0.1.51 with engine 0.1.50 (CUDA) on the 5090; 0.1.45.3 `hip-halo` on the Strix Halo.
-- **Basalt:** commit `5554887` of [jesdga95/basalt](https://github.com/jesdga95/basalt), on the 5090 only, with its own packs from [jesdga/Qwen3.8-Flash-Next-Basalt](https://huggingface.co/jesdga/Qwen3.8-Flash-Next-Basalt).
+- **Basalt 5090 runs:** commit `5554887` of [jesdga95/basalt](https://github.com/jesdga95/basalt), with its own packs from [jesdga/Qwen3.8-Flash-Next-Basalt](https://huggingface.co/jesdga/Qwen3.8-Flash-Next-Basalt).
+- **RTX PRO 6000 runs:** Basalt commit `2da2d3af`, Q2_0, IQ3_S and UD-Q4_K_XL packs, 450 W power limit. These were separate development runs with OpenCode 2.2.0; the original coding runs used 2.1.4.
 
 Raw reports are in [`results/`](../results); Basalt runs are in [`results/basalt`](../results/basalt). Each run folder has a `report.json`.
 
@@ -29,6 +30,34 @@ Same canary, context size (131k) and int8 KV cache as the Strata runs. Basalt ke
 | IQ3_S | 223–231 | 8,200 | 5.2 s | about 1.3× | [`basalt/iq3_s-speed`](../results/basalt/iq3_s-speed) |
 
 Free VRAM stayed between 3.6 and 4.4 GB during the runs, with `vram-reserve-mib` set to 4608. The dips came from desktop apps growing, while Basalt's own use held steady.
+
+### RTX PRO 6000 Blackwell on Basalt (450 W)
+
+These runs used 131k context, int8 KV cache and a 4.5 GiB reserve. The GPU had 97,887 MiB total. Both used Basalt commit `2da2d3af`; the coding canaries used OpenCode 2.2.0 because 2.1.4 was not installed.
+
+| Quantization | Cold 4k output tok/s | Cold 32k prompt tok/s | Cold 32k output tok/s | First token | Minimum free VRAM |
+|---|---:|---:|---:|---:|---:|
+| Q2_0 | 483 | 9,176 | 471 | 4.62 s | 56.3 GiB |
+| IQ3_S | 489 | 8,884 | 441 | 4.77 s | 40.1 GiB |
+| UD-Q4_K_XL | 319 | 8,294 | 329 | 5.11 s | 15.1 GiB |
+
+The append-32k cache-hit runs generated at 479 tok/s on Q2_0, 434 on IQ3_S and 346 on UD-Q4_K_XL, with 0.06–0.07 s to first token. The hard coding canary passed all 36 hidden tests in all nine runs:
+
+| Run | Score | Hidden tests | Four-turn time |
+|---|---:|---:|---:|
+| Q2_0 r1 | 100 | 36/36 | 6.5 min |
+| Q2_0 r2 | 100 | 36/36 | 4.9 min |
+| Q2_0 r3 | 100 | 36/36 | 4.3 min |
+| IQ3_S r1 | 100 | 36/36 | 6.7 min |
+| IQ3_S r2 | 96* | 36/36 | 6.6 min |
+| IQ3_S r3 | 100 | 36/36 | 4.2 min |
+| UD-Q4_K_XL r1 | 100 | 36/36 | 15.3 min |
+| UD-Q4_K_XL r2 | 100 | 36/36 | 10.6 min |
+| UD-Q4_K_XL r3 | 100 | 36/36 | 11.5 min |
+
+\* The second IQ3_S run's score lost four points because the dependency audit treated imports of the project's own `ledger` package as external dependencies. Visible and hidden tests passed; the other two IQ3_S runs and all Q2_0 and UD-Q4_K_XL runs had no audit finding.
+
+Mean four-turn time was 5.2 minutes for Q2_0, 5.8 minutes for IQ3_S and 12.5 minutes for UD-Q4_K_XL. These coding times are not a strict comparison with the original runs, which used OpenCode 2.1.4; the speed canary is independent of OpenCode. All three quantizations passed this coding test. Q4 used the most VRAM and generated more slowly; this test did not show a quality gain over Q2_0.
 
 ### Strix Halo (whole GPU)
 
@@ -104,11 +133,12 @@ The time saved is smaller than the raw speed gain because each session also spen
 - **Basalt beats Strata on the 5090** for every version tested: faster output, faster prompt reading, and a shorter wait for the first token, with the same coding results.
 - **IQ3_S on Basalt is the cautious option.** Its output speed (223–231 tok/s) is close to Q2_0 on Strata (245–270), and it reads prompts faster. Basalt's published measurements place it closer to the full-precision model: top-token agreement with Q8_0 is 87% for IQ3_S and 78% for Q2_0.
 - **On these tests IQ3_S isn't worse, just slower.** Its extra precision bought nothing measurable here.
-- **UD-Q4_K_XL isn't practical on either machine** with this setup.
+- **Q2_0, IQ3_S and UD-Q4_K_XL all passed on the RTX PRO 6000.** Q4 reached 329 tok/s on the long cold prompt and averaged 12.5 minutes on the hard canary, compared with Q2_0 at 471 tok/s and 5.2 minutes. Q4 used less than 16 GiB of free VRAM at its minimum; the coding times need the OpenCode-version caveat above.
+- **UD-Q4_K_XL did not fit the 5090 and Strix Halo configurations** with this setup. It ran on the PRO 6000.
 - **The Strix Halo is usable but slow for agent work.** It writes 50–65 tok/s, but takes about 2 minutes to read a 32k prompt.
 
 **Limits of this evidence:**
 - It covers one kind of task: small Python projects with up to about 85k tokens of context.
 - Each version ran three times at most per server.
-- Basalt was tested only on the 5090.
+- Basalt was tested on the 5090 and on the RTX PRO 6000 with Q2_0, IQ3_S and UD-Q4_K_XL. The PRO 6000 run used a newer OpenCode version.
 - 2-bit versions usually lose quality first on very long contexts (over 100k tokens) and on larger codebases, and neither was tested here.

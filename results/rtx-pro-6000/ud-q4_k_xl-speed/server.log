@@ -1,0 +1,22 @@
+[server] legend   pp=prompt read  tg=generation  c=cached  acc=drafts accepted  dl=tokens per window  hit=expert cache  pcie=routed experts over PCIe
+[server] engine   ctx=131072 kv=int8 vram-reserve=4608MiB (from config)
+[server] sampling temp=1.0 top_p=0.95 top_k=20 min_p=0.0
+[server] vision   mode=off
+[server] ready    http://127.0.0.1:18082/v1  openai+anthropic  stats http://127.0.0.1:18082/
+[server] warning: this CPU has no AVX-512: the expert kernels run on AVX-2 (multi-token for the i-quant gate/up rows)
+[server] auto     resident=17.7GB pool-affinity=auto pool=11
+[server] loading weights into cuda0 [========================]  76.9/76.9 GiB  5082 MB/s
+[server] warning: the device-planned MoE tail is off: every expert is resident
+[server] loaded   76.9GiB 21.8s  cuda0=76.9GiB
+[server] kv       0.7/2.1GiB cuda0 elastic
+[server] weights  loaded, ctx=131072 images=off
+[server] live | s1 tg=1/256 | total 0t/s
+[server] s1 done  pp=5368/0c 1.1s 5068t/s  tg=256 317.2t/s acc=68%  ttft=1.1s  end=length
+[server] warning: max tokens reached while thinking, no answer (set reasoning_budget_tokens, or start with --reasoning-budget-tokens)
+[server] live | s1 tg=1/256 | total 0t/s
+[server] s1 done  pp=42400/0c 5.1s 8319t/s  tg=256 326.6t/s acc=66%  ttft=5.1s  end=length
+[server] warning: max tokens reached while thinking, no answer (set reasoning_budget_tokens, or start with --reasoning-budget-tokens)
+[server] s1 done  pp=42431/42395c 0.1s  tg=256 343.8t/s acc=74%  ttft=0.1s  end=length
+[server] warning: max tokens reached while thinking, no answer (set reasoning_budget_tokens, or start with --reasoning-budget-tokens)
+[server] stopping (Ctrl+C again to force)
+[server] stopped

@@ -6,9 +6,12 @@ set -u
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 BASALT_DIR=${BASALT_DIR:-$ROOT/.basalt/src}
 BASALT_PY=${BASALT_PY:-$ROOT/.basalt/venv/bin/python}
+CONFIG_DIR=${BASALT_CONFIG_DIR:-$ROOT/configs/5090}
+PROVIDER=${BASALT_PROVIDER:-basalt-5090}
+RESERVE_MIB=${BASALT_RESERVE_MIB:-4096}
 PORT=18082
 REPS=${REPS:-3}
-OUT="$ROOT/results/basalt"
+OUT=${BASALT_OUT:-$ROOT/results/basalt}
 server=""
 
 stop_server() {
@@ -26,7 +29,7 @@ completed() { [ -e "$1/report.json" ] && grep -q '"status": "completed"' "$1/rep
 
 mkdir -p "$OUT"
 for variant in "$@"; do
-  config="$ROOT/configs/5090/basalt-$variant.json"
+  config="$CONFIG_DIR/basalt-$variant.json"
   model=$(python3 -c "import json,sys;print(json.load(open(sys.argv[1]))['server']['alias'])" "$config")
   serve=("$BASALT_DIR/bin/basalt" serve --config "$config" --python "$BASALT_PY")
   if ss -ltn | grep -q ":$PORT "; then
@@ -40,7 +43,7 @@ for variant in "$@"; do
     rm -rf "$speed"
     echo "[$variant] speed canary starting ($model)"
     python3 "$ROOT/bench/canary.py" --base-url "http://127.0.0.1:$PORT/v1" --model "$model" \
-      --label "basalt-$variant" --output "$speed" --reserve-mib 4096 -- "${serve[@]}"
+      --label "basalt-$variant" --output "$speed" --reserve-mib "$RESERVE_MIB" -- "${serve[@]}"
     echo "[$variant] speed done"
   fi
 
@@ -67,7 +70,7 @@ for variant in "$@"; do
     out="$OUT/$variant-hard-r$rep"
     rm -rf "$out"
     echo "[$variant r$rep] running hard canary"
-    python3 "$ROOT/bench/hard_canary.py" --base-url "http://127.0.0.1:$PORT/v1" --provider basalt-5090 \
+    python3 "$ROOT/bench/hard_canary.py" --base-url "http://127.0.0.1:$PORT/v1" --provider "$PROVIDER" \
       --model "$model" --label "basalt-$variant-hard-r$rep" --output "$out"
     kill -0 "$server" 2>/dev/null || { echo "[$variant] server died"; server=""; break; }
   done
