@@ -41,7 +41,9 @@ The key flags:
 
 ```sh
 git clone https://github.com/jesdga95/basalt .basalt/src
-# build it as its README describes; the runs here used commit 5554887
+git -C .basalt/src checkout v0.2.1        # pinned release; build as its README describes:
+#   cd .basalt/src && cmake -S . -B build -DCMAKE_BUILD_TYPE=Release && cmake --build build -j
+#   (needs CMake ≥3.24, a C++20 compiler, CUDA 13, and CMAKE_CUDA_ARCHITECTURES=120 for the 5090)
 python3 -m venv .basalt/venv
 .basalt/venv/bin/pip install -r .basalt/src/requirements.txt
 hf download jesdga/Qwen3.8-Flash-Next-Basalt \
@@ -49,12 +51,50 @@ hf download jesdga/Qwen3.8-Flash-Next-Basalt \
   --local-dir .basalt/models          # about 157 GB for both
 ```
 
+**Engine version / pack format.** Pinned at **v0.2.1** (was commit `5554887`). v0.2.x reads `.basalt`
+**format v2**; the packs on Hugging Face and any built before the bump are **v1**, and a v2 engine
+refuses them (`.basalt version 1, this build reads version 2`). Upgrade each pack in place — byte-for-byte,
+no re-quantizing, ~80 s and ~80 GB of free disk per pack — then swap it in:
+
+```sh
+.basalt/venv/bin/python .basalt/src/tools/migrations/basalt_v1_to_v2.py \
+  .basalt/models/Qwen3.8-FN-GSQ-RCO-IQ3_S.basalt .basalt/models/IQ3_S.v2.basalt
+mv .basalt/models/Qwen3.8-FN-GSQ-RCO-IQ3_S.basalt{,.v1.bak}   # keep until verified
+mv .basalt/models/IQ3_S.v2.basalt .basalt/models/Qwen3.8-FN-GSQ-RCO-IQ3_S.basalt
+```
+
+The `Q2_0` pack is still v1 — migrate it the same way before serving it on a v0.2.x engine.
+
 The server configs are [`configs/5090/basalt-q2_0.json`](../configs/5090/basalt-q2_0.json) and [`basalt-iq3_s.json`](../configs/5090/basalt-iq3_s.json). Model paths in them are relative to the config file. The key settings:
 - `kv: int8` and `max-context: 131072`, the same as the Strata runs;
 - `vram-reserve-mib: 4608`. Basalt counts its scratch space against this reserve. At 4096, free VRAM came out at about 4.0 GB with the desktop running, so it was raised to keep a margin;
 - the defaults for everything else, including MTP speculative decoding and experts kept in system RAM. IQ3_S needs about 42 GB of free RAM.
 
 `basalt serve` needs absolute paths for `--python`; the driver passes them.
+
+### Image input (vision)
+
+The `jesdga/Qwen3.8-Flash-Next-Basalt` packs already embed the vision projector (`vision/mmproj` +
+`vision/text_vocab` sections survive the v1→v2 migration), so no external mmproj is needed. Vision is a
+**server** option, not an engine flag, and it is **off unless you ask for it**. Two settings turn it on:
+
+- `"vision": "dynamic"` — the image encoder runs inside the engine on the main GPU, borrowing expert-cache
+  slots only while it reads an image (no resident VRAM cost; load is per-image). `"cpu"` or a GPU number
+  (sidecar via `bin/basalt-vision`) are the other modes; booleans are refused.
+- `"lazy": false` — **`lazy: true` turns vision off** (it brings up a text-only API and loads on first
+  request). `idle-unload` is fine: it re-spawns the engine with the same `--vision` setting.
+
+A minimal vision-enabled serving config (`~/.config/basalt/qwen-iq3_s.json` on this box, port 8080, also
+carrying the refusal-direction control vector):
+
+```json
+{ "server": { "model": "…/Qwen3.8-FN-GSQ-RCO-IQ3_S.basalt", "gpu": "0", "port": 8080,
+              "lazy": false, "idle-unload": 600, "vision": "dynamic" },
+  "engine": { "max-context": 262144, "kv": "int8", "vram-reserve-mib": 4608 } }
+```
+
+Verify: the startup log should print `vision mode=dynamic gpu=0 … load=per-image`, and an OpenAI
+`chat/completions` call with an `image_url` returns a real answer (a solid-red test image → "Red").
 
 ## Building packs
 
@@ -123,3 +163,5 @@ The Strix normally hosts the non-coding benchmark's IQ3_S server on port 18081. 
 - **Out-of-memory killer:** `systemd-oomd` kills the whole tmux scope under memory pressure. Run long batches detached with `setsid nohup`.
 - **Remote launches:** `cd dir && setsid server &` over ssh keeps ssh's pipes open, so ssh never returns. Use `cd dir; setsid server > log 2>&1 < /dev/null &`.
 - **Killing processes:** `pkill -f pattern` can match the shell that runs it. Kill by PID or process group instead.
+- **"server was started without image input (--vision)":** the server is text-only. Vision is off by default and `lazy: true` disables it outright; set `"vision": "dynamic"` and `"lazy": false` (see [Image input](#image-input-vision)). The projector is already in the pack, so no `--vision-mmproj` is needed.
+- **`.basalt version 1, this build reads version 2`:** the engine was upgraded across the format bump (v0.2.x) but the pack is still v1. Migrate it with `tools/migrations/basalt_v1_to_v2.py` (see [Engine version / pack format](#basalt-on-the-5090)); it does not re-quantize.
