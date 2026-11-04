@@ -95,6 +95,37 @@ carrying the refusal-direction control vector):
 
 Verify: the startup log should print `vision mode=dynamic gpu=0 … load=per-image`, and an OpenAI
 `chat/completions` call with an `image_url` returns a real answer (a solid-red test image → "Red").
+This survives `idle-unload`: after the engine unloads and the next request reloads it, the log shows
+`weights loaded … images=on` and images still work.
+
+### Running it as a user service
+
+For a server you keep around (rather than a session-bound shell), run it under systemd so it is
+independent of any terminal/agent session, restarts on failure, and comes back after a reboot. Unit at
+`~/.config/systemd/user/basalt.service`:
+
+```ini
+[Service]
+Type=simple
+WorkingDirectory=/mnt/data/Projects/llm-opensource-benchmark/.basalt/src
+Environment=PATH=/opt/cuda/bin:/usr/local/bin:/usr/bin:/bin
+ExecStart=/mnt/data/Projects/llm-opensource-benchmark/.basalt/src/bin/basalt serve \
+  --config /home/akitaonrails/.config/basalt/qwen-iq3_s.json \
+  --python /mnt/data/Projects/llm-opensource-benchmark/.basalt/venv/bin/python
+Restart=on-failure
+RestartSec=5
+[Install]
+WantedBy=default.target
+```
+
+```sh
+systemctl --user enable --now basalt.service
+loginctl enable-linger "$USER"      # keep it running without an active login / across reboots
+```
+
+CUDA runtime libs resolve via `ldconfig` (`/opt/cuda/lib64`), so no `LD_LIBRARY_PATH` is needed.
+`Restart=on-failure` also covers the brief case where a previous instance has not yet released port
+8080 — the unit simply retries until the port is free.
 
 ## Building packs
 
