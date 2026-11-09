@@ -4,8 +4,9 @@
 # Usage: REPS=3 bench/run_basalt.sh iq3_s q2_0
 set -u
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
-BASALT_DIR=${BASALT_DIR:-$ROOT/.basalt/src}
-BASALT_PY=${BASALT_PY:-$ROOT/.basalt/venv/bin/python}
+LOCAL_LLM=${LOCAL_LLM:-$HOME/Projects/local-llm}
+BASALT_DIR=${BASALT_DIR:-$LOCAL_LLM/basalt/src}
+BASALT_PY=${BASALT_PY:-$LOCAL_LLM/basalt/venv/bin/python}
 PORT=18082
 REPS=${REPS:-3}
 OUT="$ROOT/results/basalt"

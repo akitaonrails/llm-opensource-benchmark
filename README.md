@@ -11,6 +11,21 @@ This repo answers that for two home machines, using [opencode](https://opencode.
 
 Versions tested: **Q2_0, IQ3_XXS, IQ3_S** and **Unsloth UD-Q4_K_XL**.
 
+## Where the local stack lives
+
+Engines, weights and serving state are **not** part of this repository. They live
+in `~/Projects/local-llm` (separate repo, `akitaonrails/local-llm`):
+
+| Path | Contents |
+|---|---|
+| `local-llm/basalt/` | Live Basalt engine: checkout, venv, `.basalt` packs |
+| `local-llm/strata/` | Retired serving state plus the comparison run configs |
+| `local-llm/models/` | Shared model archive (`/mnt/data/strata-models` is a compatibility symlink) |
+
+The drivers read `LOCAL_LLM` (default `~/Projects/local-llm`), `BASALT_DIR`,
+`BASALT_PY` and the per-variant configs from there. This repository owns only
+the harness, configs and results.
+
 ## Goals
 
 1. **Speed.** Measure how fast each version writes output, how fast it reads long prompts, and how long you wait for the first token. These are the numbers that decide whether an agent feels usable.

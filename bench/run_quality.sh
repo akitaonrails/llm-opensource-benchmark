@@ -19,7 +19,8 @@ trap 'stop_server; exit 130' INT TERM
 trap stop_server EXIT
 
 for variant in "$@"; do
-  config="$ROOT/.strata/qwen-$variant.json"
+  LOCAL_LLM=${LOCAL_LLM:-$HOME/Projects/local-llm}
+  config="$LOCAL_LLM/strata/qwen-$variant.json"
   model=$(python3 -c "import json,sys;print(json.load(open(sys.argv[1]))['model_name'])" "$config")
   out="$ROOT/results/qwen-$variant-quality"
   if [ -e "$out/report.json" ] && grep -q '"status": "completed"' "$out/report.json"; then

@@ -15,15 +15,19 @@
 | `STRATA` | `run_quality.sh`, `run_hard.sh` | `~/.local/share/strata/components/control/0.1.51/bin/strata` |
 | `OPENCODE_BINARY` | all coding canaries | the mise opencode 2.1.4 native binary |
 | `REPS` | `run_hard.sh` | `3` |
-| `BASALT_DIR` | `run_basalt.sh` | `.basalt/src` (a built Basalt checkout) |
-| `BASALT_PY` | `run_basalt.sh` | `.basalt/venv/bin/python` |
+| `BASALT_DIR` | `run_basalt.sh` | `~/Projects/local-llm/basalt/src` (a built Basalt checkout) |
+| `BASALT_PY` | `run_basalt.sh` | `~/Projects/local-llm/basalt/venv/bin/python` |
 | `REPS` | `run_basalt.sh` | `3` |
 | `STRIX_HOST` | `run_strix.sh`, `strix_relay.sh` | `192.168.0.90` |
 | `STRIX_PY`, `STRIX_STRATA` | `run_strix.sh` | the Strata 0.1.45.3 terminal install on the Strix |
 
 ## Server configs
 
-Strata server configs are in [`configs/5090`](../configs/5090) and [`configs/strix`](../configs/strix). The drivers read the 5090 ones from `.strata/qwen-<version>.json`, so copy them there and edit the model and pack paths. `.strata/` holds the models and packs (about 277 GB), so it is not committed.
+All engine state, weights and serving configs live in `~/Projects/local-llm`
+(see the repository README). The drivers take `LOCAL_LLM` (default
+`~/Projects/local-llm`) and read configs from `$LOCAL_LLM/strata`.
+
+Strata server configs are in [`configs/5090`](../configs/5090) and [`configs/strix`](../configs/strix). The drivers read the 5090 ones from `~/Projects/local-llm/strata/qwen-<version>.json`, so copy them there and edit the model and pack paths. That tree holds the models and packs (about 277 GB), so it lives outside this repository.
 
 The key flags:
 - **5090:**
@@ -37,18 +41,24 @@ The key flags:
 
 ## Basalt on the 5090
 
-[Basalt](https://github.com/jesdga95/basalt) is a Strata fork for Blackwell GPUs (sm_120, CUDA 13). It serves single-file `.basalt` packs instead of Strata's GGUF plus pack. Everything lives in `.basalt/`, which is not committed:
+[Basalt](https://github.com/jesdga95/basalt) is a Strata fork for Blackwell GPUs (sm_120, CUDA 13). It serves single-file `.basalt` packs instead of Strata's GGUF plus pack. Everything lives in `~/Projects/local-llm/basalt/`, outside this repository:
 
 ```sh
-git clone https://github.com/jesdga95/basalt .basalt/src
-git -C .basalt/src checkout v0.2.1        # pinned release; build as its README describes:
-#   cd .basalt/src && cmake -S . -B build -DCMAKE_BUILD_TYPE=Release && cmake --build build -j
+mkdir -p ~/Projects/local-llm/basalt && cd ~/Projects/local-llm/basalt
+git clone https://github.com/jesdga95/basalt src
+git -C src checkout v0.2.1        # pinned release; build as its README describes:
+#   cd src && cmake -S . -B build -DCMAKE_BUILD_TYPE=Release && cmake --build build -j
 #   (needs CMake ≥3.24, a C++20 compiler, CUDA 13, and CMAKE_CUDA_ARCHITECTURES=120 for the 5090)
-python3 -m venv .basalt/venv
-.basalt/venv/bin/pip install -r .basalt/src/requirements.txt
+python3 -m venv venv
+venv/bin/pip install -r src/requirements.txt
 hf download jesdga/Qwen3.8-Flash-Next-Basalt \
   Qwen3.8-FN-GSQ-RCO-Q2_0.basalt Qwen3.8-FN-GSQ-RCO-IQ3_S.basalt \
-  --local-dir .basalt/models          # about 157 GB for both
+  --local-dir models          # about 157 GB for both
+
+The engine bakes its build-time source-tree path into the binary. The 2026-11-09
+split moved the tree out of this repository, so a pre-split checkout carries a
+`.basalt` symlink to `~/Projects/local-llm/basalt` as a compatibility shim. A
+fresh build under the new path does not need the shim.
 ```
 
 **Engine version / pack format.** Pinned at **v0.2.1** (was commit `5554887`). v0.2.x reads `.basalt`
@@ -57,10 +67,11 @@ refuses them (`.basalt version 1, this build reads version 2`). Upgrade each pac
 no re-quantizing, ~80 s and ~80 GB of free disk per pack — then swap it in:
 
 ```sh
-.basalt/venv/bin/python .basalt/src/tools/migrations/basalt_v1_to_v2.py \
-  .basalt/models/Qwen3.8-FN-GSQ-RCO-IQ3_S.basalt .basalt/models/IQ3_S.v2.basalt
-mv .basalt/models/Qwen3.8-FN-GSQ-RCO-IQ3_S.basalt{,.v1.bak}   # keep until verified
-mv .basalt/models/IQ3_S.v2.basalt .basalt/models/Qwen3.8-FN-GSQ-RCO-IQ3_S.basalt
+cd ~/Projects/local-llm/basalt
+venv/bin/python src/tools/migrations/basalt_v1_to_v2.py \
+  models/Qwen3.8-FN-GSQ-RCO-IQ3_S.basalt models/IQ3_S.v2.basalt
+mv models/Qwen3.8-FN-GSQ-RCO-IQ3_S.basalt{,.v1.bak}   # keep until verified
+mv models/IQ3_S.v2.basalt models/Qwen3.8-FN-GSQ-RCO-IQ3_S.basalt
 ```
 
 The `Q2_0` pack is still v1 — migrate it the same way before serving it on a v0.2.x engine.
