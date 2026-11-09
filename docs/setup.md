@@ -55,10 +55,6 @@ hf download jesdga/Qwen3.8-Flash-Next-Basalt \
   Qwen3.8-FN-GSQ-RCO-Q2_0.basalt Qwen3.8-FN-GSQ-RCO-IQ3_S.basalt \
   --local-dir models          # about 157 GB for both
 
-The engine bakes its build-time source-tree path into the binary. The 2026-11-09
-split moved the tree out of this repository, so a pre-split checkout carries a
-`.basalt` symlink to `~/Projects/local-llm/basalt` as a compatibility shim. A
-fresh build under the new path does not need the shim.
 ```
 
 **Engine version / pack format.** Pinned at **v0.2.1** (was commit `5554887`). v0.2.x reads `.basalt`
